@@ -1,0 +1,33 @@
+{
+  "name": "bf",
+  "plural": "bfs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number, generated:true, id:true"
+    },
+    "name": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "bfdata": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

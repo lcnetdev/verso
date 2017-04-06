@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "bf": {
+    "name": "bf",
+    "connector": "loopback-connector-sqlite3",
+    "file":"bf2db.db3"
+  }
+}
