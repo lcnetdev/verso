@@ -18,6 +18,7 @@
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
+    "loopback-connector-rest": "^2.1.0",
     "loopback-connector-sqlite3": "^1.2.0",
     "marklogic": "^1.0.6",
     "serve-favicon": "^2.0.1",

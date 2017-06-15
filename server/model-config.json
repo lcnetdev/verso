@@ -41,5 +41,9 @@
   "bf": {
     "dataSource": "db",
     "public": true
+  },
+  "quarto": {
+    "dataSource": "quarto",
+    "public": true
   }
 }

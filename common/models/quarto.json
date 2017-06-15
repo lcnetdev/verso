@@ -1,0 +1,26 @@
+{
+  "name": "quarto",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "namedGraph": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "insertedDocuments": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+  }
+}
