@@ -1,7 +1,8 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file" : "bfpilot.json"
   },
   "bf": {
     "name": "bf",
