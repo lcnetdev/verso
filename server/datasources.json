@@ -2,7 +2,7 @@
   "db": {
     "name": "db",
     "connector": "memory",
-    "file" : "bfpilot.json"
+    "file" : "/marklogic/bibliomata/verso/bfpilot.json"
   },
   "bf": {
     "name": "bf",
