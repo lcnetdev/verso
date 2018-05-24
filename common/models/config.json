@@ -1,0 +1,36 @@
+{
+  "name": "config",
+  "description": "A generic model for storing configuration data as JSON.",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuidv4"
+    },
+    "name": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "configType": {
+      "type": "string",
+      "required": true
+    },
+    "json": {
+      "type": "object",
+      "required": true
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
