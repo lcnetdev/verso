@@ -33,6 +33,12 @@
       }
     }
   },
+  "mixins": {
+    "ReadOnly": {
+      "id": true,
+      "metadata": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],

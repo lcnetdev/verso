@@ -20,6 +20,7 @@
     "loopback-component-explorer": "^4.0.0",
     "loopback-connector-rest": "^2.1.0",
     "loopback-connector-sqlite3": "^1.2.0",
+    "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0"
