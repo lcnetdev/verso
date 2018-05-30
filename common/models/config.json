@@ -14,7 +14,6 @@
     },
     "name": {
       "type": "string",
-      "id": true,
       "required": true
     },
     "configType": {
@@ -26,7 +25,12 @@
       "required": true
     },
     "metadata": {
-      "type": "object"
+      "type": {
+        "createDate": "date",
+        "updateDate": "date",
+        "createUser": "string",
+        "updateUser": "string"
+      }
     }
   },
   "validations": [],
