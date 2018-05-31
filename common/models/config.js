@@ -12,24 +12,28 @@ module.exports = function(Config) {
           createDate: d,
           updateDate: d,
           createUser: userId,
-          updateUser: userId
+          updateUser: userId,
         };
         next();
       } else {
-        Config.findById(ctx.instance.id,{ fields: { metadata: true } }, function(err, instance) {
-          if (instance.metadata == null) {
-            instance.metadata = {};
+        Config.findById(
+          ctx.instance.id,
+          {fields: {metadata: true}},
+          function(err, instance) {
+            if (instance.metadata == null) {
+              instance.metadata = {};
+            }
+            instance.metadata.updateDate = d;
+            instance.metadata.updateUser = userId;
+            ctx.instance.metadata = instance.metadata;
+            next();
           }
-          instance.metadata.updateDate = d;
-          instance.metadata.updateUser = userId;
-          ctx.instance.metadata = instance.metadata;
-          next();
-        });
+        );
       }
     } else {
       let metadata = ctx.currentInstance.metadata;
       if (metadata == null) {
-        metadata = {}
+        metadata = {};
       }
       metadata.updateDate = d;
       metadata.updateUser = userId;
@@ -37,5 +41,8 @@ module.exports = function(Config) {
       next();
     }
   });
-  Config.validatesUniquenessOf('name',{ allowNull: false, ignoreCase: 'ignore', scopedTo: [ 'configType' ] });
+  Config.validatesUniquenessOf(
+    'name',
+    {allowNull: false, ignoreCase: 'ignore', scopedTo: ['configType']}
+  );
 };
