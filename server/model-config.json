@@ -48,7 +48,7 @@
     "public": true
   },
   "config": {
-    "dataSource": "memOnly",
+    "dataSource": "db",
     "public": true
   }
 }

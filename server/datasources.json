@@ -1,8 +1,7 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory",
-    "file": "/marklogic/bibliomata/verso/bfpilot.json"
+    "connector": "memory"
   },
   "bf": {
     "name": "bf",
@@ -31,9 +30,5 @@
         }
       }
     ]
-  },
-  "memOnly": {
-    "name": "memOnly",
-    "connector": "memory"
   }
 }
