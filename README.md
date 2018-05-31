@@ -2,7 +2,7 @@
 
 ## Introduction
 
-_Verso_ is a boilerplate [Loopback API] (https://loopback.io/) REST application for use with the Library of Congress' [BIBFRAME editor](https://github.com/lcnetdev/bfe) and its related [profile editor](https://github.com/lcnetdev/profile-edit). It offers endpoints for a few different kinds of storage:
+_Verso_ is a boilerplate [Loopback API](https://loopback.io/) REST application for use with the Library of Congress' [BIBFRAME editor](https://github.com/lcnetdev/bfe) and its related [profile editor](https://github.com/lcnetdev/profile-edit). It offers endpoints for a few different kinds of storage:
 
 1. `/verso/api/bfs`: Memory-based storage of BIBFRAME graphs for use with the BIBFRAME editor.
 2. `/verso/api/configs`: Memory-based storage of JSON configuration objects for use with the profile editor.
@@ -81,4 +81,4 @@ DB_STORAGE=mongodb
 DB_URL=mongodb://localhost:27017/test
 ```
 
-The environment will be picked up by both `npm start` or `pm2`.
+The environment will be picked up by both `npm start` and `pm2`.
