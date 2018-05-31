@@ -37,4 +37,5 @@ module.exports = function(Config) {
       next();
     }
   });
+  Config.validatesUniquenessOf('name',{ allowNull: false, ignoreCase: 'ignore', scopedTo: [ 'configType' ] });
 };
