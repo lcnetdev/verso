@@ -1,6 +1,6 @@
 {
   "name": "config",
-  "description": "A generic model for storing configuration data as JSON.",
+  "description": "Generic model for storing configuration data as JSON",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {

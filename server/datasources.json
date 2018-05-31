@@ -2,33 +2,5 @@
   "db": {
     "name": "db",
     "connector": "memory"
-  },
-  "bf": {
-    "name": "bf",
-    "connector": "loopback-connector-sqlite3",
-    "file": "bf2db.db3"
-  },
-  "quarto": {
-    "name": "quarto",
-    "baseURL": "http://mlvlp04.loc.gov:8387/v1/resources/interface-quarto",
-    "crud": false,
-    "connector": "rest",
-    "operations": [
-      {
-        "template": {
-          "method": "GET",
-          "query": {
-            "rs:type": "{type}",
-            "rs:graph": "{graph}"
-          },
-          "options": {
-            "useQuerystring": true,
-            "headers": {
-              "Accept": "text/turtle"
-            }
-          }
-        }
-      }
-    ]
   }
 }

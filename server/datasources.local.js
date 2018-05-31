@@ -13,29 +13,3 @@ if (process.env.DB_STORAGE === 'mongodb') {
     url: process.env.DB_URL
   }
 }
-
-if (process.env.QUARTO_URL) {
-  module.exports.quarto = {
-    "baseURL": process.env.QUARTO_URL,
-    "crud": false,
-    "connector": "rest",
-    "operations": [
-      {
-        "template": {
-          "method": "GET",
-          "query": {
-            "rs:type": "{type}",
-            "rs:graph": "{graph}"
-          },
-          "options": {
-            "useQuerystring": true,
-            "headers": {
-              "Accept": "text/turtle"
-            }
-          }
-        }
-      }
-    ]
-  }
-}
-

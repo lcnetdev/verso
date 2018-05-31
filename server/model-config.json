@@ -36,15 +36,8 @@
     "dataSource": "db",
     "public": false
   },
-  "Message": {
-    "dataSource": null
-  },
   "bf": {
     "dataSource": "db",
-    "public": true
-  },
-  "quarto": {
-    "dataSource": "quarto",
     "public": true
   },
   "config": {
