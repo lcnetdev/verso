@@ -63,6 +63,9 @@ To restart the cluster with the dump file:
 $ sudo pm2 resurrect
 ```
 
+## Sample data
+Sample configuration data for the profile editor is in `data/profiles`. If there is no data in the data store, the sample data will be loaded on server start.
+
 ## Configuring Datasource
 
 The `db` datasource can be configured using the following environment variables:
