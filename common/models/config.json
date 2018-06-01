@@ -1,0 +1,46 @@
+{
+  "name": "config",
+  "description": "Generic model for storing configuration data as JSON",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuidv4"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "configType": {
+      "type": "string",
+      "required": true
+    },
+    "json": {
+      "type": "object",
+      "required": true
+    },
+    "metadata": {
+      "type": {
+        "createDate": "date",
+        "updateDate": "date",
+        "createUser": "string",
+        "updateUser": "string"
+      }
+    }
+  },
+  "mixins": {
+    "ReadOnly": {
+      "id": true,
+      "metadata": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
