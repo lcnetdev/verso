@@ -28,7 +28,8 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0"
+    "nsp": "^2.1.0",
+    "xml2json": "^0.11.2"
   },
   "repository": {
     "type": "",
