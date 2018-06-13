@@ -29,7 +29,7 @@ module.exports = function(app, cb) {
             (fs.statSync(path).isDirectory() === false)) {
           const fname = vocabFiles[i].substr(0, vocabFiles[i].length - 4);
 	  const name = names[fname];
-	  console.log(name);
+	  // console.log(name);
           const xml = fs.readFileSync(path, {encoding: 'utf8'});
 	  const json = parser.toJson(xml);
           data.push({
