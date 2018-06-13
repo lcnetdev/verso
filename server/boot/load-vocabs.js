@@ -2,6 +2,7 @@
 // Read all .rdf files from data/vocabularies
 // Use the file name as the vocabulary name
 'use strict';
+const names = {'bflc':'LC BIBFRAME 2.0 Extensions','mads':'MADSRDF','bibframe':'Bibframe','languages':'Languages'};
 
 module.exports = function(app, cb) {
   /*
@@ -15,6 +16,7 @@ module.exports = function(app, cb) {
   const Config = app.models.Config;
   Config.count({configType: 'vocabulary'}, function(err, count) {
     const fs = require('fs');
+    const parser = require('xml2json');
     if (err) { return console.warn(err.message); }
     if (count) {
       console.log('Skipping vocabulary load (datastore is populated)');
@@ -25,8 +27,11 @@ module.exports = function(app, cb) {
         let path = vocabPath + '/' + vocabFiles[i];
         if ((vocabFiles[i].search('\.rdf$') != -1) &&
             (fs.statSync(path).isDirectory() === false)) {
-          const name = vocabFiles[i].substr(0, vocabFiles[i].length - 3);
-          const json = fs.readFileSync(path, {encoding: 'utf8'});
+          const fname = vocabFiles[i].substr(0, vocabFiles[i].length - 4);
+	  const name = names[fname];
+	  console.log(name);
+          const xml = fs.readFileSync(path, {encoding: 'utf8'});
+	  const json = parser.toJson(xml);
           data.push({
             name: name,
             configType: 'vocabulary',
