@@ -23,13 +23,13 @@
     "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "strong-error-handler": "^2.0.0",
+    "x2js": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0",
-    "xml2json": "^0.11.2"
+    "nsp": "^2.1.0"
   },
   "repository": {
     "type": "",
