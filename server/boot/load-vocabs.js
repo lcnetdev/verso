@@ -16,7 +16,8 @@ module.exports = function(app, cb) {
   const Config = app.models.Config;
   Config.count({configType: 'vocabulary'}, function(err, count) {
     const fs = require('fs');
-    const parser = require('xml2json');
+    const x2js = require('x2js');
+    const parser = new x2js();
     if (err) { return console.warn(err.message); }
     if (count) {
       console.log('Skipping vocabulary load (datastore is populated)');
@@ -31,7 +32,7 @@ module.exports = function(app, cb) {
 	  const name = names[fname];
 	  // console.log(name);
           const xml = fs.readFileSync(path, {encoding: 'utf8'});
-	  const json = parser.toJson(xml);
+	  const json = parser.xml2js(xml);
           data.push({
             name: name,
             configType: 'vocabulary',
