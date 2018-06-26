@@ -26,9 +26,10 @@
               "useValuesFrom": [],
               "valueDataType": {
                 "dataTypeLabelHint": "Date or date and time on which the original metadata first created."
-              }
+              },
+              "editable": "false"
             },
-            "propertyLabel": "Creation date (YYYY-MM-DD)",
+            "propertyLabel": "Creation date",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate"
           },
           {
@@ -41,7 +42,8 @@
               "useValuesFrom": [],
               "valueDataType": {
                 "dataTypeLabelHint": "Date or date and time on which the metadata was modified."
-              }
+              },
+              "editable": "false"
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
             "propertyLabel": "Change date"
@@ -121,10 +123,11 @@
                 "http://id.loc.gov/vocabulary/languages"
               ],
               "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language",
+                "dataTypeLabel": ""
               },
               "defaultLiteral": "eng",
-              "defaultURI": "http://id.loc.gov/vocabulary/languages/eng",
+              "defaultURI": "",
               "editable": "false",
               "repeatable": "false"
             },
