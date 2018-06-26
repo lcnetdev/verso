@@ -9,7 +9,7 @@
           {
             "propertyLabel": "Search LCNAF",
             "valueConstraint": {
-              "repeatable": "false",
+              "repeatable": "true",
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
@@ -186,7 +186,8 @@
               ],
               "valueDataType": {
                 "dataTypeURI": ""
-              }
+              },
+              "repeatable": "true"
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#FamilyName",
             "type": "lookup",
@@ -414,7 +415,8 @@
               ],
               "valueDataType": {
                 "dataTypeURI": ""
-              }
+              },
+              "repeatable": "true"
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#CorporateName",
             "type": "lookup",
@@ -495,7 +497,7 @@
               "valueDataType": {}
             },
             "propertyLabel": "Other Designation Associated with Corporate Body (RDA 11.7)",
-            "propertyURI": "http://www.loc.gov/mads/rdf/v2.html#OtherDesignation",
+            "propertyURI": "http://www.loc.gov/mads/rdf/v1#entityDescriptor",
             "remark": "http://access.rdatoolkit.org/rdachp11_rda11-4726.html"
           },
           {
@@ -657,7 +659,8 @@
               ],
               "valueDataType": {
                 "dataTypeURI": ""
-              }
+              },
+              "repeatable": "true"
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#ConferenceName",
             "type": "lookup",
@@ -754,7 +757,7 @@
             },
             "remark": "http://access.rdatoolkit.org/rdachp11_rda11-4726.html",
             "propertyLabel": "Other Designation Associated with Conference (RDA 11.7) CORE IF ...",
-            "propertyURI": "http://www.loc.gov/mads/rdf/v2.html#OtherDesignation"
+            "propertyURI": "http://www.loc.gov/mads/rdf/v1#entityDescriptor"
           },
           {
             "mandatory": "false",
@@ -903,7 +906,8 @@
               ],
               "valueDataType": {
                 "dataTypeURI": ""
-              }
+              },
+              "repeatable": "true"
             }
           },
           {
@@ -1144,7 +1148,7 @@
         ],
         "id": "profile:bf2:Agents:AdminMetadata",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#adminMetadata",
-        "resourceLabel": "Agents: Admin Metadata",
+        "resourceLabel": "Admin Metadata",
         "remark": "This relates an Authority or Variant to its administrative metadata, which is, minimimally, a Class defined outside of the MADS/RDF namespace. The RecordInfo Class from the RecordInfo ontology is recommended."
       },
       {
@@ -1205,7 +1209,7 @@
           }
         ],
         "id": "profile:bf2:Agents:Addresses",
-        "resourceLabel": "Agents: Addresses",
+        "resourceLabel": "Addresses",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
       },
       {
@@ -1290,7 +1294,7 @@
           }
         ],
         "id": "profile:bf2:Agents:Addresses:Extended",
-        "resourceLabel": "Agents: Addresses: Extended",
+        "resourceLabel": "Addresses, Extended",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
       },
       {
@@ -1331,7 +1335,7 @@
             "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label"
           }
         ],
-        "resourceLabel": "Agents: Related Agents",
+        "resourceLabel": "Related Agents",
         "id": "profile:bf2:Agents:RelatedAgents",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Authority"
       },
@@ -1398,7 +1402,7 @@
             "remark": "http://access.rdatoolkit.org/rdachp8_rda8-531.html"
           }
         ],
-        "resourceLabel": "Agents: Sources Consulted and Cataloger's Notes",
+        "resourceLabel": "Sources Consulted and Cataloger's Notes",
         "id": "profile:bf2:Agents:Source",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Source"
       },
@@ -1420,14 +1424,14 @@
           }
         ],
         "id": "profile:bf2:Agents:VariantAgents",
-        "resourceLabel": "Agents: Variant Access Points Representing Agents",
+        "resourceLabel": "Variant Access Points Representing Agents",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#hasVariant"
       },
       {
         "propertyTemplates": [
           {
             "mandatory": "false",
-            "repeatable": "true",
+            "repeatable": "false",
             "type": "lookup",
             "resourceTemplates": [],
             "valueConstraint": {
@@ -1437,30 +1441,32 @@
               ],
               "valueDataType": {
                 "dataTypeURI": ""
-              }
+              },
+              "repeatable": "false"
             },
-            "propertyLabel": "Search MARC relator code",
+            "propertyLabel": "Search MARC relator term",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/Role"
           },
           {
             "mandatory": "false",
-            "repeatable": "true",
+            "repeatable": "false",
             "type": "literal",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
               "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Role"
-              }
+                "dataTypeURI": ""
+              },
+              "repeatable": "false"
             },
             "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-            "propertyLabel": "Input RDA relationship designator (if it does not appear above)"
+            "propertyLabel": "Input RDA relationship designator term (if it does not appear above)"
           }
         ],
         "id": "profile:bf2:Agent:Role",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Role",
-        "resourceLabel": "Agent Role"
+        "resourceLabel": "Role"
       },
       {
         "propertyTemplates": [
@@ -1476,11 +1482,26 @@
             },
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "propertyLabel": "Identifier"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "profile:bf2:Agent:Identifier:Source"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "propertyLabel": "Source of identifier"
           }
         ],
         "id": "profile:bf2:Agent:Identifier",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Identifier",
-        "resourceLabel": "Agent Identifier"
+        "resourceLabel": "Identifier"
       },
       {
         "propertyTemplates": [
@@ -1500,7 +1521,64 @@
         ],
         "id": "profile:bf2:Agent:Note",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#note",
-        "resourceLabel": "Agent Note"
+        "resourceLabel": "Note"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Source of identifier"
+          }
+        ],
+        "id": "profile:bf2:Agent:Identifier:Source",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
+        "resourceLabel": "Source"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "http://id.loc.gov/authorities/names"
+              ],
+              "valueDataType": {}
+            },
+            "propertyLabel": "Search LCNAF",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Person"
+              }
+            },
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Preferred Name for Person (RDA 9.2.2) CORE ELEMENT"
+          }
+        ],
+        "id": "profile:bf2:Agent:bfPerson",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
+        "resourceLabel": "Bibframe Person"
       }
     ],
     "id": "profile:bf2:Agents:Attributes",
