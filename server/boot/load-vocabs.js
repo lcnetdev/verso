@@ -32,7 +32,14 @@ module.exports = function(app, cb) {
 	  const name = names[fname];
 	  // console.log(name);
           const xml = fs.readFileSync(path, {encoding: 'utf8'});
-	  const json = parser.xml2js(xml);
+          var json;
+          try {
+            json = parser.xml2js(xml);
+          }
+          catch(err) {
+            console.warn('Error parsing XML for ' + name + ':' + err.message);
+            continue;
+          }
           data.push({
             name: name,
             configType: 'vocabulary',
