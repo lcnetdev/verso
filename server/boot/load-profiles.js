@@ -11,7 +11,7 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
    */
-  const profilePath = 'data/profiles';
+  const profilePath = '/opt/bibliomata/verso/data/profiles';
   const Config = app.models.Config;
   Config.count({configType: 'profile'}, function(err, count) {
     const fs = require('fs');
