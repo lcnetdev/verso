@@ -26,7 +26,14 @@ module.exports = function(app, cb) {
         if ((profileFiles[i].search('\.json$') != -1) &&
             (fs.statSync(path).isDirectory() === false)) {
           const name = profileFiles[i].substr(0, profileFiles[i].length - 5);
-          const json = fs.readFileSync(path, {encoding: 'utf8'});
+          var json;
+          try {
+            json = JSON.parse(fs.readFileSync(path, {encoding: 'utf8'}));
+          }
+          catch(err) {
+            console.warn('Error parsing JSON for ' + name + ':' + err.message);
+            continue;
+          }
           data.push({
             name: name,
             configType: 'profile',
