@@ -2,20 +2,21 @@
 var fs = require('fs');
 var request = require('request');
 
-var content = fs.readFileSync('data/bfdump_eval.json');
+var content = fs.readFileSync('data/bfdump8.json');
 
 var bfdump = JSON.parse(content);
 
 for (var i in bfdump) {
-  delete bfdump[i].id;
-  request.post({url: 'http://localhost:3001/api/bfs/', 
+  //if (bfdump[i].id > 3119){
+      delete bfdump[i].id;
+      request.post({url: 'http://localhost:3000/verso/api/bfs/', 
                 header: 'Content-Type: application/json', 
                 json: bfdump[i]},
                 function(err, res, body) { 
                 if (err){
-                    console.log(err);
-                } else {
-                    console.log(body.name);
+                    console.log("error:" + err);
+                } else {                    
+                    console.log(body.id);
                 } 
                 });
 //                ).on('error', (err) => {
@@ -23,4 +24,6 @@ for (var i in bfdump) {
 //                }).on('finish'), (res) => {
 //                    console.log(i)
 //                };
+   console.log(i) 
+   //}
 }
