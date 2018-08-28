@@ -97,7 +97,8 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "profile:bf2:Form",
-                "profile:bf2:RareMat:RBMS"
+                "profile:bf2:RareMat:RBMS",
+                "profile:bf2:RareMat:AAT"
               ],
               "useValuesFrom": [],
               "valueDataType": {}
@@ -636,7 +637,7 @@
               "useValuesFrom": [],
               "valueDataType": {}
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
             "propertyLabel": "Related Manifestation"
           },
           {
@@ -850,6 +851,21 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
+                "profile:bf2:Title:VarTitle"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "propertyLabel": "Item Title"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
                 "profile:bf2:RelatedWork"
               ],
               "useValuesFrom": [],
@@ -995,7 +1011,7 @@
               "useValuesFrom": [],
               "valueDataType": {}
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Related Manifestations (RDA 27)",
             "remark": "http://access.rdatoolkit.org/27.1.html"
           },
@@ -1065,7 +1081,7 @@
               "useValuesFrom": [],
               "valueDataType": {}
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationshipTarget",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
             "propertyLabel": "Relationship Designator for Related Manifestation (RDA Appendix J)",
             "remark": "http://access.rdatoolkit.org/J.4.html"
           }
@@ -1605,6 +1621,28 @@
         "id": "profile:bf2:RareMat:ExpressionOld",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
         "resourceLabel": "BIBFRAME Work (RDA Expression Elements)"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "https://lookup.ld4l.org/qa/search/linked_data/getty_aat_ld4l_cache"
+              ],
+              "valueDataType": {}
+            },
+            "propertyLabel": "Getty AAT",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
+          }
+        ],
+        "id": "profile:bf2:RareMat:AAT",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+        "resourceLabel": "Getty AAT"
       }
     ],
     "id": "profile:bf2:RareMat",

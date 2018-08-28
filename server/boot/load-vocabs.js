@@ -12,7 +12,7 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
    */
-  const vocabPath = 'data/vocabularies';
+  const vocabPath = '/opt/bibliomata/verso/data/vocabularies';
   const Config = app.models.Config;
   Config.count({configType: 'vocabulary'}, function(err, count) {
     const fs = require('fs');

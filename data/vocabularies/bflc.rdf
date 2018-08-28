@@ -3,8 +3,8 @@
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-05-04T15:04:44.622-04:00</owl:versionInfo>
     <rdfs:label>BIBFRAME vocabulary with LC extensions</rdfs:label>
     <dcterms:modified>2017-05-04T15:04:44.622-04:00</dcterms:modified>
-    <!-- <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
-    <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/> -->
+    <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
+    <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/>
   </owl:Ontology>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/AppliesTo">
     <rdfs:label>Applies to</rdfs:label>
