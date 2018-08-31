@@ -440,7 +440,7 @@
               "useValuesFrom": [],
               "valueDataType": {}
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
             "propertyLabel": "Related Manifestations (RDA Chapter 27, Appendix J)"
           },
           {
@@ -707,20 +707,18 @@
             "remark": ""
           },
           {
-            "propertyLabel": "Dimensions",
+            "propertyLabel": "Dimensions (RDA 3.5)",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/dimensions",
             "resourceTemplates": [],
             "valueConstraint": {
-              "valueTemplateRefs": [
-                "profile:bf2:35mmFeatureFilm:Dimensions"
-              ],
+              "valueTemplateRefs": [],
               "useValuesFrom": [],
               "valueDataType": {}
             },
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
-            "remark": ""
+            "type": "literal",
+            "remark": "http://access.rdatoolkit.org/3.5.html"
           },
           {
             "mandatory": "false",
@@ -797,7 +795,8 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "profile:bf2:35mmFeatureFilm:Sound",
+                "profile:bf2:35mmFeatureFilm:Sound3",
+                "profile:bf2:35mmFeatureFilm:Sound4",
                 "profile:bf2:35mmFeatureFilm:Sound1",
                 "profile:bf2:35mmFeatureFilm:Sound2"
               ],
@@ -1081,91 +1080,6 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/copyrightRegistration",
-            "propertyLabel": "Copyright Registration Number"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/copyrightRegistration",
-            "propertyLabel": "Note on Copyright Registration"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyLabel": "Universal Product Code (UPC)",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/upc"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyLabel": "Note on Universal Product Code (UPC)",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/upc"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyLabel": "Publisher Number",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/PublisherNumber"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyLabel": "Note on Publisher Number",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/PublisherNumber"
-          }
-        ],
-        "id": "profile:bf:identifier:35mmFeatureFilm",
-        "resourceURI": "http://id.loc.gov/ontologies/bibframe/identifier",
-        "resourceLabel": "Identifiers (unused)"
-      },
-      {
-        "propertyTemplates": [
-          {
-            "mandatory": "false",
-            "repeatable": "true",
             "type": "resource",
             "resourceTemplates": [],
             "valueConstraint": {
@@ -1174,10 +1088,10 @@
                 "http://mlvlp04.loc.gov:8230/resources/instances"
               ],
               "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Instance"
+                "dataTypeURI": ""
               }
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Search"
           },
           {
@@ -1190,7 +1104,7 @@
               "useValuesFrom": [],
               "valueDataType": {}
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Record Related Manifestation Authorized Access Point"
           },
           {
@@ -1204,12 +1118,12 @@
               "valueDataType": {}
             },
             "propertyLabel": "Record Relationship Designator for Related Manifestation (RDA Appendix J)",
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationshipTarget"
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relation"
           }
         ],
         "id": "profile:bf2:35mmFeatureFilm:RelatedInstance",
         "resourceLabel": "Related Instance",
-        "resourceURI": "http://id.loc.gov/ontologies/bibframe/hasInstance"
+        "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship"
       },
       {
         "propertyTemplates": [
@@ -1408,7 +1322,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "target",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -1419,7 +1333,7 @@
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/IntendedAudience"
               }
             },
-            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Audience"
           },
           {
@@ -1477,43 +1391,6 @@
         "id": "profile:bf2:35mmFeatureFilm:Extent",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Extent",
         "resourceLabel": "Extent"
-      },
-      {
-        "propertyTemplates": [
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-            "propertyLabel": "Dimensions (RDA 3.5)",
-            "remark": "http://access.rdatoolkit.org/3.5.html"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "resource",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "profile:bf2:Note"
-              ],
-              "useValuesFrom": [],
-              "valueDataType": {}
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-            "propertyLabel": "Note about dimensions (RDA 3.21.3)",
-            "remark": "http://access.rdatoolkit.org/rdachp3_rda3-5659.html"
-          }
-        ],
-        "id": "profile:bf2:35mmFeatureFilm:Dimensions",
-        "resourceLabel": "Dimensions",
-        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Dimensions"
       },
       {
         "propertyTemplates": [
@@ -1603,16 +1480,18 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal",
+            "type": "target",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
-              "useValuesFrom": [],
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/mrectype"
+              ],
               "valueDataType": {}
             },
-            "propertyLabel": "Sound Characteristic (RDA 3.16)",
-            "remark": "http://access.rdatoolkit.org/3.16.html",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"
+            "propertyLabel": "Type of Recording (RDA 3.16.2)",
+            "remark": "http://access.rdatoolkit.org/3.16.2.html",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
           },
           {
             "mandatory": "false",
@@ -1627,13 +1506,52 @@
               "valueDataType": {}
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-            "propertyLabel": "Details of Sound Characteristic (RDA 3.16.1.4)",
-            "remark": "http://access.rdatoolkit.org/3.16.1.4.html"
+            "propertyLabel": "Details of Type of Recording (RDA 3.16.2.4)",
+            "remark": "http://access.rdatoolkit.org/3.16.2.4.html"
           }
         ],
-        "id": "profile:bf2:35mmFeatureFilm:Sound",
-        "resourceURI": "http://id.loc.gov/ontologies/bibframe/soundCharacteristic",
-        "resourceLabel": "Sound Characteristics"
+        "id": "profile:bf2:35mmFeatureFilm:Sound3",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/RecordingMethod",
+        "resourceLabel": "Type of Recording"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "target",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/mrecmedium"
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+            "propertyLabel": "Type of Recording (RDA 3.16.3)",
+            "remark": "Type of Recording (RDA 3.16.3)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "profile:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Details of Recording Medium (RDA 3.16.3.4)",
+            "remark": "http://access.rdatoolkit.org/3.16.3.4.html"
+          }
+        ],
+        "id": "profile:bf2:35mmFeatureFilm:Sound4",
+        "resourceLabel": "Recording Medium",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/RecordingMedium"
       },
       {
         "propertyTemplates": [
