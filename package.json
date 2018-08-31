@@ -1,9 +1,9 @@
 {
   "name": "verso",
-  "version": "1.0.0",
+  "version": "2.0.0-SNAPSHOT",
   "main": "server/server.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=4 <7"
   },
   "scripts": {
     "lint": "eslint .",
@@ -13,16 +13,18 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "dotenv": "^5.0.1",
     "helmet": "^1.3.0",
     "ldtr": "^0.2.1",
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
-    "loopback-connector-rest": "^2.1.0",
-    "loopback-connector-sqlite3": "^1.2.0",
+    "loopback-connector-mongodb": "^3.4.3",
+    "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "strong-error-handler": "^2.0.0",
+    "x2js": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
@@ -33,7 +35,7 @@
     "type": "",
     "url": ""
   },
-  "license": "UNLICENSED",
+  "license": "CC0-1.0",
   "description": "verso",
   "author": ""
 }
