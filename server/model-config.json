@@ -9,6 +9,7 @@
     "mixins": [
       "loopback/common/mixins",
       "loopback/server/mixins",
+      "../node_modules/loopback-ds-readonly-mixin/lib",
       "../common/mixins",
       "./mixins"
     ]
@@ -35,15 +36,12 @@
     "dataSource": "db",
     "public": false
   },
-  "Message": {
-    "dataSource": null
-  },
   "bf": {
     "dataSource": "db",
     "public": true
   },
-  "quarto": {
-    "dataSource": "quarto",
+  "config": {
+    "dataSource": "db",
     "public": true
   }
 }
