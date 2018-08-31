@@ -11,7 +11,7 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
    */
-  const profilePath = '/opt/bibliomata/verso/data/profiles';
+  let profilePath = '/opt/bibliomata/verso/data/profiles';
   const Config = app.models.Config;
   Config.count({configType: 'profile'}, function(err, count) {
     const fs = require('fs');
@@ -19,7 +19,15 @@ module.exports = function(app, cb) {
     if (count) {
       console.log('Skipping profile load (datastore is populated)');
     } else {
-      const profileFiles = fs.readdirSync(profilePath);
+      let profileFiles = [];
+      try {
+        profileFiles = fs.readdirSync(profilePath);
+      } catch (e) {
+        console.log(profilePath + ' not found!');
+        profilePath = 'data/profiles';
+        console.log('Trying ' + profilePath);
+        profileFiles = fs.readdirSync(profilePath);
+      }
       let data = [];
       for (let i = 0; i < profileFiles.length; i++) {
         let path = profilePath + '/' + profileFiles[i];
@@ -29,8 +37,7 @@ module.exports = function(app, cb) {
           var json;
           try {
             json = JSON.parse(fs.readFileSync(path, {encoding: 'utf8'}));
-          }
-          catch(err) {
+          } catch (err) {
             console.warn('Error parsing JSON for ' + name + ':' + err.message);
             continue;
           }
