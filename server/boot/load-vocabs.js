@@ -17,11 +17,10 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
    */
+  let vocabPath = '/opt/bibliomata/verso/data/vocabularies';
+  const Config = app.models.Config;
+  Config.count({configType: 'vocabulary'}, function(err, count) {
     const fs = require('fs');
-    const path = require('path');
-    const vocabPath = path.join(__dirname, '/data/vocabularies');
-    const Config = app.models.Config;
-    Config.count({configType: 'vocabulary'}, function(err, count) {
     const x2js = require('x2js');
     const parser = new x2js();
     if (err) { return console.warn(err.message); }
@@ -30,7 +29,14 @@ module.exports = function(app, cb) {
     } else {
       // const vocabFiles = fs.readdirSync(vocabPath);
       let vocabFiles = [];
-      vocabFiles = fs.readdirSync(vocabPath);
+      try {
+        vocabFiles = fs.readdirSync(vocabPath);
+      } catch (e) {
+        console.log(vocabPath + ' not found!');
+        vocabPath = 'data/vocabularies';
+        console.log('Trying ' + vocabPath);
+        vocabFiles = fs.readdirSync(vocabPath);
+      }
       let data = [];
       for (let i = 0; i < vocabFiles.length; i++) {
         let path = vocabPath + '/' + vocabFiles[i];
