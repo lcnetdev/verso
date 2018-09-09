@@ -2,7 +2,12 @@
 // Read all .rdf files from data/vocabularies
 // Use the file name as the vocabulary name
 'use strict';
-const names = {'bflc':'LC BIBFRAME 2.0 Extensions','mads':'MADSRDF','bibframe':'Bibframe','languages':'Languages'};
+const names = {
+  'bflc': 'LC BIBFRAME 2.0 Extensions',
+  'mads': 'MADSRDF',
+  'bibframe': 'Bibframe',
+  'languages': 'Languages',
+};
 
 module.exports = function(app, cb) {
   /*
@@ -12,7 +17,7 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
    */
-  const vocabPath = 'data/vocabularies';
+  let vocabPath = '/opt/bibliomata/verso/data/vocabularies';
   const Config = app.models.Config;
   Config.count({configType: 'vocabulary'}, function(err, count) {
     const fs = require('fs');
@@ -22,21 +27,29 @@ module.exports = function(app, cb) {
     if (count) {
       console.log('Skipping vocabulary load (datastore is populated)');
     } else {
-      const vocabFiles = fs.readdirSync(vocabPath);
+      // const vocabFiles = fs.readdirSync(vocabPath);
+      let vocabFiles = [];
+      try {
+        vocabFiles = fs.readdirSync(vocabPath);
+      } catch (e) {
+        console.log(vocabPath + ' not found!');
+        vocabPath = 'data/vocabularies';
+        console.log('Trying ' + vocabPath);
+        vocabFiles = fs.readdirSync(vocabPath);
+      }
       let data = [];
       for (let i = 0; i < vocabFiles.length; i++) {
         let path = vocabPath + '/' + vocabFiles[i];
         if ((vocabFiles[i].search('\.rdf$') != -1) &&
             (fs.statSync(path).isDirectory() === false)) {
           const fname = vocabFiles[i].substr(0, vocabFiles[i].length - 4);
-	  const name = names[fname];
-	  // console.log(name);
+	        const name = names[fname];
+	        // console.log(name);
           const xml = fs.readFileSync(path, {encoding: 'utf8'});
           var json;
           try {
             json = parser.xml2js(xml);
-          }
-          catch(err) {
+          } catch (err) {
             console.warn('Error parsing XML for ' + name + ':' + err.message);
             continue;
           }
