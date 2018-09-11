@@ -8,8 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check",
-    "console": "loopback-console"
+    "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -22,7 +21,6 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
     "loopback-connector-mongodb": "^3.4.3",
-    "loopback-console": "^1.1.0",
     "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
     "serve-favicon": "^2.0.1",
