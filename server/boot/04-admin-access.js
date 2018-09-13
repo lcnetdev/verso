@@ -14,10 +14,10 @@
 'use strict';
 
 module.exports = function(app) {
-  const ACL = app.models.ACL,
-        User = app.models.User,
-        Role = app.models.Role,
-        RoleMapping = app.models.RoleMapping;
+  const ACL = app.models.ACL;
+  const User = app.models.User;
+  const Role = app.models.Role;
+  const RoleMapping = app.models.RoleMapping;
 
   // Create admin and profile_editor roles if they don't exist
   // If DEV_USER_PW is set, create dev users, otherwise create admin user interactively
@@ -112,7 +112,7 @@ module.exports = function(app) {
       principalId: 'admin',
       property: '*',
       accessType: '*',
-      permission: 'ALLOW'
+      permission: 'ALLOW',
     },
     function(err, acl) {
       if (err) throw err;
@@ -139,10 +139,11 @@ module.exports = function(app) {
    * @param {Function} callback
    */
   User.prototype.addToRole = function(roleName, callback) {
-    var error, userId = this.id;
+    var error;
+    var userId = this.id;
     Role.findOne(
       {
-        where: { name: roleName }
+        where: {name: roleName},
       },
       function(err, role) {
         if (err) {
@@ -159,8 +160,8 @@ module.exports = function(app) {
           {
             where: {
               principalId: userId,
-              roleId: role.id
-            }
+              roleId: role.id,
+            },
           },
           function(err, roleMapping) {
             if (err) {
@@ -174,7 +175,7 @@ module.exports = function(app) {
             role.principals.create(
               {
                 principalType: RoleMapping.USER,
-                principalId: userId
+                principalId: userId,
               },
               callback
             );
@@ -196,14 +197,14 @@ module.exports = function(app) {
           required: true,
           description: 'Name of the role to add.',
           http: {
-            source: 'path'
-          }
-        }
+            source: 'path',
+          },
+        },
       ],
       http: {
         path: '/roles/:roleName',
-        verb: 'put'
-      }
+        verb: 'put',
+      },
     }
   );
 
@@ -214,10 +215,11 @@ module.exports = function(app) {
    * @param {Function} callback
    */
   User.prototype.removeFromRole = function(roleName, callback) {
-    var error, userId = this.id;
+    var error;
+    var userId = this.id;
     Role.findOne(
       {
-        where: { name: roleName }
+        where: {name: roleName},
       },
       function(err, role) {
         if (err) {
@@ -234,8 +236,8 @@ module.exports = function(app) {
           {
             where: {
               principalId: userId,
-              roleId: role.id
-            }
+              roleId: role.id,
+            },
           },
           function(err, roleMapping) {
             if (err) {
@@ -265,14 +267,14 @@ module.exports = function(app) {
           required: true,
           description: 'Name of the role to remove.',
           http: {
-            source: 'path'
-          }
-        }
+            source: 'path',
+          },
+        },
       ],
       http: {
         path: '/roles/:roleName',
-        verb: 'delete'
-      }
+        verb: 'delete',
+      },
     }
   );
 };
