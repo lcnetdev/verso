@@ -25,7 +25,7 @@ module.exports = function(app) {
     if (err) throw err;
     if (adminRole !== null) return;
     Role.create([
-      {name: 'admin', id: 'admin'}, // Set the ID for the admin role for use in admin access ACL
+      {name: 'admin'},
       {name: 'profile_editor'},
     ], function(err, roles) {
       if (err) throw err;
@@ -126,11 +126,12 @@ module.exports = function(app) {
   });
 
   // Ensure that the `admin` role has access to manage users.
+  const adminRole = Role.findOne({where: {name: 'admin'}});
   ACL.findOrCreate(
     {
       model: 'User',
       principalType: 'ROLE',
-      principalId: 'admin',
+      principalId: adminRole.id,
       property: '*',
       accessType: '*',
       permission: 'ALLOW',
