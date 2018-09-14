@@ -5,26 +5,27 @@ module.exports = function enableAuthentication(server) {
   server.enableAuth();
 
   // Respond to login with user identity and token in cookies
-  server.models.User.afterRemote('login', function(ctx) {
-    server.models.User.findById(
+  server.models.User.afterRemote('login', async function(ctx) {
+    const currentUserLB = await server.models.User.findById(
       ctx.result.userId,
       {include: 'roles'},
-      function(err, instance) {
-        if (err) throw err;
-        const user = instance.toJSON();
-        var roles = [];
-        user.roles.forEach(function(role) {
-          roles.push(role.name);
-        });
-        const currentUser = {
-          id: ctx.result.userId,
-          username: user.username,
-          roles: roles,
-        };
-        ctx.res.cookie('current_user', JSON.stringify(currentUser));
-      });
-    ctx.res.cookie('access_token', ctx.result.id,
-      {signed: true, expires: 0, httpOnly: true});
+    );
+    const currentUser = currentUserLB.toJSON();
+    var roles = [];
+    currentUser.roles.forEach(function(role) {
+      roles.push(role.name);
+    });
+    const userIdentity = {
+      id: ctx.result.userId,
+      username: currentUser.username,
+      roles: roles,
+    };
+    ctx.res.cookie('current_user', JSON.stringify(userIdentity));
+    ctx.res.cookie(
+      'access_token',
+      ctx.result.id,
+      {signed: true, expires: 0, httpOnly: true}
+    );
     return Promise.resolve();
   });
 
