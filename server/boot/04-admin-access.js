@@ -14,10 +14,10 @@
 'use strict';
 
 module.exports = function(app) {
-  const ACL = app.models.ACL,
-        User = app.models.User,
-        Role = app.models.Role,
-        RoleMapping = app.models.RoleMapping;
+  const ACL = app.models.ACL;
+  const User = app.models.User;
+  const Role = app.models.Role;
+  const RoleMapping = app.models.RoleMapping;
 
   // Create admin and profile_editor roles if they don't exist
   // If DEV_USER_PW is set, create dev users, otherwise create admin user interactively
@@ -65,12 +65,23 @@ module.exports = function(app) {
         (async function() {
           const inquirer = require('inquirer');
           console.log('\nNo admin role present, assuming first run.');
+          console.log('\nPLEASE NOTE ALL FIELDS ARE REQUIRED!');
           const adminUserMd = {username: 'admin'};
-          adminUserMd.email = (await inquirer.prompt({
-            type: 'input',
-            name: 'email',
-            message: 'Email for admin user?',
-          })).email;
+          const emailRe = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+          const emailAddr = async function() {
+            const emailAttempt = await inquirer.prompt({
+              type: 'input',
+              name: 'email',
+              message: 'Email for admin user?',
+            });
+            if (emailRe.test(emailAttempt.email)) {
+              return emailAttempt.email;
+            } else {
+              console.log('Invalid email address, try again.');
+              return emailAddr();
+            }
+          };
+          adminUserMd.email = await emailAddr();
           const confirmPassword = async function() {
             const pwAttempt = await inquirer.prompt([
               {
@@ -85,7 +96,12 @@ module.exports = function(app) {
               },
             ]);
             if (pwAttempt.password === pwAttempt.confirmation) {
-              return pwAttempt.password;
+              if (pwAttempt.password == '') {
+                console.log('Password cannot be empty, try again.');
+                return confirmPassword();
+              } else {
+                return pwAttempt.password;
+              }
             } else {
               console.log('Passwords do not match, try again.');
               return confirmPassword();
@@ -112,7 +128,7 @@ module.exports = function(app) {
       principalId: 'admin',
       property: '*',
       accessType: '*',
-      permission: 'ALLOW'
+      permission: 'ALLOW',
     },
     function(err, acl) {
       if (err) throw err;
@@ -139,10 +155,11 @@ module.exports = function(app) {
    * @param {Function} callback
    */
   User.prototype.addToRole = function(roleName, callback) {
-    var error, userId = this.id;
+    var error;
+    var userId = this.id;
     Role.findOne(
       {
-        where: { name: roleName }
+        where: {name: roleName},
       },
       function(err, role) {
         if (err) {
@@ -159,8 +176,8 @@ module.exports = function(app) {
           {
             where: {
               principalId: userId,
-              roleId: role.id
-            }
+              roleId: role.id,
+            },
           },
           function(err, roleMapping) {
             if (err) {
@@ -174,7 +191,7 @@ module.exports = function(app) {
             role.principals.create(
               {
                 principalType: RoleMapping.USER,
-                principalId: userId
+                principalId: userId,
               },
               callback
             );
@@ -196,14 +213,14 @@ module.exports = function(app) {
           required: true,
           description: 'Name of the role to add.',
           http: {
-            source: 'path'
-          }
-        }
+            source: 'path',
+          },
+        },
       ],
       http: {
         path: '/roles/:roleName',
-        verb: 'put'
-      }
+        verb: 'put',
+      },
     }
   );
 
@@ -214,10 +231,11 @@ module.exports = function(app) {
    * @param {Function} callback
    */
   User.prototype.removeFromRole = function(roleName, callback) {
-    var error, userId = this.id;
+    var error;
+    var userId = this.id;
     Role.findOne(
       {
-        where: { name: roleName }
+        where: {name: roleName},
       },
       function(err, role) {
         if (err) {
@@ -234,8 +252,8 @@ module.exports = function(app) {
           {
             where: {
               principalId: userId,
-              roleId: role.id
-            }
+              roleId: role.id,
+            },
           },
           function(err, roleMapping) {
             if (err) {
@@ -265,14 +283,14 @@ module.exports = function(app) {
           required: true,
           description: 'Name of the role to remove.',
           http: {
-            source: 'path'
-          }
-        }
+            source: 'path',
+          },
+        },
       ],
       http: {
         path: '/roles/:roleName',
-        verb: 'delete'
-      }
+        verb: 'delete',
+      },
     }
   );
 };
