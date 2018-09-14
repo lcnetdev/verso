@@ -65,12 +65,23 @@ module.exports = function(app) {
         (async function() {
           const inquirer = require('inquirer');
           console.log('\nNo admin role present, assuming first run.');
+          console.log('\nPLEASE NOTE ALL FIELDS ARE REQUIRED!');
           const adminUserMd = {username: 'admin'};
-          adminUserMd.email = (await inquirer.prompt({
-            type: 'input',
-            name: 'email',
-            message: 'Email for admin user?',
-          })).email;
+          const emailRe = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+          const emailAddr = async function() {
+            const emailAttempt = await inquirer.prompt({
+              type: 'input',
+              name: 'email',
+              message: 'Email for admin user?',
+            });
+            if (emailRe.test(emailAttempt.email)) {
+              return emailAttempt.email;
+            } else {
+              console.log('Invalid email address, try again.');
+              return emailAddr();
+            }
+          };
+          adminUserMd.email = await emailAddr();
           const confirmPassword = async function() {
             const pwAttempt = await inquirer.prompt([
               {
@@ -85,7 +96,12 @@ module.exports = function(app) {
               },
             ]);
             if (pwAttempt.password === pwAttempt.confirmation) {
-              return pwAttempt.password;
+              if (pwAttempt.password == '') {
+                console.log('Password cannot be empty, try again.');
+                return confirmPassword();
+              } else {
+                return pwAttempt.password;
+              }
             } else {
               console.log('Passwords do not match, try again.');
               return confirmPassword();
