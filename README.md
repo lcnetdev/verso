@@ -127,7 +127,23 @@ The following roles and ACLs are set up by default:
 
 On application startup, a bootscript runs to set up the default roles and to extend the `User` model. If there is no admin user present, the bootscript will prompt to create one (see [Running _Verso_](#running-verso) above).
 
-On login to _Verso_, custom middleware creates a cookie that stores the authentication token for use in subsequent requests. This allows applications like the BIBFRAME Editor and the Profile Editor to use _Verso_ as an authentication layer without significant code changes.
+On login to _Verso_, a custom hook on the User `login` remote method creates two cookies:
+
+* `access_token`: a signed, HTTP-only session cookie that contains the LoopBack authentication token. Custom middleware looks for this cookie with every request, so that the `Authorization` HTTP header is not required. This allows applications like the BIBFRAME Editor and the Profile Editor to use _Verso_ as an authentication layer without significant code changes.
+
+* `current_user`: a session cookie that contains user identity information, as a JSON object. For example:
+
+```
+{
+  "id": 1234,
+  "username": "superuser",
+  "roles": [
+    "admin"
+  ]
+}
+```
+
+This cookie could be used by applications to present identity information on the page.
 
 ### User management
 
