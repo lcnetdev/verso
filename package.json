@@ -22,6 +22,7 @@
     "loopback-connector-mongodb": "^3.4.3",
     "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
+    "requestretry": "^2.0.2",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0",
     "x2js": "^3.2.1"
