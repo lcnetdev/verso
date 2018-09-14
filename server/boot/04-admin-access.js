@@ -108,13 +108,18 @@ module.exports = function(app) {
             }
           };
           adminUserMd.password = await confirmPassword();
-          const adminUser = await User.create(adminUserMd);
-          const adminRole = await Role.findOne({where: {name: 'admin'}});
-          await adminRole.principals.create({
-            principalType: RoleMapping.USER,
-            principalId: adminUser.id,
-          });
-          console.log('Admin user created.');
+          var adminUser, adminRole;
+          try {
+            adminUser = await User.create(adminUserMd);
+            adminRole = await Role.findOne({where: {name: 'admin'}});
+            await adminRole.principals.create({
+              principalType: RoleMapping.USER,
+              principalId: adminUser.id,
+            });
+            console.log('Admin user created.');
+          } catch (err) {
+            console.warn('Unable to create admin user: ' + err);
+          }
         })();
       }
     });
