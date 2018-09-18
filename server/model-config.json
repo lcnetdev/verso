@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -14,6 +15,7 @@
       "./mixins"
     ]
   },
+
   "User": {
     "dataSource": "db"
   },
@@ -36,6 +38,16 @@
     "dataSource": "db",
     "public": false
   },
+
+  "UserCredential": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "db",
+    "public": true
+  },
+
   "bf": {
     "dataSource": "db",
     "public": true
