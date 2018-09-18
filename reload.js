@@ -1,22 +1,28 @@
+
 'use strict';
 var fs = require('fs');
 var request = require('requestretry');
 var content;
-if (process.argv[2]===undefined)
-    process.exit()
-else
-    content = fs.readFileSync(process.argv[2]);
 
+if (process.argv[2]===undefined) {
+    console.log('Usage: node reload.js dumpfile');
+    process.exit();
+} else {
+    content = fs.readFileSync(process.argv[2]);
+}
 var bfdump = JSON.parse(content);
 
 for (var i in bfdump) {
+      console.log(i);
   //if (bfdump[i].id > 3119){
+      setTimeout(function() {
+
       delete bfdump[i].id;
 
       request.post({
             url: 'http://localhost:3001/verso/api/bfs/',
-            maxAttempts: 3,
-            retryDelay: 1000,
+            maxAttempts: 2,
+            retryDelay: 500,
             retryStrategy: request.RetryStrategies.HTTPOrNetworkError,
 
 //      request.post({url: 'http://localhost:3000/verso/api/bfs/', 
@@ -34,6 +40,6 @@ for (var i in bfdump) {
 //                }).on('finish'), (res) => {
 //                    console.log(i)
 //                };
-   console.log(i) 
    //}
+}, 500);
 }
