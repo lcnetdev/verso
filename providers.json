@@ -1,0 +1,25 @@
+{
+  "ldap": {
+    "provider": "ldap",
+    "authScheme":"ldap",
+    "module": "passport-ldapauth",
+    "authPath": "/verso/auth/ldap",
+    "failureRedirect": "/verso/auth/fail",
+    "session": false,
+    "json": true,
+    "profileAttributesFromLDAP": {
+      "login": "uid",
+      "username": "uid",
+      "displayName": "uid",
+      "email": "mail",
+      "externalId": "uid"
+    },
+    "server":{
+      "url": "ldap://127.0.0.1:389",
+      "bindDn": "cn=admin,dc=example,dc=com",
+      "bindCredentials": "examplepassword",
+      "searchBase": "ou=users,dc=example,dc=com",
+      "searchFilter": "(uid={{username}}"
+    }
+  }
+}
