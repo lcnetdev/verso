@@ -2,7 +2,8 @@
 
 module.exports = function enableAuthentication(server) {
   // Enable authentication
-  server.enableAuth();
+  if(process.env.AUTH==="true")
+    server.enableAuth();
 
   // Respond to login with user identity and token in cookies
   server.models.User.afterRemote('login', async function(ctx) {
