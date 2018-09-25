@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "sudo pm2 start ecosystem.config.js --update-env",
-    "mongo": "sudo service mongodb start && sudo pm2 start ecosystem.config.js -env mongodb --update-env",
+    "stop": "sudo pm2 delete verso",
+    "mongo": "sudo service mongodb start && sudo pm2 start ecosystem.config.js --env mongo --update-env",
     "dev": "node .",
     "posttest": "npm run lint && nsp check"
   },
