@@ -20,16 +20,30 @@ Saving a record from the Profile Editor results in corruption of the record when
 
 ## Getting started
 
-_Verso_ is a [Node.js](https://nodejs.org/) application designed to be built and run with [npm](https://npmjs.com). 
+_Verso_ is a [Node.js](https://nodejs.org/) application designed to be built and run with [npm](https://npmjs.com). It has been tested with node v.10.11.0 and npm v.6.4.1
+
+_Verso_ is compatible with PM2, a package manager for nodejs.
 
 ### Installation
 
-Create a directory to hold your application, and navigate to that directory. Then:
+Create a directory to hold your application, and navigate to that directory. 
 
+If using PM2:
+
+```
+sudo npm install pm2 -g
+git clone https://github.com/lcnetdev/verso
+cd verso
+npm install
+npm start
+```
+
+For development:
 ```
 git clone https://github.com/lcnetdev/verso
 cd verso
 npm install
+npm run dev
 ```
 
 ### Configuring storage
@@ -42,24 +56,36 @@ _Verso_'s `db` datasource can be configured using the following environment vari
 
 `DB_URL`: The MongoDB connection string if `DB_STORAGE=mongodb`. Format is `mongodb://[user:password@]host[:port]/db`.
 
+`AUTH`: Default false, if set to true authorization is enabled.
+
 You can configure these variables using a `.env` file in the root directory of the application. For example:
 
 ```
 # Environment variables
+AUTH=true
 DB_STORAGE=mongodb
-DB_URL=mongodb://localhost:27017/test
+DB_URL=mongodb://localhost:27017/bf
 ```
+
+The variables have been included in [lcnetdev/verso/blob/master/ecosystem.config.js](ecosystem.config.js), the default environment is `file`.
+To start mongo, use `npm run mongo`.
 
 ### Running _Verso_
 
 TL;DR: `npm start`.
 
-The first time you start _Verso_, you will be prompted to create an `admin` user. This user can be used to create and manage other users (see [Authentication and authorization](#authentication-and-authorization) below for more details). For example:
+The first time you start _Verso_ with authorization enabled, you will be prompted to create an `admin` user. This user can be used to create and manage other users (see [Authentication and authorization](#authentication-and-authorization) below for more details). See above for creating an .env file. 
+For example:
 
 ```
-$ npm start
+$ cat .env
+AUTH=true
+DB_STORAGE=mongodb
+DB_URL=mongodb://127.0.0.1:27017/bf
 
-> verso@2.0.0-SNAPSHOT start /opt/bibliomata/verso
+$ npm run dev
+
+> verso@1.0.0 start /opt/bibliomata/verso
 > node .
 
 /opt/bibliomata/verso/data/profiles not found!
@@ -89,9 +115,10 @@ _Verso_ can be run using the [PM2 Process Manager](http://pm2.keymetrics.io/) fo
 To use pm2 to deploy _Verso_:
 
 ```
-sudo npm install pm2 -g
-sudo pm2 start server/server.js --name verso
+sudo pm2 start ecosystem.config.js --update-env
 ```
+Note: this is the same script which is run using `npm start`
+
 
 To check on the status of pm2 applications:
 
