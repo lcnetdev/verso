@@ -2,7 +2,7 @@
 // Read all .rdf files from data/vocabularies
 // Use the file name as the vocabulary name
 'use strict';
-const ptypes = ['literal','resource','lookup','target','list'];
+const ptypes = ['literal', 'resource', 'lookup', 'target', 'list'];
 let data = [];
 
 module.exports = function(app, cb) {
@@ -19,11 +19,11 @@ module.exports = function(app, cb) {
     if (count) {
       console.log('Skipping vocabulary load (datastore is populated)');
     } else {
-          data.push({
-            name: 'propertyTypes',
-            configType: 'propertySettings',
-            json: ptypes,
-          });
+      data.push({
+        name: 'propertyTypes',
+        configType: 'propertySettings',
+        json: ptypes,
+      });
       Config.create(data, function(err, models) {
         if (err) { return console.warn(err); }
         console.log('Created ' + models.length + ' propertyTypes');
