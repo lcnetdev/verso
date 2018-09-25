@@ -1,20 +1,22 @@
 {
   "name": "verso",
-  "version": "2.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "main": "server/server.js",
-  "engines": {
-    "node": ">=4 <7"
-  },
   "scripts": {
     "lint": "eslint .",
-    "start": "node .",
+    "start": "sudo pm2 start ecosystem.config.js --update-env",
+    "stop": "sudo pm2 delete verso",
+    "mongo": "sudo service mongodb start && sudo pm2 start ecosystem.config.js --env mongo --update-env",
+    "dev": "node .",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
     "compression": "^1.0.3",
+    "cookie-parser": "^1.4.3",
     "cors": "^2.5.2",
     "dotenv": "^5.0.1",
     "helmet": "^1.3.0",
+    "inquirer": "^6.2.0",
     "ldtr": "^0.2.1",
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
@@ -22,6 +24,7 @@
     "loopback-connector-mongodb": "^3.4.3",
     "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
+    "requestretry": "^2.0.2",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0",
     "x2js": "^3.2.1"
