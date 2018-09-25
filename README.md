@@ -253,10 +253,16 @@ This will grant the user full access to the `configs` endpoint.
 
 You can explore the User API further using the Loopback API explorer at `/verso/explorer`.
 
-### Disable authentication and authorization
+### Docker
 
-If you want to work with _Verso_ without authentication and authorization for testing or development, you can disable it by removing the bootscript `server/boot/00-authentication.js`.
+The file `Dockerfile` allows Verso to built as a Docker Image.
 
+Build verso:
+docker build -t ld4p/verso .
+
+Running in the foreground:
+docker run -p 8000:8000 ld4p/verso
+yy
 ### Test users
 
 If the environment variable `DEV_USER_PW` is set, the users `admin`, `profile_editor`, and `user` will be created with the password set to the value in the variable.
