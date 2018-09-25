@@ -23,7 +23,10 @@
     "modified": {
       "type": "date"
     },
-    "bfdata": {
+    "url":{
+      "type": "string"
+    },
+    "rdf": {
       "type": "object"
     }
   },
