@@ -1,13 +1,12 @@
 {
   "name": "verso",
-  "version": "2.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "main": "server/server.js",
-  "engines": {
-    "node": ">=4 <7"
-  },
   "scripts": {
     "lint": "eslint .",
-    "start": "node .",
+    "start": "sudo pm2 start ecosystem.config.js --update-env",
+    "mongo": "sudo service mongodb start && sudo pm2 start ecosystem.config.js -env mongodb --update-env",
+    "dev": "node .",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
