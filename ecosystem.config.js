@@ -17,6 +17,11 @@ module.exports = {
         'DB_STORAGE': 'mongodb',
       },
     },
-  ],
+    {
+      name: 'recto',
+      script: '../recto/server.js',
+      watch: false
+    },
+  ]
 };
 
