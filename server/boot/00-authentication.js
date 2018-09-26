@@ -9,7 +9,7 @@ module.exports = function enableAuthentication(server) {
   server.models.User.afterRemote('login', async function(ctx) {
     const currentUserLB = await server.models.User.findById(
       ctx.result.userId,
-      {include: 'roles'},
+      {include: 'roles'}
     );
     const currentUser = currentUserLB.toJSON();
     var roles = [];
