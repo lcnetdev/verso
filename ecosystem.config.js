@@ -9,7 +9,8 @@ module.exports = {
         env: {
             "AUTH": false,
             "DB_STORAGE":"file",
-            "DB_FILE": "/opt/bibliomata/verso/bfpilot.json"
+            "DB_FILE": "/marklogic/bibliomata/verso/bfpilot.json",
+            "DEV_USER_PW": "noot12"
         },
         env_mongo: {
             "AUTH": true,
