@@ -1,15 +1,38 @@
-FROM node:8
+FROM keymetrics/pm2:latest-jessie
 
-ENV HOME /opt/sinopia/verso
-ENV REPO https://github.com/lcnetdev/verso.git
+ENV HOME /opt/sinopia
+ENV VERSO https://github.com/lcnetdev/verso.git
+ENV RECTO https://github.com/lcnetdev/recto.git
+ENV AUTH false
+ENV DB_STORAGE: file
+ENV DB_FILE ./bfpilot.json
+ENV DEV_USER_PW password
 
-RUN apt-get update && \ 
-    git clone $REPO $HOME
+RUN apt-get update
 
-WORKDIR $HOME
+RUN    git clone $VERSO $HOME/verso
+
+RUN    git clone --recursive $RECTO $HOME/recto
+
+WORKDIR $HOME/verso
 
 RUN npm i npm@latest -g && \
-    cd $HOME && \
-    npm install -g
+    npm i pm2@latest -g && \
+    npm i grunt@latest -g
 
-CMD ["npm", "start"]
+RUN cd $HOME/verso && \
+    npm install && \
+    cd $HOME/recto && \
+    npm install && \
+    cd $HOME/recto/bfe && \
+    npm install && \
+    grunt && \
+    cd $HOME/recto/profile-edit/source && \
+    npm install && \
+    grunt
+
+EXPOSE 3000
+
+EXPOSE 3001
+
+CMD ["pm2-runtime", "start", "ecosystem.config.js"]
