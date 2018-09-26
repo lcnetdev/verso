@@ -17,7 +17,7 @@ module.exports = function(app, cb) {
   Config.count({configType: 'propertySettings'}, function(err, count) {
     if (err) { return console.warn(err.message); }
     if (count) {
-      console.log('Skipping vocabulary load (datastore is populated)');
+      console.log('Skipping types load (datastore is populated)');
     } else {
       data.push({
         name: 'propertyTypes',
