@@ -30,8 +30,15 @@
       "enabled": false
     }
   },
+  "session:before": {
+    "cookie-parser": {
+      "params": "${secretForSigningCookies}"
+    }
+  },
   "session": {},
-  "auth": {},
+  "auth": {
+    "loopback#token": {}
+  },
   "parse": {},
   "routes": {
     "loopback#rest": {
