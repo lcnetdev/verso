@@ -9,7 +9,7 @@ module.exports = {
       env: {
         'AUTH': false,
         'DB_STORAGE': 'file',
-        'DB_FILE': '/opt/bibliomata/verso/bfpilot.json',
+        'DB_FILE': './bfpilot.json',
       },
       env_mongo: {
         'AUTH': true,
