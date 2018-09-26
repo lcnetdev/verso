@@ -35,6 +35,4 @@ EXPOSE 3000
 
 EXPOSE 3001
 
-COPY ecosystem.config.js .
-
-CMD ["pm2-docker", "start", "ecosystem.config.js"]
+CMD ["pm2-runtime", "start", "ecosystem.config.js"]
