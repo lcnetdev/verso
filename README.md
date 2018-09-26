@@ -261,8 +261,8 @@ Build verso:
 docker build -t ld4p/verso .
 
 Running in the foreground:
-docker run -p 8000:8000 ld4p/verso
-yy
+docker run -p 3000:3000 ld4p/verso
+
 ### Test users
 
 If the environment variable `DEV_USER_PW` is set, the users `admin`, `profile_editor`, and `user` will be created with the password set to the value in the variable.
