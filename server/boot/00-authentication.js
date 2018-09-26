@@ -2,7 +2,7 @@
 
 module.exports = function enableAuthentication(server) {
   // Enable authentication
-  if(process.env.AUTH==="true")
+  if (process.env.AUTH === 'true')
     server.enableAuth();
 
   // Respond to login with user identity and token in cookies
