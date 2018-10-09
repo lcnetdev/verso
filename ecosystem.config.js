@@ -20,8 +20,8 @@ module.exports = {
     {
       name: 'recto',
       script: '../recto/server.js',
-      watch: false
+      watch: false,
     },
-  ]
+  ],
 };
 

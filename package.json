@@ -35,10 +35,10 @@
     "nsp": "^2.1.0"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/lcnetdev/verso.git"
   },
   "license": "CC0-1.0",
   "description": "verso",
-  "author": ""
+  "author": "kirkhess"
 }

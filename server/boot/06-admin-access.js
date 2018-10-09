@@ -74,11 +74,19 @@ module.exports = function(app) {
               name: 'email',
               message: 'Email for admin user?',
             });
+            var attempt = 0;
             if (emailRe.test(emailAttempt.email)) {
               return emailAttempt.email;
             } else {
-              console.log('Invalid email address, try again.');
-              return emailAddr();
+              console.log('Attempt failed '+ attempt+ ': Invalid email address, try again.');
+              throw Error ('FAIL');
+              //attempt++;
+              //if (attempt > 3){
+                console.err("Too many failed attempts");
+                //process.exit(1);
+              //} else {
+              //  return emailAddr();
+              // }
             }
           };
           adminUserMd.email = await emailAddr();
@@ -119,8 +127,9 @@ module.exports = function(app) {
             console.log('Admin user created.');
           } catch (err) {
             console.warn('Unable to create admin user: ' + err);
+            //process.exit(1);
           }
-        })();
+        })().catch(err => console.warn(err));
       }
     });
   });
