@@ -369,22 +369,6 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SupplContent"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/supplementaryContent",
-                        "propertyLabel": "Supplementary Content"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
                                 "profile:bf2:Note"
                             ],
                             "useValuesFrom": [],
@@ -394,6 +378,22 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/colorContent",
                         "propertyLabel": "Color Content (RDA 7.17)",
                         "remark": "http://access.rdatoolkit.org/7.17.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "profile:bf2:SupplContent"
+                            ],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/supplementaryContent",
+                        "propertyLabel": "Supplementary Content"
                     },
                     {
                         "mandatory": "false",

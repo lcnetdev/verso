@@ -44,8 +44,8 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Part name",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName"
+                        "propertyLabel": "Part number",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber"
                     },
                     {
                         "mandatory": "false",
@@ -58,8 +58,8 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Part number",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber"
+                        "propertyLabel": "Part name",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName"
                     },
                     {
                         "mandatory": "false",

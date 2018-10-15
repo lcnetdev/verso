@@ -1194,8 +1194,8 @@
                                 "http://id.loc.gov/vocabulary/mgroove"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "",
-                                "remark": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic"
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic",
+                                "remark": ""
                             },
                             "defaults": []
                         },

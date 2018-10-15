@@ -1000,9 +1000,9 @@
                                 "http://id.loc.gov/vocabulary/millus"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "",
-                                "remark": "http://id.loc.gov/ontologies/bibframe/Illustration",
-                                "dataTypeLabelHint": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Illustration",
+                                "remark": "",
+                                "dataTypeLabelHint": ""
                             },
                             "valueLanguage": "",
                             "defaults": []
@@ -1059,7 +1059,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:WorkTitle"
+                                "profile:bf2:ReferenceInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},

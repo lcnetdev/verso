@@ -119,8 +119,8 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/cartographicAttributes",
-                        "propertyLabel": "Coordinates of Cartographic Content (RDA 7.4)",
-                        "remark": "http://access.rdatoolkit.org/7.4.html"
+                        "propertyLabel": "Coordinates of Cartographic Content",
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -359,32 +359,19 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/projection",
-                        "propertyLabel": "Projection of Cartographic Content (RDA 7.26)",
-                        "remark": "http://access.rdatoolkit.org/7.26.html"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
+                            "valueTemplateRefs": [
+                                "profile:bf2:Cartographic:Projection"
+                            ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/cartographicAttributes",
-                        "propertyLabel": "Other Details of Cartographic Content (RDA 7.27)",
-                        "remark": "http://access.rdatoolkit.org/7.27.html"
+                        "propertyLabel": "Projection of Cartographic Content",
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -773,7 +760,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Cartographic:Digital"
+                                "profile:bf2:Cartographic:DataType",
+                                "profile:bf2:Cartographic:ObjectType"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -781,7 +769,7 @@
                         },
                         "propertyLabel": "Digital File Characteristic (RDA 3.19)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/digitalCharacteristic",
-                        "remark": "http://access.rdatoolkit.org/3.19.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1055,12 +1043,82 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/coordinates",
-                        "propertyLabel": "Coordinates statement"
+                        "propertyLabel": "Coordinates (RDA 7.4)",
+                        "remark": "http://access.rdatoolkit.org/7.4.html"
                     }
                 ],
                 "id": "profile:bf2:Cartographic:Coordinates",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Cartographic",
                 "resourceLabel": "Cartographic Coordinates"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Cartographic Data Type",
+                        "remark": "http://access.rdatoolkit.org/3.19.8.5.html"
+                    }
+                ],
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/CartographicDataType",
+                "id": "profile:bf2:Cartographic:DataType",
+                "remark": "",
+                "resourceLabel": "Cartographic Data Type"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Cartographic Object Type",
+                        "remark": "http://access.rdatoolkit.org/3.19.8.html"
+                    }
+                ],
+                "id": "profile:bf2:Cartographic:ObjectType",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/CartographicObjectType",
+                "resourceLabel": "Cartographic Object Type"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Projection"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/projection",
+                        "propertyLabel": "Projection (RDA 7.26)",
+                        "remark": "http://access.rdatoolkit.org/7.26.html"
+                    }
+                ],
+                "id": "profile:bf2:Cartographic:Projection",
+                "resourceLabel": "Cartographic Projection",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Cartographic"
             },
             {
                 "propertyTemplates": [
@@ -1101,41 +1159,6 @@
                 "id": "profile:bf2:Cartographic:Scale",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Scale",
                 "resourceLabel": "Scale"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/CartographicDataType",
-                        "propertyLabel": "Cartographic data type"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/CartographicObjectType",
-                        "propertyLabel": "Cartographic object type"
-                    }
-                ],
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic",
-                "id": "profile:bf2:Cartographic:Digital",
-                "resourceLabel": "Digital characteristics"
             },
             {
                 "propertyTemplates": [

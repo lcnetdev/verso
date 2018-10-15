@@ -14,7 +14,9 @@
                                 "http://id.loc.gov/vocabulary/mbroadstd"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/BroadcastStandard"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Broadcast Standard (RDA 3.18.3)",
@@ -216,7 +218,9 @@
                                 "http://id.loc.gov/vocabulary/mfiletype"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/FileType"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "File Type (RDA 3.19.2)",
@@ -241,7 +245,7 @@
                     }
                 ],
                 "id": "profile:bf2:FileType",
-                "resourceURI": "http://access.rdatoolkit.org/3.9.1.4.html",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/FileType",
                 "resourceLabel": "File Type"
             },
             {
@@ -299,7 +303,9 @@
                                 "http://id.loc.gov/vocabulary/mplayback"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Configuration of Playback Channels (RDA 3.16.8)",
@@ -363,7 +369,8 @@
                             ],
                             "defaults": [],
                             "valueDataType": {
-                                "dataTypeLabel": ""
+                                "dataTypeLabel": "",
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/ProductionMethod"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
@@ -410,7 +417,9 @@
                                     "defaultLiteral": "optical"
                                 }
                             ],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/RecordingMedium"
+                            }
                         },
                         "propertyLabel": "Recording Medium (RDA 3.16.3)",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
@@ -451,7 +460,9 @@
                                 "http://id.loc.gov/vocabulary/mregencoding"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/RegionalEncoding"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Regional Encoding (RDA 3.19.6.3)",
@@ -502,7 +513,9 @@
                                     "defaultLiteral": "sound"
                                 }
                             ],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/SoundContent"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Sound Content (RDA 7.18)",
@@ -543,7 +556,9 @@
                                 "http://id.loc.gov/vocabulary/mspecplayback"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PlaybackCharacteristic"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Special Playback Characteristic (RDA 3.16.9)",
@@ -588,7 +603,9 @@
                                     "defaultLiteral": "digital"
                                 }
                             ],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/RecordingMethod"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Type of Recording (RDA 3.16.2)",
@@ -629,7 +646,9 @@
                                 "http://id.loc.gov/authorities/performanceMediums"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicInstrument"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "LCMPT for Instrument"
@@ -696,7 +715,9 @@
                                 "http://id.loc.gov/authorities/performanceMediums"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicVoice"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "LCMPT for Voice"
@@ -763,7 +784,9 @@
                                 "http://id.loc.gov/authorities/performanceMediums"
                             ],
                             "defaults": [],
-                            "valueDataType": {}
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicEnsemble"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "LCMPT for Ensemble"
