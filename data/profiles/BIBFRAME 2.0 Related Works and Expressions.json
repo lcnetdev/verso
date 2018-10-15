@@ -212,6 +212,30 @@
                 "id": "profile:bf2:RelatedInstance",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "profile:bf2:Title"
+                            ],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+                        "propertyLabel": "Title referenced"
+                    }
+                ],
+                "id": "profile:bf2:ReferenceInstance",
+                "resourceLabel": "Instance Referenced",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
+                "remark": "used in rare materials profile"
             }
         ],
         "id": "profile:bf2:RelatedWorkorExpression",
