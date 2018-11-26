@@ -1,0 +1,26 @@
+{
+    "ldap": {
+      "provider": "ldap",
+      "authScheme": "ldap",
+      "module": "passport-ldapauth",
+      "authPath": "/verso/auth/ldap",
+      "failureRedirect": "/verso/auth/fail",
+      "session": true,
+      "json": true,
+      "profileAttributesFromLDAP": {
+        "login": "dn",
+        "username": "sn",
+        "displayName": "cn",
+        "email": "mail",
+        "externalId": "sAMAccountName"
+      },
+      "server":{
+        "url": "ldap://id-ad-test1.eastus.cloudapp.azure.com:389",
+        "bindDn": "cn=Charles Ledvina,cn=Users,dc=indexdata,dc=local",
+        "bindCredentials": "Pass@word1!",
+        "searchBase": "dc=indexdata,dc=local",
+        "searchFilter": "(CN={{username}})"
+      }
+    }
+  }
+  
