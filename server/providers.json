@@ -10,10 +10,11 @@
       "json": false,
       "profileAttributesFromLDAP": {
         "login": "dn",
-        "username": "sn",
-        "displayName": "cn",
+        "username": "sAMAccountName",
+        "displayName": "name",
         "email": "mail",
-        "externalId": "sAMAccountName"
+        "externalId": "sAMAccountName",
+        "role": "memberOf"
       },
       "server":{
         "url": "ldap://id-ad-test1.eastus.cloudapp.azure.com:389",
