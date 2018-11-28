@@ -4,9 +4,10 @@
       "authScheme": "ldap",
       "module": "passport-ldapauth",
       "authPath": "/verso/auth/ldap",
-      "failureRedirect": "/verso/auth/fail",
+      "failureRedirect": "/",
+      "successRedirect": "/",
       "session": true,
-      "json": true,
+      "json": false,
       "profileAttributesFromLDAP": {
         "login": "dn",
         "username": "sn",
