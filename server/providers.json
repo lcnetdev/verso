@@ -9,19 +9,19 @@
       "session": true,
       "json": false,
       "profileAttributesFromLDAP": {
-        "login": "dn",
+        "login": "sAMAccountName",
         "username": "sAMAccountName",
         "displayName": "name",
         "email": "mail",
         "externalId": "sAMAccountName",
-        "role": "memberOf"
+        "memberOf": "memberOf"
       },
       "server":{
         "url": "ldap://id-ad-test1.eastus.cloudapp.azure.com:389",
         "bindDn": "cn=Charles Ledvina,cn=Users,dc=indexdata,dc=local",
         "bindCredentials": "Pass@word1!",
         "searchBase": "dc=indexdata,dc=local",
-        "searchFilter": "(CN={{username}})"
+        "searchFilter": "(sAMAccountName={{username}})"
       }
     }
   }
