@@ -3,8 +3,12 @@
 require('dotenv').load();
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var bodyParser = require('body-parser');
 
 var app = module.exports = loopback();
+
+app.middleware('parse', bodyParser.json());
+app.middleware('parse', bodyParser.urlencoded({extended: true}));
 
 app.start = function() {
   // start the web server
