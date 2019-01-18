@@ -253,6 +253,20 @@ This will grant the user full access to the `configs` endpoint.
 
 You can explore the User API further using the Loopback API explorer at `/verso/explorer`.
 
+## LDAP setup
+
+You will enter your LDAP settings in the server/providers.json file.  Please see some examples at https://github.com/strongloop/loopback-example-passport/blob/master/providers.json.template and https://developer.ibm.com/recipes/tutorials/configuring-tokenbased-ldap-authentication-with-loopback-io-2/
+
+There is a providers.json file included with this distribution but the account at azure.com is temporary and is likely not to connect.
+
+There is also an example of a secure LDAP (ldaps) providers file called providers.ldaps.example.json.  Set the tlsOptions.certFile to the appropriate filename.  The cert file should be located in the same directory as providers.json.  NOTE: The developer has not been able to test this functionallity becouse of a ERR_TLS_CERT_ALTNAME_INVALID error. 
+
+Shortfalls of the loopback-component-passport module:
+
+* It stores the access_token in a regular (not HTTP Only) cookie.
+* It doesn't create the current_user cookie.  This is created by a script in the login.html file.
+* Initial login will not create a roll for the new user, the administrator must manually map a roll after initial login.
+
 ### Docker
 
 The file `Dockerfile` allows Verso to built as a Docker Image.
