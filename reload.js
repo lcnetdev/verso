@@ -2,7 +2,7 @@
 var fs = require('fs');
 var request = require('request');
 
-var content = fs.readFileSync('data/bfdump8.json');
+var content = fs.readFileSync('data/bfdump2.json');
 
 var bfdump = JSON.parse(content);
 
