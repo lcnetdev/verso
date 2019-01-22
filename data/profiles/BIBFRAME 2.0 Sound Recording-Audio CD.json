@@ -579,7 +579,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title",
+                                "profile:bf2:InstanceTitle",
                                 "profile:bf2:Title:VarTitle",
                                 "profile:bf2:ParallelTitle",
                                 "profile:bflc:TranscribedTitle"

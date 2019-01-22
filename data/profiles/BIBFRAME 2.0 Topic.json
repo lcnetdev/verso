@@ -73,8 +73,9 @@
                             "repeatable": "false",
                             "defaults": []
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
-                        "propertyLabel": "Input Subject + Subdivision string"
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Subject + Subdivision string",
+                        "remark": "A human-readable name for the subject."
                     },
                     {
                         "mandatory": "false",

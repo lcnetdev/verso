@@ -79,7 +79,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
-                "id": "profile:bf2:Title",
+                "id": "profile:bf2:InstanceTitle",
                 "resourceLabel": "Instance Title",
                 "remark": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
