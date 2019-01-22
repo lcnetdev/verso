@@ -167,7 +167,7 @@
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
-                            "editable": "false",
+                            "editable": "true",
                             "repeatable": "true",
                             "defaults": [
                                 {
