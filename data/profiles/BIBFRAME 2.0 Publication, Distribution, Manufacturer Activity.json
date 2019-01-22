@@ -74,7 +74,7 @@
                     }
                 ],
                 "id": "profile:bf2:PublicationInformation",
-                "author": "NDMSO",
+                "contact": "",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
                 "resourceLabel": "Publication Activity"
             },
@@ -401,7 +401,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names"
+                                "http://mlvlp06.loc.gov:8288/bfentities/providers"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"

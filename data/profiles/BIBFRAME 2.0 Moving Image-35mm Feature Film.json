@@ -142,7 +142,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Eidr"
+                                "profile:bf2:Identifiers:Eidr",
+                                "profile:bf2:Identifiers:Copyright"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -540,7 +541,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title",
+                                "profile:bf2:InstanceTitle",
                                 "profile:bf2:Title:VarTitle",
                                 "profile:bf2:ParallelTitle"
                             ],
