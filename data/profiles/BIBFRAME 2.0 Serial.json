@@ -34,7 +34,8 @@
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
                             },
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "false"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Creator of Work (RDA 19.2)",
@@ -119,7 +120,8 @@
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "false"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
                         "propertyLabel": "(Geographic) Coverage of the Content"
@@ -169,7 +171,8 @@
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "false"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Contribution (RDA 19.3 and 20.2)",
@@ -489,7 +492,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title",
+                                "profile:bf2:InstanceTitle",
                                 "profile:bf2:Title:VarTitle",
                                 "profile:bf2:Title:KeyTitle",
                                 "profile:bf2:Title:AbbrTitle",
