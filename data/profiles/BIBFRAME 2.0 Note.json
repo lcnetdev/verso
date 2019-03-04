@@ -143,7 +143,7 @@
                             }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Supplementary Content (RDA 7.16)",
+                        "propertyLabel": "Supplementary Content",
                         "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
                     {
@@ -181,7 +181,7 @@
                             "valueDataType": {}
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "System Requirement (RDA 3.20)",
+                        "propertyLabel": "System Requirement",
                         "remark": "http://access.rdatoolkit.org/3.20.html"
                     }
                 ],

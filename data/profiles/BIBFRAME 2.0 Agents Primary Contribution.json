@@ -19,7 +19,7 @@
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "repeatable": "true",
-                            "editable": "false",
+                            "editable": "true",
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
@@ -38,7 +38,7 @@
                             "valueDataType": {},
                             "repeatable": "true",
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                         "propertyLabel": "Relationship Designator (RDA Appendix I)",
