@@ -3,10 +3,15 @@
 require('dotenv').load();
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+
 var cors = require('cors')
 var app = module.exports = loopback();
 
 app.options('*', cors());
+var bodyParser = require('body-parser');
+
+app.middleware('parse', bodyParser.json());
+app.middleware('parse', bodyParser.urlencoded({extended: true}));
 
 app.start = function() {
   // start the web server
