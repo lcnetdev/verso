@@ -18,7 +18,8 @@
                                 "profile:bf2:Agent:Jurisdiction",
                                 "profile:bf2:Agent:Conference"
                             ],
-                            "editable": "true"
+                            "editable": "true",
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "type": "resource",
@@ -39,7 +40,8 @@
                             ],
                             "useValuesFrom": [],
                             "editable": "true",
-                            "repeatable": "true"
+                            "repeatable": "true",
+                            "defaults": []
                         },
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
@@ -61,7 +63,8 @@
                                 "profile:bf2:Agent:CorporateBody",
                                 "profile:bf2:Agent:Jurisdiction",
                                 "profile:bf2:Agent:Conference"
-                            ]
+                            ],
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "type": "resource",
@@ -80,7 +83,8 @@
                             "valueTemplateRefs": [
                                 "profile:bf2:Agent:Role"
                             ],
-                            "useValuesFrom": []
+                            "useValuesFrom": [],
+                            "defaults": []
                         },
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }

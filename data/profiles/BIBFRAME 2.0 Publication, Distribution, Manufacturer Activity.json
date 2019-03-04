@@ -53,7 +53,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-                        "propertyLabel": "Date (RDA 2.8.6)",
+                        "propertyLabel": "Date",
                         "remark": "http://access.rdatoolkit.org/2.8.6.html"
                     },
                     {
@@ -70,13 +70,14 @@
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note about publisher"
+                        "propertyLabel": "Note",
+                        "remark": "http://access.rdatoolkit.org/2.17.7.html"
                     }
                 ],
                 "id": "profile:bf2:PublicationInformation",
                 "contact": "",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
-                "resourceLabel": "Publication Activity"
+                "resourceLabel": "Publication"
             },
             {
                 "propertyTemplates": [
@@ -130,7 +131,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-                        "propertyLabel": "Date (RDA 2.9.6)",
+                        "propertyLabel": "Date",
                         "remark": "http://access.rdatoolkit.org/2.9.6.html"
                     },
                     {
@@ -147,7 +148,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Statement of Function (RDA 2.9.4.4)",
+                        "propertyLabel": "Statement of Function",
                         "remark": "http://access.rdatoolkit.org/2.9.4.4.html"
                     },
                     {
@@ -164,10 +165,11 @@
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note about distributor"
+                        "propertyLabel": "Note",
+                        "remark": "http://access.rdatoolkit.org/2.17.8.html"
                     }
                 ],
-                "resourceLabel": "Distribution Activity",
+                "resourceLabel": "Distribution",
                 "id": "profile:bf2:DistributionInformation",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution"
             },
@@ -227,7 +229,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-                        "propertyLabel": "Date (RDA 2.10.6)",
+                        "propertyLabel": "Date",
                         "remark": "http://access.rdatoolkit.org/2.10.6.html"
                     },
                     {
@@ -244,11 +246,12 @@
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note about manufacturer"
+                        "propertyLabel": "Note",
+                        "remark": "http://access.rdatoolkit.org/2.17.9.html"
                     }
                 ],
                 "id": "profile:bf2:ManufactureInformation",
-                "resourceLabel": "Manufacture Activity",
+                "resourceLabel": "Manufacture",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture"
             },
             {
@@ -256,18 +259,22 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/countries"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+                            },
                             "repeatable": "true",
                             "editable": "true",
                             "defaults": []
                         },
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Place (RDA 2.10.2)",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyLabel": "Search Place",
                         "remark": "http://access.rdatoolkit.org/2.10.2.html"
                     }
                 ],
@@ -280,19 +287,37 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
+                        "type": "lookup",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/entities/providers"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+                            },
+                            "repeatable": "true",
+                            "editable": "true",
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyLabel": "Search Name",
+                        "remark": "http://access.rdatoolkit.org/2.8.4.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {},
-                            "repeatable": "true",
-                            "editable": "true",
-                            "defaults": []
+                            "defaults": [],
+                            "valueDataType": {}
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Name (RDA 2.8.4)",
-                        "remark": "http://access.rdatoolkit.org/2.8.4.html"
+                        "propertyLabel": "Record Name (if it does not appear above)"
                     }
                 ],
                 "id": "profile:bf2:Provision:Name",
@@ -303,16 +328,19 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "profile:bf2:Provision:PlaceTest"
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/countries"
                             ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+                            },
+                            "defaults": [],
+                            "repeatable": "false"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
                         "propertyLabel": "Place"
@@ -346,75 +374,11 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                         "propertyLabel": "Date"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivityStatement",
-                        "propertyLabel": "Provision activity statement"
                     }
                 ],
                 "id": "profile:bf2:PublicationInformationTest",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
                 "resourceLabel": "Publication Test"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
-                            },
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Place"
-                    }
-                ],
-                "id": "profile:bf2:Provision:PlaceTest",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
-                "resourceLabel": "Place Test"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "http://mlvlp06.loc.gov:8288/bfentities/providers"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
-                            },
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Name"
-                    }
-                ],
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
-                "id": "profile:bf2:Provision:NameTest",
-                "resourceLabel": "Name Test"
             }
         ],
         "id": "profile:bf2:PublicationDistributionManufactureInformation",
