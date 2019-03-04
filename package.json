@@ -11,6 +11,7 @@
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "compression": "^1.0.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.5.2",
@@ -21,9 +22,11 @@
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
+    "loopback-component-passport": "^3.10.0",
     "loopback-connector-mongodb": "^3.4.3",
     "loopback-ds-readonly-mixin": "^2.0.4",
     "marklogic": "^1.0.6",
+    "passport-ldapauth": "^2.1.0",
     "requestretry": "^2.0.2",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0",
@@ -35,10 +38,10 @@
     "nsp": "^2.1.0"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/lcnetdev/verso.git"
   },
   "license": "CC0-1.0",
   "description": "verso",
-  "author": ""
+  "author": "kirkhess"
 }
