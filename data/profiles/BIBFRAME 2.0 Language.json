@@ -14,7 +14,7 @@
                                 "http://id.loc.gov/vocabulary/languages"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language",
+                                "dataTypeURI": "",
                                 "remark": ""
                             },
                             "valueLanguage": "",
@@ -24,7 +24,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Language of Expression (RDA 6.11)",
+                        "propertyLabel": "Language of Expression",
                         "remark": "http://access.rdatoolkit.org/6.11.html"
                     },
                     {
@@ -41,7 +41,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Language of Content (RDA 7.12)",
+                        "propertyLabel": "Language of Content",
                         "remark": "http://access.rdatoolkit.org/7.12.html"
                     }
                 ],

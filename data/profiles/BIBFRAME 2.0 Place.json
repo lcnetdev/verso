@@ -47,7 +47,7 @@
                 "id": "profile:bf2:Place",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "resourceLabel": "Place Associated with a Work",
-                "author": "NDMSO"
+                "contact": ""
             }
         ],
         "id": "bf2:Place",

@@ -15,7 +15,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
-                        "propertyLabel": "Title Proper (RDA 2.3.2) (BIBFRAME: Main title)",
+                        "propertyLabel": "Main Title",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3376.html"
                     },
                     {
@@ -30,7 +30,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
-                        "propertyLabel": "Other Title Information (RDA 2.3.4) (BIBFRAME: Subtitle)",
+                        "propertyLabel": "Subtitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3782.html"
                     },
                     {
@@ -75,11 +75,11 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on title",
+                        "propertyLabel": "Note",
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
-                "id": "profile:bf2:Title",
+                "id": "profile:bf2:InstanceTitle",
                 "resourceLabel": "Instance Title",
                 "remark": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
@@ -114,7 +114,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on title",
+                        "propertyLabel": "Note",
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
@@ -136,22 +136,8 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
-                        "propertyLabel": "Preferred Title for Work (RDA 6.2.2, RDA 6.14.2) (BIBFRAME: Main title)",
+                        "propertyLabel": "Preferred Title for Work",
                         "remark": "http://access.rdatoolkit.org/rdachp6_rda6-2036.html"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
-                        "propertyLabel": "Part name"
                     },
                     {
                         "mandatory": "false",
@@ -170,6 +156,20 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
+                        "propertyLabel": "Part name"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -181,7 +181,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on title"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "resourceLabel": "Work Title",
@@ -201,7 +201,7 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Variant Title for Work (RDA 6.2.3, 6.14.3 (Music))",
+                        "propertyLabel": "Variant Title for Work",
                         "remark": "http://access.rdatoolkit.org/rdachp6_rda6-2658.html",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle"
                     },
@@ -219,7 +219,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on title"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "resourceLabel": "Work Title Variation",
@@ -261,7 +261,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
-                        "propertyLabel": "Variant Title (RDA 2.3.6)",
+                        "propertyLabel": "Variant Title",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-4013.html"
                     },
                     {
@@ -296,7 +296,7 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Parallel Title Proper (RDA 2.3.3)",
+                        "propertyLabel": "Parallel Title",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3695.html"
                     },
@@ -312,7 +312,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
-                        "propertyLabel": "Parallel Other Title Information (RDA 2.3.5)",
+                        "propertyLabel": "Subtitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3939.html"
                     },
                     {
@@ -329,7 +329,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Parallel Title",
+                        "propertyLabel": "Note",
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],

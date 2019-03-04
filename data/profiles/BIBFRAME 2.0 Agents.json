@@ -181,6 +181,8 @@
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#hasSource"
                     }
                 ],
+                "contact": "",
+                "remark": ""
             },
             {
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#FamilyName",
@@ -1068,6 +1070,7 @@
                         "remark": "http://access.rdatoolkit.org/rdachp8_rda8-479.html"
                     }
                 ],
+                "contact": ""
             },
             {
                 "propertyTemplates": [

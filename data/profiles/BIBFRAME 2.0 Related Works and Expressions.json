@@ -218,12 +218,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "profile:bf2:Title"
-                            ],
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "defaults": [],
                             "valueDataType": {}
