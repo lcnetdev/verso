@@ -37,14 +37,6 @@
     "dataSource": "db",
     "public": false
   },
-  "UserCredential": {
-    "dataSource": "db",
-    "public": true
-  },
-  "UserIdentity": {
-    "dataSource": "db",
-    "public": true
-  },
   "bf": {
     "dataSource": "db",
     "public": true

@@ -78,7 +78,6 @@ module.exports = function(app) {
             if (emailRe.test(emailAttempt.email)) {
               return emailAttempt.email;
             } else {
-<<<<<<< HEAD:server/boot/07-admin-access.js
               console.log('Attempt failed ' + attempt + ': Invalid email \
                 address, try again.');
               throw Error('FAIL');
