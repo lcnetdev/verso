@@ -324,7 +324,7 @@
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Audio Issue Number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:AudioIssue",
@@ -367,7 +367,7 @@
                         },
                         "propertyLabel": "Copyright Registration Number",
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -399,7 +399,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Copyright Registration"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Copyright",
@@ -421,7 +421,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "EAN",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -451,7 +451,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on EAN"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:EAN",
@@ -488,7 +488,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on EIDR"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Eidr",
@@ -525,7 +525,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note about GTIN-14"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Gtin14",
@@ -547,8 +547,8 @@
                             "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "ISBN (RDA 2.15)",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "propertyLabel": "ISBN",
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -578,7 +578,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on ISBN"
+                        "propertyLabel": "Note"
                     },
                     {
                         "mandatory": "false",
@@ -618,7 +618,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "ISMN",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -648,7 +648,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on ISMN"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:ISMN",
@@ -670,7 +670,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "ISRC",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -700,7 +700,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on ISRC"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:ISRC",
@@ -722,7 +722,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "ISSN",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -754,7 +754,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on ISSN"
+                        "propertyLabel": "Note"
                     },
                     {
                         "mandatory": "false",
@@ -794,7 +794,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "ISSN-L",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -826,7 +826,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on ISSN-L"
+                        "propertyLabel": "Note"
                     },
                     {
                         "mandatory": "false",
@@ -866,7 +866,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "LCCN",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -937,7 +937,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on local system number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Local",
@@ -988,7 +988,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Matrix Number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Matrix",
@@ -1010,7 +1010,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Music Distributor Number",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1079,7 +1079,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Music Plate Number",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1125,7 +1125,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Music Plate Number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:MusicPlate",
@@ -1147,7 +1147,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Music Publisher Number",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1193,7 +1193,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Music Publisher Number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:MusicPub",
@@ -1215,7 +1215,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Other identifier",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1245,7 +1245,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on other identifier"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:Other",
@@ -1267,7 +1267,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Publisher Number",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1313,7 +1313,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Publisher Number"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:PubNumber",
@@ -1335,7 +1335,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Standard Technical Report Number",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1365,7 +1365,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on STRN"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:STRN",
@@ -1387,7 +1387,7 @@
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Universal Product Code (UPC)",
-                        "remark": "http://access.rdatoolkit.org/2.15.html"
+                        "remark": ""
                     },
                     {
                         "mandatory": "false",
@@ -1417,7 +1417,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note on Universal Product Code (UPC)"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Identifiers:UPC",

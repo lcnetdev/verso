@@ -19,7 +19,7 @@
                             "repeatable": "false",
                             "defaults": []
                         },
-                        "propertyLabel": "Search LCGFT (RDA 6.3)",
+                        "propertyLabel": "Search LCGFT",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     }
@@ -49,7 +49,7 @@
                             "remark": "",
                             "defaults": []
                         },
-                        "propertyLabel": "(Geographic) Coverage of the Content (RDA 7.3)",
+                        "propertyLabel": "(Geographic) Coverage of the Content",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
                     },
@@ -67,7 +67,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note about Geographic coverage"
+                        "propertyLabel": "Note"
                     }
                 ],
                 "id": "profile:bf2:Form:Geog",

@@ -172,7 +172,7 @@
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
-                                    "defaultLiteral": "DLC"
+                                    "defaultLiteral": "Library of Congress"
                                 }
                             ]
                         },
@@ -352,7 +352,7 @@
                     {
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -376,7 +376,7 @@
                     {
                         "mandatory": "true",
                         "repeatable": "false",
-                        "type": "resource",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -402,7 +402,7 @@
                     {
                         "mandatory": "true",
                         "repeatable": "false",
-                        "type": "resource",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -429,7 +429,7 @@
                     {
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
