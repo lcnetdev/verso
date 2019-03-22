@@ -2,7 +2,8 @@
 // Read all .rdf files from data/vocabularies
 // Use the file name as the vocabulary name
 'use strict';
-const ptypes = ['literal', 'literal-lang', 'resource', 'lookup', 'target', 'list'];
+const iso639 = require('../../data/vocabularies/ISO-639-1-language.json');
+
 let data = [];
 
 module.exports = function(app, cb) {
@@ -20,13 +21,13 @@ module.exports = function(app, cb) {
       console.log('Skipping types load (datastore is populated)');
     } else {
       data.push({
-        name: 'propertyTypes',
+        name: 'iso639',
         configType: 'propertySettings',
-        json: ptypes,
+        json: iso639,
       });
       Config.create(data, function(err, models) {
         if (err) { return console.warn(err); }
-        console.log('Created ' + models.length + ' propertyTypes');
+        console.log('Created ' + models.length + ' iso639');
       });
     }
   });
