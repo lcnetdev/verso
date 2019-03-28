@@ -2,7 +2,7 @@
 // Read all .rdf files from data/vocabularies
 // Use the file name as the vocabulary name
 'use strict';
-const ptypes = ['literal', 'resource', 'lookup', 'target', 'list'];
+const ptypes = ['literal', 'literal-lang', 'resource', 'lookup', 'target', 'list'];
 let data = [];
 
 module.exports = function(app, cb) {
