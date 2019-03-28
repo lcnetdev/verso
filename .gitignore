@@ -18,4 +18,4 @@ coverage
 node_modules
 npm-debug.log
 .env
-server/providers.json server/providers.ldaps.example.json
+server/providers*
