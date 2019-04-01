@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "target",
+                        "type": "lookup",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -16,13 +16,14 @@
                             ],
                             "valueDataType": {
                                 "remark": "",
-                                "dataTypeURI": ""
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
                             },
                             "repeatable": "false",
-                            "defaults": []
+                            "defaults": [],
+                            "validatePattern": ""
                         },
                         "propertyLabel": "Search LCNAF/LCSH",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Place"
                     },
                     {
                         "mandatory": "false",
@@ -44,13 +45,13 @@
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     }
                 ],
-                "id": "profile:bf2:Place",
+                "id": "lc:RT:bf2:Place",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "resourceLabel": "Place Associated with a Work",
                 "contact": ""
             }
         ],
-        "id": "bf2:Place",
+        "id": "lc:profile:bf2:Place",
         "title": "BIBFRAME 2.0 Place",
         "date": "2017-05-13",
         "description": "Place Associated with a Resource",

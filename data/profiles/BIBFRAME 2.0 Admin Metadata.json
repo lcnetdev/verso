@@ -28,7 +28,8 @@
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the original metadata first created."
+                                "dataTypeLabelHint": "Date or date and time on which the original metadata first created.",
+                                "dataTypeURI": "http://www.w3.org/2001/XMLSchema#date"
                             },
                             "editable": "false",
                             "defaults": []
@@ -45,7 +46,8 @@
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the metadata was modified."
+                                "dataTypeLabelHint": "Date or date and time on which the metadata was modified.",
+                                "dataTypeURI": "http://www.w3.org/2001/XMLSchema#dateTime"
                             },
                             "editable": "false",
                             "defaults": []
@@ -163,7 +165,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -222,7 +226,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Local"
+                                "lc:RT:bf2:Identifiers:Local"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -239,7 +243,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata:GenerationProcess"
+                                "lc:RT:bf2:AdminMetadata:GenerationProcess"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -256,7 +260,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata:Status"
+                                "lc:RT:bf2:AdminMetadata:Status"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -265,9 +269,23 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
                         "propertyLabel": "Status",
                         "remark": ""
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/procInfo",
+                        "propertyLabel": "Process Information"
                     }
                 ],
-                "id": "profile:bf2:AdminMetadata:BFDB",
+                "id": "lc:RT:bf2:AdminMetadata:BFDB",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "BF DB Admin Metadata"
             },
@@ -351,8 +369,8 @@
                     },
                     {
                         "mandatory": "true",
-                        "repeatable": "true",
-                        "type": "lookup",
+                        "repeatable": "false",
+                        "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -367,7 +385,8 @@
                                     "defaultURI": "http://id.loc.gov/vocabulary/marcauthen/pcc",
                                     "defaultLiteral": "pcc"
                                 }
-                            ]
+                            ],
+                            "editable": "false"
                         },
                         "propertyLabel": "Description authentication",
                         "remark": "",
@@ -375,8 +394,8 @@
                     },
                     {
                         "mandatory": "true",
-                        "repeatable": "false",
-                        "type": "lookup",
+                        "repeatable": "true",
+                        "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -387,7 +406,7 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"
                             },
                             "editable": "false",
-                            "repeatable": "false",
+                            "repeatable": "true",
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/rda",
@@ -402,7 +421,7 @@
                     {
                         "mandatory": "true",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
@@ -429,11 +448,13 @@
                     {
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -484,9 +505,23 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/profile",
                         "propertyLabel": "Profile",
                         "remark": "The profile code for the resource"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/procInfo",
+                        "propertyLabel": "Process Information"
                     }
                 ],
-                "id": "profile:bf2:AdminMetadata",
+                "id": "lc:RT:bf2:AdminMetadata",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "BIBFRAME 2.0 Admin Metadata"
             },
@@ -541,7 +576,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata2:Source"
+                                "lc:RT:bf2:AdminMetadata2:Source"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -626,7 +661,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata2:Source"
+                                "lc:RT:bf2:AdminMetadata2:Source"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -654,7 +689,7 @@
                         "propertyLabel": "Encoding level"
                     }
                 ],
-                "id": "profile:bf2:AdminMetadata2",
+                "id": "lc:RT:bf2:AdminMetadata2",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "Admin Metadata Test"
             },
@@ -682,7 +717,7 @@
                         "propertyLabel": "Source/Agent"
                     }
                 ],
-                "id": "profile:bf2:AdminMetadata2:Source",
+                "id": "lc:RT:bf2:AdminMetadata2:Source",
                 "resourceLabel": "Source/Agent",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent"
             },
@@ -705,7 +740,7 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
-                "id": "profile:bf2:AdminMetadata:GenerationProcess",
+                "id": "lc:RT:bf2:AdminMetadata:GenerationProcess",
                 "resourceLabel": "Generation Process"
             },
             {
@@ -728,10 +763,10 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "Status",
                 "remark": "",
-                "id": "profile:bf2:AdminMetadata:Status"
+                "id": "lc:RT:bf2:AdminMetadata:Status"
             }
         ],
-        "id": "bf2:AdminMetadata",
+        "id": "lc:profile:bf2:AdminMetadata",
         "title": "BIBFRAME 2.0 Admin Metadata",
         "description": "Metadata for BIBFRAME Resources",
         "date": "2018-10-24",

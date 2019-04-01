@@ -28,29 +28,29 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bflc:Agents:PrimaryContribution"
+                                "lc:RT:bflc:Agents:PrimaryContribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
                             },
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Creator of Work",
                         "remark": "http://access.rdatoolkit.org/19.2.html"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:WorkTitle",
-                                "profile:bf2:WorkVariantTitle",
-                                "profile:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkTitle",
+                                "lc:RT:bf2:WorkVariantTitle",
+                                "lc:RT:bflc:TranscribedTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -66,11 +66,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true",
+                            "repeatable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Contribution",
@@ -83,11 +85,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Components"
+                                "lc:RT:bf2:Components"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true",
+                            "repeatable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
                         "propertyLabel": "Subject of the Work",
@@ -100,9 +104,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form",
-                                "profile:bf2:RareMat:RBMS",
-                                "profile:bf2:RareMat:AAT"
+                                "lc:RT:bf2:Form",
+                                "lc:RT:bf2:RareMat:RBMS",
+                                "lc:RT:bf2:RareMat:AAT"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -138,7 +142,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -154,7 +158,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -170,7 +174,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Summary"
+                                "lc:RT:bf2:Summary"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -186,8 +190,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:LCC",
-                                "profile:bf2:DDC"
+                                "lc:RT:bf2:LCC",
+                                "lc:RT:bf2:DDC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -229,7 +233,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Language2"
+                                "lc:RT:bf2:Language2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -250,7 +254,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RareMat:Illus"
+                                "lc:RT:bf2:RareMat:Illus"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -266,7 +270,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -283,7 +287,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SupplContent"
+                                "lc:RT:bf2:SupplContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -299,7 +303,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedWork"
+                                "lc:RT:bf2:RelatedWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -316,7 +320,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RareMat:Instance"
+                                "lc:RT:bf2:RareMat:Instance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -326,7 +330,7 @@
                         "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
-                "id": "profile:bf2:RareMat:Work",
+                "id": "lc:RT:bf2:RareMat:Work",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work"
             },
@@ -339,7 +343,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RareMat:Work"
+                                "lc:RT:bf2:RareMat:Work"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -349,17 +353,17 @@
                         "propertyLabel": "Instance of"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:InstanceTitle",
-                                "profile:bf2:Title:VarTitle",
-                                "profile:bf2:ParallelTitle",
-                                "profile:bflc:TranscribedTitle",
-                                "profile:bf2:Title:CollTitle"
+                                "lc:RT:bf2:InstanceTitle",
+                                "lc:RT:bf2:Title:VarTitle",
+                                "lc:RT:bf2:ParallelTitle",
+                                "lc:RT:bflc:TranscribedTitle",
+                                "lc:RT:bf2:Title:CollTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -407,7 +411,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -424,9 +428,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PublicationInformation",
-                                "profile:bf2:DistributionInformation",
-                                "profile:bf2:ManufactureInformation"
+                                "lc:RT:bf2:PublicationInformation",
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ManufactureInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -472,7 +476,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SeriesInformation"
+                                "lc:RT:bf2:SeriesInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -488,8 +492,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form",
-                                "profile:bf2:RareMat:RBMS"
+                                "lc:RT:bf2:Form",
+                                "lc:RT:bf2:RareMat:RBMS"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -505,9 +509,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISBN",
-                                "profile:bf2:Identifiers:Other",
-                                "profile:bf2:Identifiers:Local"
+                                "lc:RT:bf2:Identifiers:ISBN",
+                                "lc:RT:bf2:Identifiers:Other",
+                                "lc:RT:bf2:Identifiers:Local"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -523,7 +527,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -540,7 +544,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RareMat:RefWork"
+                                "lc:RT:bf2:RareMat:RefWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -634,7 +638,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Extent"
+                                "lc:RT:bf2:Extent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -660,13 +664,13 @@
                         "remark": "http://access.rdatoolkit.org/3.5.html"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LCCN"
+                                "lc:RT:bf2:Identifiers:LCCN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -682,7 +686,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedInstance"
+                                "lc:RT:bf2:RelatedInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -698,7 +702,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RareMat:Item"
+                                "lc:RT:bf2:RareMat:Item"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -708,13 +712,13 @@
                         "propertyLabel": "Has Item"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -724,7 +728,7 @@
                         "propertyLabel": "Administrative Metadata for Instance"
                     }
                 ],
-                "id": "profile:bf2:RareMat:Instance",
+                "id": "lc:RT:bf2:RareMat:Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "resourceLabel": "BIBFRAME Instance"
             },
@@ -772,7 +776,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -803,7 +807,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:ImmAcqSource"
+                                "lc:RT:bf2:Item:ImmAcqSource"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -820,7 +824,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -836,8 +840,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form",
-                                "profile:bf2:RareMat:RBMS"
+                                "lc:RT:bf2:Form",
+                                "lc:RT:bf2:RareMat:RBMS"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -853,7 +857,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -869,8 +873,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LC",
-                                "profile:bf2:Identifiers:Shelfmark"
+                                "lc:RT:bf2:Identifiers:LC",
+                                "lc:RT:bf2:Identifiers:Shelfmark"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -886,9 +890,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Access",
-                                "profile:bf2:Item:Use",
-                                "profile:bf2:Item:Retention"
+                                "lc:RT:bf2:Item:Access",
+                                "lc:RT:bf2:Item:Use",
+                                "lc:RT:bf2:Item:Retention"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -918,7 +922,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:VarTitle"
+                                "lc:RT:bf2:Title:VarTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -934,7 +938,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedWork"
+                                "lc:RT:bf2:RelatedWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -944,7 +948,7 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship"
                     }
                 ],
-                "id": "profile:bf2:RareMat:Item",
+                "id": "lc:RT:bf2:RareMat:Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "resourceLabel": "BIBFRAME Item"
             },
@@ -984,7 +988,7 @@
                         "propertyLabel": "Source of term"
                     }
                 ],
-                "id": "profile:bf2:RareMat:RBMS",
+                "id": "lc:RT:bf2:RareMat:RBMS",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "RBMS term"
             },
@@ -992,7 +996,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "target",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1019,7 +1023,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1029,7 +1033,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:RareMat:Illus",
+                "id": "lc:RT:bf2:RareMat:Illus",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Illustration",
                 "resourceLabel": "Illustrative content"
             },
@@ -1037,7 +1041,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1060,7 +1064,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:ReferenceInstance"
+                                "lc:RT:bf2:ReferenceInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1076,7 +1080,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1086,7 +1090,7 @@
                         "propertyLabel": "Location of citation"
                     }
                 ],
-                "id": "profile:bf2:RareMat:RefWork",
+                "id": "lc:RT:bf2:RareMat:RefWork",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "References"
             },
@@ -1109,12 +1113,12 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
                     }
                 ],
-                "id": "profile:bf2:RareMat:AAT",
+                "id": "lc:RT:bf2:RareMat:AAT",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "Getty AAT"
             }
         ],
-        "id": "profile:bf2:RareMat",
+        "id": "lc:profile:bf2:RareMat",
         "title": "BIBFRAME 2.0 Rare Materials",
         "description": "Work, Instance, Item for Rare Materials",
         "date": "2017-08-30",
