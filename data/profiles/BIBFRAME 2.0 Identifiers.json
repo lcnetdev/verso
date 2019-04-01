@@ -10,7 +10,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -26,7 +26,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Copyright"
+                                "lc:RT:bf2:Identifiers:Copyright"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -42,7 +42,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:EAN"
+                                "lc:RT:bf2:Identifiers:EAN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -58,7 +58,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Eidr"
+                                "lc:RT:bf2:Identifiers:Eidr"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -74,7 +74,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISBN"
+                                "lc:RT:bf2:Identifiers:ISBN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -90,7 +90,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISMN"
+                                "lc:RT:bf2:Identifiers:ISMN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -106,7 +106,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:TestProfile:ISRC"
+                                "lc:RT:bf2:TestProfile:ISRC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -122,7 +122,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISSN"
+                                "lc:RT:bf2:Identifiers:ISSN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -138,7 +138,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISSNL"
+                                "lc:RT:bf2:Identifiers:ISSNL"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -154,7 +154,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LCCN"
+                                "lc:RT:bf2:Identifiers:LCCN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -170,7 +170,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Distributor"
+                                "lc:RT:bf2:Identifiers:Distributor"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -186,7 +186,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:MusicPlate"
+                                "lc:RT:bf2:Identifiers:MusicPlate"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -202,7 +202,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:MusicPub"
+                                "lc:RT:bf2:Identifiers:MusicPub"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -218,7 +218,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:PubNumber"
+                                "lc:RT:bf2:Identifiers:PubNumber"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -234,7 +234,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:STRN"
+                                "lc:RT:bf2:Identifiers:STRN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -250,7 +250,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:UPC"
+                                "lc:RT:bf2:Identifiers:UPC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -260,7 +260,7 @@
                         "propertyLabel": "Universal Product Code (UPC)"
                     }
                 ],
-                "id": "profile:bf2:Identifiers",
+                "id": "lc:RT:bf2:Identifiers",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier",
                 "resourceLabel": "Identifiers"
             },
@@ -287,7 +287,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -317,7 +317,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -327,7 +327,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:AudioIssue",
+                "id": "lc:RT:bf2:Identifiers:AudioIssue",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AudioIssueNumber",
                 "resourceLabel": "Audio Issue Number"
             },
@@ -348,7 +348,7 @@
                         "propertyLabel": "Barcode"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Barcode",
+                "id": "lc:RT:bf2:Identifiers:Barcode",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Barcode",
                 "resourceLabel": "Barcode"
             },
@@ -376,7 +376,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -392,7 +392,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -402,7 +402,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Copyright",
+                "id": "lc:RT:bf2:Identifiers:Copyright",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CopyrightRegistration",
                 "resourceLabel": "Copyright Registration Number"
             },
@@ -444,7 +444,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -454,7 +454,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:EAN",
+                "id": "lc:RT:bf2:Identifiers:EAN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Ean",
                 "resourceLabel": "EAN"
             },
@@ -481,7 +481,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -491,7 +491,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Eidr",
+                "id": "lc:RT:bf2:Identifiers:Eidr",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Eidr",
                 "resourceLabel": "EIDR"
             },
@@ -518,7 +518,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -528,7 +528,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Gtin14",
+                "id": "lc:RT:bf2:Identifiers:Gtin14",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Gtin14Number",
                 "resourceLabel": "GTIN-14"
             },
@@ -544,7 +544,8 @@
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "repeatable": "true",
-                            "defaults": []
+                            "defaults": [],
+                            "valueLanguage": ""
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "ISBN",
@@ -571,7 +572,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -599,7 +600,7 @@
                         "propertyLabel": "Incorrect, Invalid or Canceled?"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:ISBN",
+                "id": "lc:RT:bf2:Identifiers:ISBN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Isbn",
                 "resourceLabel": "ISBN"
             },
@@ -641,7 +642,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -651,7 +652,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:ISMN",
+                "id": "lc:RT:bf2:Identifiers:ISMN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Ismn",
                 "resourceLabel": "ISMN"
             },
@@ -693,7 +694,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -703,7 +704,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:ISRC",
+                "id": "lc:RT:bf2:Identifiers:ISRC",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Isrc",
                 "resourceLabel": "ISRC"
             },
@@ -731,7 +732,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -747,7 +748,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -775,7 +776,7 @@
                         "propertyLabel": "Incorrect, Invalid or Canceled?"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:ISSN",
+                "id": "lc:RT:bf2:Identifiers:ISSN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Issn",
                 "resourceLabel": "ISSN"
             },
@@ -803,7 +804,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -819,7 +820,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -847,7 +848,7 @@
                         "propertyLabel": "Incorrect, Invalid or Canceled?"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:ISSNL",
+                "id": "lc:RT:bf2:Identifiers:ISSNL",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/IssnL",
                 "resourceLabel": "ISSN-L"
             },
@@ -887,7 +888,7 @@
                         "propertyLabel": "Invalid/Canceled?"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:LCCN",
+                "id": "lc:RT:bf2:Identifiers:LCCN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Lccn",
                 "resourceLabel": "LCCN"
             },
@@ -914,7 +915,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -930,7 +931,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -940,7 +941,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Local",
+                "id": "lc:RT:bf2:Identifiers:Local",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local",
                 "resourceLabel": "Local system number"
             },
@@ -981,7 +982,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -991,7 +992,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Matrix",
+                "id": "lc:RT:bf2:Identifiers:Matrix",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MatrixNumber",
                 "resourceLabel": "Matrix Number"
             },
@@ -1019,7 +1020,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1050,7 +1051,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1060,7 +1061,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Distributor",
+                "id": "lc:RT:bf2:Identifiers:Distributor",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicDistributorNumber",
                 "resourceLabel": "Music Distributor Number"
             },
@@ -1088,7 +1089,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1118,7 +1119,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1128,7 +1129,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:MusicPlate",
+                "id": "lc:RT:bf2:Identifiers:MusicPlate",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicPlate",
                 "resourceLabel": "Music Plate Number"
             },
@@ -1156,7 +1157,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1186,7 +1187,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1196,7 +1197,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:MusicPub",
+                "id": "lc:RT:bf2:Identifiers:MusicPub",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicPublisherNumber",
                 "resourceLabel": "Music Publisher Number"
             },
@@ -1238,7 +1239,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1248,7 +1249,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Other",
+                "id": "lc:RT:bf2:Identifiers:Other",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier",
                 "resourceLabel": "Other Identifier"
             },
@@ -1276,7 +1277,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Source"
+                                "lc:RT:bf2:Identifiers:Source"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1306,7 +1307,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1316,7 +1317,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:PubNumber",
+                "id": "lc:RT:bf2:Identifiers:PubNumber",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PublisherNumber",
                 "resourceLabel": "Publisher Number"
             },
@@ -1358,7 +1359,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1368,7 +1369,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:STRN",
+                "id": "lc:RT:bf2:Identifiers:STRN",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Strn",
                 "resourceLabel": "Standard Technical Report Number"
             },
@@ -1410,7 +1411,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Note"
+                                "lc:RT:bf2:Identifiers:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1420,7 +1421,7 @@
                         "propertyLabel": "Note"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:UPC",
+                "id": "lc:RT:bf2:Identifiers:UPC",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Upc",
                 "resourceLabel": "Universal Product Code (UPC)"
             },
@@ -1441,7 +1442,7 @@
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Note",
+                "id": "lc:RT:bf2:Identifiers:Note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note"
             },
@@ -1462,7 +1463,7 @@
                         "propertyLabel": "Label name"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:Source",
+                "id": "lc:RT:bf2:Identifiers:Source",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
                 "resourceLabel": "Source"
             },
@@ -1483,7 +1484,7 @@
                         "propertyLabel": "LC shelfmark"
                     }
                 ],
-                "id": "profile:bf2:Identifiers:LC",
+                "id": "lc:RT:bf2:Identifiers:LC",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
                 "resourceLabel": "LC shelfmark"
             },
@@ -1506,7 +1507,7 @@
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkDcc",
                 "resourceLabel": "DDC shelfmark",
-                "id": "profile:bf2:Identifiers:DDC"
+                "id": "lc:RT:bf2:Identifiers:DDC"
             },
             {
                 "propertyTemplates": [
@@ -1526,11 +1527,11 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark",
-                "id": "profile:bf2:Identifiers:Shelfmark",
+                "id": "lc:RT:bf2:Identifiers:Shelfmark",
                 "resourceLabel": "Accession or copy number"
             }
         ],
-        "id": "bf2:Identifiers",
+        "id": "lc:profile:bf2:Identifiers",
         "title": "BIBFRAME 2.0 Identifiers",
         "description": "Identifiers for BIBFRAME Resources",
         "date": "2017-08-16",

@@ -11,7 +11,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
                         "propertyLabel": "DDC Classification number"
@@ -31,18 +32,19 @@
                             },
                             "defaultURI": "",
                             "defaultLiteral": "",
-                            "editable": "true"
+                            "editable": "true",
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/edition",
                         "propertyLabel": "Dewey Edition"
                     }
                 ],
-                "id": "profile:bf2:DDC",
+                "id": "lc:RT:bf2:DDC",
                 "resourceLabel": "Dewey Decimal Classification",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc"
             }
         ],
-        "id": "bf2:DDC",
+        "id": "lc:profile:bf2:DDC",
         "description": "Dewey Decimal Classification",
         "title": "BIBFRAME 2.0 DDC",
         "date": "2017-07-28",

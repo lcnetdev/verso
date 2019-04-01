@@ -3,7 +3,7 @@
         "resourceTemplates": [
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
-                "id": "profile:bf2:Agents:Contribution",
+                "id": "lc:RT:bf2:Agents:Contribution",
                 "resourceLabel": "Contribution",
                 "propertyTemplates": [
                     {
@@ -12,11 +12,11 @@
                             "repeatable": "true",
                             "useValuesFrom": [],
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Person",
-                                "profile:bf2:Agent:Family",
-                                "profile:bf2:Agent:CorporateBody",
-                                "profile:bf2:Agent:Jurisdiction",
-                                "profile:bf2:Agent:Conference"
+                                "lc:RT:bf2:Agent:Person",
+                                "lc:RT:bf2:Agent:Family",
+                                "lc:RT:bf2:Agent:CorporateBody",
+                                "lc:RT:bf2:Agent:Jurisdiction",
+                                "lc:RT:bf2:Agent:Conference"
                             ],
                             "editable": "true",
                             "defaults": []
@@ -36,7 +36,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Role"
+                                "lc:RT:bf2:Agent:Role"
                             ],
                             "useValuesFrom": [],
                             "editable": "true",
@@ -49,7 +49,7 @@
             },
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
-                "id": "profile:bf2:Agents:bfContribution",
+                "id": "lc:RT:bf2:Agents:bfContribution",
                 "resourceLabel": "Contribution (test)",
                 "propertyTemplates": [
                     {
@@ -58,11 +58,11 @@
                             "repeatable": "true",
                             "useValuesFrom": [],
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:bfPerson",
-                                "profile:bf2:Agent:Family",
-                                "profile:bf2:Agent:CorporateBody",
-                                "profile:bf2:Agent:Jurisdiction",
-                                "profile:bf2:Agent:Conference"
+                                "lc:RT:bf2:Agent:bfPerson",
+                                "lc:RT:bf2:Agent:Family",
+                                "lc:RT:bf2:Agent:CorporateBody",
+                                "lc:RT:bf2:Agent:Jurisdiction",
+                                "lc:RT:bf2:Agent:Conference"
                             ],
                             "defaults": []
                         },
@@ -81,7 +81,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Role"
+                                "lc:RT:bf2:Agent:Role"
                             ],
                             "useValuesFrom": [],
                             "defaults": []
@@ -91,7 +91,7 @@
                 ]
             }
         ],
-        "id": "bf2:AgentsContribution",
+        "id": "lc:profile:bf2:AgentsContribution",
         "title": "BIBFRAME 2.0 Agents Contribution",
         "date": "2017-05-13",
         "description": "Creators and Contributors",

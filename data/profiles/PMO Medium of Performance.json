@@ -10,7 +10,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "lc:RT:bf2:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -62,7 +62,7 @@
                         "propertyLabel": "Total Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:DecMed",
+                "id": "lc:RT:bf2:PMOMedPerf:DecMed",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium of Performance"
             },
@@ -75,7 +75,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart"
+                                "lc:RT:bf2:PMOMedPerf:MedPart"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -127,7 +127,7 @@
                         "propertyLabel": "Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:PerfMed",
+                "id": "lc:RT:bf2:PMOMedPerf:PerfMed",
                 "resourceURI": "http://performedmusicontology.org/ontology/PerformedMedium",
                 "resourceLabel": "Performed Medium"
             },
@@ -140,8 +140,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPerfI1",
-                                "profile:bf2:PMOMedPerf:MedPerfI2"
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI1",
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -151,7 +151,7 @@
                         "propertyLabel": "has Medium of Performance"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPart2",
+                "id": "lc:RT:bf2:PMOMedPerf:MedPart2",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Declared"
             },
@@ -164,8 +164,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPerfI1",
-                                "profile:bf2:PMOMedPerf:MedPerfI2"
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI1",
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -231,7 +231,7 @@
                         "propertyLabel": "has Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPart",
+                "id": "lc:RT:bf2:PMOMedPerf:MedPart",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Performed"
             },
@@ -285,7 +285,7 @@
                         "propertyLabel": "Required Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPerfI1",
+                "id": "lc:RT:bf2:PMOMedPerf:MedPerfI1",
                 "resourceURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance",
                 "resourceLabel": "Individual Medium of Performance"
             },
@@ -324,7 +324,7 @@
                         "propertyLabel": "has Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPerfI2",
+                "id": "lc:RT:bf2:PMOMedPerf:MedPerfI2",
                 "resourceURI": "http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance",
                 "resourceLabel": "Ensemble Medium of Performance"
             },
@@ -337,7 +337,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "lc:RT:bf2:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -353,7 +353,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "lc:RT:bf2:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -369,7 +369,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:Doubling"
+                                "lc:RT:bf2:PMOMedPerf:Doubling"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -421,7 +421,7 @@
                         "propertyLabel": "Total Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:DecMedTest",
+                "id": "lc:RT:bf2:PMOMedPerf:DecMedTest",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium Test"
             },
@@ -434,7 +434,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Person"
+                                "lc:RT:bf2:Agent:Person"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -450,7 +450,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Role"
+                                "lc:RT:bf2:Agent:Role"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -478,7 +478,7 @@
                         "propertyLabel": "Medium of Performance"
                     }
                 ],
-                "id": "profile:bf2:PMOAgentPerf",
+                "id": "lc:RT:bf2:PMOAgentPerf",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
                 "resourceLabel": "Agent, Role, Medium of Performance"
             },
@@ -491,7 +491,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "lc:RT:bf2:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -507,7 +507,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:Doubling"
+                                "lc:RT:bf2:PMOMedPerf:Doubling"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -517,7 +517,7 @@
                         "propertyLabel": "Doubling Medium of Performance"
                     }
                 ],
-                "id": "profile:bf2:PMODecDoubling",
+                "id": "lc:RT:bf2:PMODecDoubling",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared + Doubling"
             },
@@ -530,8 +530,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPerfI1",
-                                "profile:bf2:PMOMedPerf:MedPerfI2"
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI1",
+                                "lc:RT:bf2:PMOMedPerf:MedPerfI2"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -541,12 +541,12 @@
                         "propertyLabel": "Doubling Medium of Performance"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:Doubling",
+                "id": "lc:RT:bf2:PMOMedPerf:Doubling",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Doubling Medium of Performance"
             }
         ],
-        "id": "profile:bf2:PMOMedPerf",
+        "id": "lc:profile:bf2:PMOMedPerf",
         "title": "PMO Medium of Performance",
         "description": "PMO Medium of Performance",
         "date": "2018-05-24",
