@@ -58,7 +58,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -68,9 +68,10 @@
                         "propertyLabel": "Description of Related Work"
                     }
                 ],
-                "id": "profile:bf2:RelatedWork",
+                "id": "lc:RT:bf2:RelatedWork",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
-                "resourceLabel": "Related Work"
+                "resourceLabel": "Related Work",
+                "author": ""
             },
             {
                 "propertyTemplates": [
@@ -129,7 +130,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -140,7 +141,7 @@
                     }
                 ],
                 "resourceLabel": "Related Expression",
-                "id": "profile:bf2:RelatedExpression",
+                "id": "lc:RT:bf2:RelatedExpression",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship"
             },
             {
@@ -153,11 +154,11 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "http://mlvlp04.loc.gov:8230/resources/works"
+                                "http://mlvlp04.loc.gov:8230/resources/instances"
                             ],
                             "defaults": [],
                             "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Instance"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
@@ -199,7 +200,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -209,7 +210,7 @@
                         "propertyLabel": "Description of Related Instance"
                     }
                 ],
-                "id": "profile:bf2:RelatedInstance",
+                "id": "lc:RT:bf2:RelatedInstance",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance"
             },
@@ -230,15 +231,16 @@
                         "propertyLabel": "Title referenced"
                     }
                 ],
-                "id": "profile:bf2:ReferenceInstance",
+                "id": "lc:RT:bf2:ReferenceInstance",
                 "resourceLabel": "Instance Referenced",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "remark": "used in rare materials profile"
             }
         ],
-        "id": "profile:bf2:RelatedWorkorExpression",
+        "id": "lc:profile:bf2:RelatedWorkorExpression",
         "title": "BIBFRAME 2.0 Related Works and Expressions",
         "date": "2017-05-13",
-        "description": "Related Work or Expression"
+        "description": "Related Work or Expression",
+        "author": "NDMSO"
     }
 }

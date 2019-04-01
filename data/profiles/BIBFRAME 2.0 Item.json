@@ -10,10 +10,11 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                         "propertyLabel": "Barcode"
@@ -25,12 +26,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LC",
-                                "profile:bf2:Identifiers:DDC",
-                                "profile:bf2:Identifiers:Shelfmark"
+                                "lc:RT:bf2:Identifiers:LC",
+                                "lc:RT:bf2:Identifiers:DDC",
+                                "lc:RT:bf2:Identifiers:Shelfmark"
                             ],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                         "propertyLabel": "Call numbers"
@@ -43,7 +45,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/enumerationAndChronology",
                         "propertyLabel": "Enumeration and chronology"
@@ -59,8 +62,12 @@
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
-                            "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
-                            "defaultLiteral": "DLC"
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
+                                    "defaultLiteral": "DLC"
+                                }
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
                         "propertyLabel": "Held by"
@@ -73,7 +80,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
                         "propertyLabel": "Shelving location"
@@ -86,7 +94,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
                         "propertyLabel": "Electronic location"
@@ -99,7 +108,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy",
                         "propertyLabel": "Usage and access policy"
@@ -112,7 +122,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note"
@@ -125,7 +136,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/acquisitionSource",
                         "propertyLabel": "Contact information (RDA 4.3)",
@@ -134,7 +146,7 @@
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "resourceLabel": "BIBFRAME 2.0 Item",
-                "id": "profile:bf2:Item"
+                "id": "lc:RT:bf2:Item"
             },
             {
                 "propertyTemplates": [
@@ -148,13 +160,14 @@
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy"
-                            }
+                            },
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Lending or Access Policy"
                     }
                 ],
-                "id": "profile:bf2:Item:Access",
+                "id": "lc:RT:bf2:Item:Access",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy",
                 "resourceLabel": "Lending or Access Policy"
             },
@@ -170,13 +183,14 @@
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
-                            }
+                            },
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Use or Reproduction Policy"
                     }
                 ],
-                "id": "profile:bf2:Item:Use",
+                "id": "lc:RT:bf2:Item:Use",
                 "resourceLabel": "Use or Reproduction Policy",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
             },
@@ -192,13 +206,14 @@
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy"
-                            }
+                            },
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Retention Policy"
                     }
                 ],
-                "id": "profile:bf2:Item:Retention",
+                "id": "lc:RT:bf2:Item:Retention",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy",
                 "resourceLabel": "Retention Policy"
             },
@@ -212,14 +227,15 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Immediate Source of Acquisition of Item (RDA 2.19)",
                         "remark": "http://access.rdatoolkit.org/2.19.html"
                     }
                 ],
-                "id": "profile:bf2:Item:ImmAcqSource",
+                "id": "lc:RT:bf2:Item:ImmAcqSource",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition",
                 "resourceLabel": "Immediate Source of Acquisition"
             },
@@ -233,13 +249,14 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Enumeration"
                     }
                 ],
-                "id": "profile:bf2:Item:Enumeration",
+                "id": "lc:RT:bf2:Item:Enumeration",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Enumeration",
                 "resourceLabel": "Enumeration"
             },
@@ -253,18 +270,19 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {}
+                            "valueDataType": {},
+                            "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Chronology"
                     }
                 ],
-                "id": "profile:bf2:Item:Chronology",
+                "id": "lc:RT:bf2:Item:Chronology",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Chronology",
                 "resourceLabel": "Chronology"
             }
         ],
-        "id": "bf2:Item",
+        "id": "lc:profile:bf2:Item",
         "title": "BIBFRAME 2.0 Item",
         "description": "Item for all formats (testing)",
         "date": "2017-08-08",

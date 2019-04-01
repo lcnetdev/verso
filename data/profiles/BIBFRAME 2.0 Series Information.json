@@ -70,7 +70,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -81,12 +81,12 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
-                "id": "profile:bf2:SeriesInformation",
+                "id": "lc:RT:bf2:SeriesInformation",
                 "resourceLabel": "Series Statement",
                 "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html"
             }
         ],
-        "id": "bf2:SeriesInformation",
+        "id": "lc:profile:bf2:SeriesInformation",
         "title": "BIBFRAME 2.0 Series Information",
         "date": "2017-06-07",
         "author": "NDMSO",

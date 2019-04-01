@@ -10,11 +10,11 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Person",
-                                "profile:bf2:Agent:Family",
-                                "profile:bf2:Agent:CorporateBody",
-                                "profile:bf2:Agent:Jurisdiction",
-                                "profile:bf2:Agent:Conference"
+                                "lc:RT:bf2:Agent:Person",
+                                "lc:RT:bf2:Agent:Family",
+                                "lc:RT:bf2:Agent:CorporateBody",
+                                "lc:RT:bf2:Agent:Jurisdiction",
+                                "lc:RT:bf2:Agent:Conference"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -32,7 +32,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Role"
+                                "lc:RT:bf2:Agent:Role"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -45,7 +45,7 @@
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
                 ],
-                "id": "profile:bflc:Agents:PrimaryContribution",
+                "id": "lc:RT:bflc:Agents:PrimaryContribution",
                 "resourceLabel": "Primary Contribution",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
             },
@@ -58,11 +58,11 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:bfPerson",
-                                "profile:bf2:Agent:Family",
-                                "profile:bf2:Agent:CorporateBody",
-                                "profile:bf2:Agent:Jurisdiction",
-                                "profile:bf2:Agent:Conference"
+                                "lc:RT:bf2:Agent:bfPerson",
+                                "lc:RT:bf2:Agent:Family",
+                                "lc:RT:bf2:Agent:CorporateBody",
+                                "lc:RT:bf2:Agent:Jurisdiction",
+                                "lc:RT:bf2:Agent:Conference"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -78,7 +78,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agent:Role"
+                                "lc:RT:bf2:Agent:Role"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -89,13 +89,13 @@
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
                 ],
-                "id": "profile:bflc:Agents:bfPrimaryContribution",
+                "id": "lc:RT:bflc:Agents:bfPrimaryContribution",
                 "resourceLabel": "Primary Contribution (test)",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
             }
         ],
         "author": "NDMSO",
-        "id": "profile:bflc:PrimaryContribution",
+        "id": "lc:profile:bflc:PrimaryContribution",
         "title": "BIBFRAME 2.0 Agents Primary Contribution",
         "description": "Primary Contribution",
         "date": "2017-07-18"

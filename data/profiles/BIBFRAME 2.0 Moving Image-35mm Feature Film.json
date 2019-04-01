@@ -22,15 +22,15 @@
                         "propertyLabel": "Search works"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:WorkTitle",
-                                "profile:bf2:WorkVariantTitle",
-                                "profile:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkTitle",
+                                "lc:RT:bf2:WorkVariantTitle",
+                                "lc:RT:bflc:TranscribedTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -46,7 +46,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Place"
+                                "lc:RT:bf2:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -93,7 +93,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SourceConsulted"
+                                "lc:RT:bf2:SourceConsulted"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -110,7 +110,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form:Geog"
+                                "lc:RT:bf2:Form:Geog"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -142,8 +142,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Eidr",
-                                "profile:bf2:Identifiers:Copyright"
+                                "lc:RT:bf2:Identifiers:Eidr",
+                                "lc:RT:bf2:Identifiers:Copyright"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -159,7 +159,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Audience"
+                                "lc:RT:bf2:Audience"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -175,7 +175,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -191,7 +191,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -207,7 +207,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Summary"
+                                "lc:RT:bf2:35mmFeatureFilm:Summary"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -223,7 +223,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form"
+                                "lc:RT:bf2:Form"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -239,11 +239,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Components"
+                                "lc:RT:bf2:Components"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true",
+                            "repeatable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
                         "propertyLabel": "Subjects",
@@ -256,12 +258,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bflc:Agents:PrimaryContribution"
+                                "lc:RT:bflc:Agents:PrimaryContribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Creator of Work",
@@ -274,12 +276,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Contribution",
@@ -318,7 +320,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Language2"
+                                "lc:RT:bf2:Language2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -339,7 +341,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Color"
+                                "lc:RT:bf2:35mmFeatureFilm:Color"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -355,7 +357,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SoundContent"
+                                "lc:RT:bf2:SoundContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -386,7 +388,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Capture"
+                                "lc:RT:bf2:Capture"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -404,7 +406,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Event"
+                                "lc:RT:bf2:35mmFeatureFilm:Event"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -435,7 +437,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedWork"
+                                "lc:RT:bf2:RelatedWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -452,7 +454,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedExpression"
+                                "lc:RT:bf2:RelatedExpression"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -469,7 +471,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedInstance"
+                                "lc:RT:bf2:RelatedInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -485,7 +487,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Instance"
+                                "lc:RT:bf2:35mmFeatureFilm:Instance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -495,12 +497,12 @@
                         "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:Work",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Work",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work"
             },
             {
-                "id": "profile:bf2:35mmFeatureFilm:Instance",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Instance",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Instance Of",
@@ -508,7 +510,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Work"
+                                "lc:RT:bf2:35mmFeatureFilm:Work"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -524,15 +526,15 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:InstanceTitle",
-                                "profile:bf2:Title:VarTitle",
-                                "profile:bf2:ParallelTitle"
+                                "lc:RT:bf2:InstanceTitle",
+                                "lc:RT:bf2:Title:VarTitle",
+                                "lc:RT:bf2:ParallelTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "remark": ""
@@ -576,9 +578,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PublicationInformation",
-                                "profile:bf2:DistributionInformation",
-                                "profile:bf2:ManufactureInformation"
+                                "lc:RT:bf2:PublicationInformation",
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ManufactureInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -650,9 +652,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Copyright",
-                                "profile:bf2:Identifiers:Other",
-                                "profile:bf2:Identifiers:Local"
+                                "lc:RT:bf2:Identifiers:Copyright",
+                                "lc:RT:bf2:Identifiers:Other",
+                                "lc:RT:bf2:Identifiers:Local"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -669,7 +671,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -686,7 +688,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Credits"
+                                "lc:RT:bf2:35mmFeatureFilm:Credits"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -754,7 +756,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Extent"
+                                "lc:RT:bf2:Extent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -859,10 +861,10 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:TypeRec",
-                                "profile:bf2:RecMedium",
-                                "profile:bf2:Playback",
-                                "profile:bf2:SpecPlayback"
+                                "lc:RT:bf2:35mmFeatureFilm:TypeRec",
+                                "lc:RT:bf2:RecMedium",
+                                "lc:RT:bf2:Playback",
+                                "lc:RT:bf2:SpecPlayback"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -879,8 +881,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:ProjFormat",
-                                "profile:bf2:ProjSpeed"
+                                "lc:RT:bf2:ProjFormat",
+                                "lc:RT:bf2:ProjSpeed"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -912,7 +914,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -930,7 +932,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SourceConsulted"
+                                "lc:RT:bf2:SourceConsulted"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -941,13 +943,13 @@
                         "remark": ""
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LCCN"
+                                "lc:RT:bf2:Identifiers:LCCN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -958,13 +960,13 @@
                         "remark": ""
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -980,7 +982,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Item"
+                                "lc:RT:bf2:35mmFeatureFilm:Item"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -994,7 +996,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance"
             },
             {
-                "id": "profile:bf2:35mmFeatureFilm:Item",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Item",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Held by",
@@ -1023,8 +1025,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LC",
-                                "profile:bf2:Identifiers:Shelfmark"
+                                "lc:RT:bf2:Identifiers:LC",
+                                "lc:RT:bf2:Identifiers:Shelfmark"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1040,7 +1042,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1098,7 +1100,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1114,9 +1116,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Access",
-                                "profile:bf2:Item:Use",
-                                "profile:bf2:Item:Retention"
+                                "lc:RT:bf2:Item:Access",
+                                "lc:RT:bf2:Item:Use",
+                                "lc:RT:bf2:Item:Retention"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1133,7 +1135,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Enumeration"
+                                "lc:RT:bf2:Item:Enumeration"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1149,7 +1151,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:ImmAcqSource"
+                                "lc:RT:bf2:Item:ImmAcqSource"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1165,7 +1167,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Extent"
+                                "lc:RT:bf2:Extent"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -1268,7 +1270,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:35mmFeatureFilm:Color"
+                                "lc:RT:bf2:35mmFeatureFilm:Color"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -1305,7 +1307,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1315,7 +1317,7 @@
                         "propertyLabel": "Details of Summary note"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:Summary",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Summary",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note"
             },
@@ -1336,7 +1338,7 @@
                         "propertyLabel": "Cast/credits note"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:Credits",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Credits",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Credits",
                 "resourceLabel": "Cast/Credits note"
             },
@@ -1368,7 +1370,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1379,7 +1381,7 @@
                         "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:Color",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Color",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ColorContent",
                 "resourceLabel": "Color content"
             },
@@ -1414,7 +1416,7 @@
                         "propertyLabel": "Date of Event"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:Event",
+                "id": "lc:RT:bf2:35mmFeatureFilm:Event",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Event",
                 "resourceLabel": "Event"
             },
@@ -1422,7 +1424,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "target",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1449,7 +1451,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -1460,7 +1462,7 @@
                         "remark": "http://access.rdatoolkit.org/3.16.2.4.html"
                     }
                 ],
-                "id": "profile:bf2:35mmFeatureFilm:TypeRec",
+                "id": "lc:RT:bf2:35mmFeatureFilm:TypeRec",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RecordingMethod",
                 "resourceLabel": "Type of Recording"
             }
@@ -1468,7 +1470,7 @@
         "author": "NDMSO",
         "date": "2017-05-20",
         "description": "Work, Instance, Item for 35mm Films",
-        "id": "profile:bf2:35mmFeatureFilm",
+        "id": "lc:profile:bf2:35mmFeatureFilm",
         "title": "BIBFRAME 2.0 Moving Image-35mm Feature Film",
         "remark": ""
     }
