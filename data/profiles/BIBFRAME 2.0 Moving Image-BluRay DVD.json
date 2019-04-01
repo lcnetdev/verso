@@ -22,15 +22,15 @@
                         "propertyLabel": "Search works"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:WorkTitle",
-                                "profile:bf2:WorkVariantTitle",
-                                "profile:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkTitle",
+                                "lc:RT:bf2:WorkVariantTitle",
+                                "lc:RT:bflc:TranscribedTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -46,12 +46,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form"
+                                "lc:RT:bf2:Form"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
                         "propertyLabel": "Form of Work"
@@ -81,7 +81,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Place"
+                                "lc:RT:bf2:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -113,7 +113,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SourceConsulted"
+                                "lc:RT:bf2:SourceConsulted"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -130,12 +130,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form:Geog"
+                                "lc:RT:bf2:Form:Geog"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
                         "propertyLabel": "(Geographic) Coverage of the Content"
@@ -162,7 +162,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Eidr"
+                                "lc:RT:bf2:Identifiers:Eidr"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -178,7 +178,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Audience"
+                                "lc:RT:bf2:Audience"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -194,14 +194,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bflc:Agents:PrimaryContribution"
+                                "lc:RT:bflc:Agents:PrimaryContribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
                             },
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Creator of Work",
@@ -214,12 +214,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true",
+                            "repeatable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Contribution",
@@ -232,11 +233,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Components"
+                                "lc:RT:bf2:Components"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true",
+                            "repeatable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
                         "propertyLabel": "Subject of the Work",
@@ -249,7 +252,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -265,7 +268,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -281,7 +284,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Summary"
+                                "lc:RT:bf2:MIBluRayDVD:Summary"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -297,8 +300,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:LCC",
-                                "profile:bf2:DDC"
+                                "lc:RT:bf2:LCC",
+                                "lc:RT:bf2:DDC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -340,7 +343,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Language2"
+                                "lc:RT:bf2:Language2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -361,7 +364,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Capture"
+                                "lc:RT:bf2:Capture"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -377,7 +380,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Event"
+                                "lc:RT:bf2:MIBluRayDVD:Event"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -408,7 +411,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SupplContent"
+                                "lc:RT:bf2:SupplContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -424,7 +427,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Color"
+                                "lc:RT:bf2:MIBluRayDVD:Color"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -440,7 +443,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SoundContent"
+                                "lc:RT:bf2:SoundContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -456,7 +459,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Aspect"
+                                "lc:RT:bf2:MIBluRayDVD:Aspect"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -502,7 +505,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedWork"
+                                "lc:RT:bf2:RelatedWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -519,7 +522,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedExpression"
+                                "lc:RT:bf2:RelatedExpression"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -536,7 +539,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Instance"
+                                "lc:RT:bf2:MIBluRayDVD:Instance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -546,12 +549,12 @@
                         "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Work",
+                "id": "lc:RT:bf2:MIBluRayDVD:Work",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work"
             },
             {
-                "id": "profile:bf2:MIBluRayDVD:Instance",
+                "id": "lc:RT:bf2:MIBluRayDVD:Instance",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Instance Of",
@@ -560,7 +563,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Work"
+                                "lc:RT:bf2:MIBluRayDVD:Work"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -575,15 +578,15 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:InstanceTitle",
-                                "profile:bf2:Title:VarTitle",
-                                "profile:bf2:ParallelTitle"
+                                "lc:RT:bf2:InstanceTitle",
+                                "lc:RT:bf2:Title:VarTitle",
+                                "lc:RT:bf2:ParallelTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "remark": ""
@@ -627,9 +630,9 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PublicationInformation",
-                                "profile:bf2:DistributionInformation",
-                                "profile:bf2:ManufactureInformation"
+                                "lc:RT:bf2:PublicationInformation",
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ManufactureInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -678,7 +681,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SeriesInformation"
+                                "lc:RT:bf2:SeriesInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -721,14 +724,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Copyright",
-                                "profile:bf2:Identifiers:UPC",
-                                "profile:bf2:Identifiers:ISBN",
-                                "profile:bf2:Identifiers:PubNumber",
-                                "profile:bf2:Identifiers:EAN",
-                                "profile:bf2:Identifiers:Other",
-                                "profile:bf2:Identifiers:Local",
-                                "profile:bf2:Identifiers:Gtin14"
+                                "lc:RT:bf2:Identifiers:Copyright",
+                                "lc:RT:bf2:Identifiers:UPC",
+                                "lc:RT:bf2:Identifiers:ISBN",
+                                "lc:RT:bf2:Identifiers:PubNumber",
+                                "lc:RT:bf2:Identifiers:EAN",
+                                "lc:RT:bf2:Identifiers:Other",
+                                "lc:RT:bf2:Identifiers:Local",
+                                "lc:RT:bf2:Identifiers:Gtin14"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -745,7 +748,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -762,7 +765,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SupplContent"
+                                "lc:RT:bf2:SupplContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -778,7 +781,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -794,7 +797,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Credits"
+                                "lc:RT:bf2:MIBluRayDVD:Credits"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -863,7 +866,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:ProdMeth"
+                                "lc:RT:bf2:ProdMeth"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -879,7 +882,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Extent"
+                                "lc:RT:bf2:Extent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -927,7 +930,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Language:Note"
+                                "lc:RT:bf2:Language:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -943,7 +946,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -959,7 +962,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -975,7 +978,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form"
+                                "lc:RT:bf2:Form"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -992,7 +995,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Aspect"
+                                "lc:RT:bf2:MIBluRayDVD:Aspect"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1008,10 +1011,10 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:TypeRec",
-                                "profile:bf2:RecMedium",
-                                "profile:bf2:MIBluRayDVD:Playback",
-                                "profile:bf2:SpecPlayback"
+                                "lc:RT:bf2:TypeRec",
+                                "lc:RT:bf2:RecMedium",
+                                "lc:RT:bf2:MIBluRayDVD:Playback",
+                                "lc:RT:bf2:SpecPlayback"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1030,7 +1033,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:BroadStd"
+                                "lc:RT:bf2:BroadStd"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -1049,11 +1052,11 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:DigChar",
-                                "profile:bf2:MIBluRayDVD:FileType",
-                                "profile:bf2:RegEncoding",
-                                "profile:bf2:MIBluRayDVD:EncFmt",
-                                "profile:bf2:Resolution"
+                                "lc:RT:bf2:DigChar",
+                                "lc:RT:bf2:MIBluRayDVD:FileType",
+                                "lc:RT:bf2:RegEncoding",
+                                "lc:RT:bf2:MIBluRayDVD:EncFmt",
+                                "lc:RT:bf2:Resolution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -1075,7 +1078,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1092,7 +1095,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1110,7 +1113,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SourceConsulted"
+                                "lc:RT:bf2:SourceConsulted"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1127,7 +1130,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:URL"
+                                "lc:RT:bf2:MIBluRayDVD:URL"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1138,13 +1141,13 @@
                         "remark": ""
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LCCN"
+                                "lc:RT:bf2:Identifiers:LCCN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1155,13 +1158,13 @@
                         "remark": ""
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1177,7 +1180,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:MIBluRayDVD:Item"
+                                "lc:RT:bf2:MIBluRayDVD:Item"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1191,7 +1194,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance"
             },
             {
-                "id": "profile:bf2:MIBluRayDVD:Item",
+                "id": "lc:RT:bf2:MIBluRayDVD:Item",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Held by",
@@ -1220,8 +1223,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LC",
-                                "profile:bf2:Identifiers:Shelfmark"
+                                "lc:RT:bf2:Identifiers:LC",
+                                "lc:RT:bf2:Identifiers:Shelfmark"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1237,7 +1240,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1295,7 +1298,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1311,9 +1314,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Access",
-                                "profile:bf2:Item:Use",
-                                "profile:bf2:Item:Retention"
+                                "lc:RT:bf2:Item:Access",
+                                "lc:RT:bf2:Item:Use",
+                                "lc:RT:bf2:Item:Retention"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1330,7 +1333,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Enumeration"
+                                "lc:RT:bf2:Item:Enumeration"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1346,7 +1349,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:ImmAcqSource"
+                                "lc:RT:bf2:Item:ImmAcqSource"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1397,7 +1400,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1407,7 +1410,7 @@
                         "propertyLabel": "Note about the summary"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Summary",
+                "id": "lc:RT:bf2:MIBluRayDVD:Summary",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note"
             },
@@ -1428,7 +1431,7 @@
                         "propertyLabel": "Cast/Credits note"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Credits",
+                "id": "lc:RT:bf2:MIBluRayDVD:Credits",
                 "resourceLabel": "Cast/Credits note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Credits"
             },
@@ -1460,7 +1463,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1471,7 +1474,7 @@
                         "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Color",
+                "id": "lc:RT:bf2:MIBluRayDVD:Color",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ColorContent",
                 "remark": "",
                 "resourceLabel": "Color content"
@@ -1480,7 +1483,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "target",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1505,7 +1508,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1533,7 +1536,7 @@
                         "remark": "http://access.rdatoolkit.org/7.19.1.3.html"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Aspect",
+                "id": "lc:RT:bf2:MIBluRayDVD:Aspect",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio",
                 "resourceLabel": "Aspect Ratio"
             },
@@ -1561,7 +1564,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1572,7 +1575,7 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent",
-                "id": "profile:bf2:MIBluRayDVD:URL",
+                "id": "lc:RT:bf2:MIBluRayDVD:URL",
                 "resourceLabel": "URL"
             },
             {
@@ -1606,7 +1609,7 @@
                         "propertyLabel": "Date of Event"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Event",
+                "id": "lc:RT:bf2:MIBluRayDVD:Event",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Event",
                 "resourceLabel": "Event"
             },
@@ -1614,61 +1617,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "target",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/mfiletype"
-                            ],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/mfiletype/video",
-                                    "defaultLiteral": "video file"
-                                }
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/FileType"
-                            },
-                            "validatePattern": ""
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "File Type",
-                        "remark": "http://access.rdatoolkit.org/3.19.2.html"
-                    }
-                ],
-                "id": "profile:bf2:MIBluRayDVD:FileType",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/FileType",
-                "resourceLabel": "File Type"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
-                        },
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Encoding Format",
-                        "remark": "http://access.rdatoolkit.org/3.19.3.html"
-                    }
-                ],
-                "id": "profile:bf2:MIBluRayDVD:EncFmt",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/EncodingFormat",
-                "resourceLabel": "Encoding Format"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "target",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1693,7 +1642,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -1704,7 +1653,7 @@
                         "remark": "http://access.rdatoolkit.org/3.16.8.4.html"
                     }
                 ],
-                "id": "profile:bf2:MIBluRayDVD:Playback",
+                "id": "lc:RT:bf2:MIBluRayDVD:Playback",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels",
                 "resourceLabel": "Playback Channels"
             }
@@ -1712,7 +1661,7 @@
         "author": "NDMSO",
         "date": "2017-05-20",
         "description": "Work, Instance, Item for DVDs",
-        "id": "profile:bf2:MIBluRayDVD",
+        "id": "lc:profile:bf2:MIBluRayDVD",
         "title": "BIBFRAME 2.0 Moving Image-BluRay DVD",
         "remark": ""
     }

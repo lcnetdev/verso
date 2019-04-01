@@ -5,7 +5,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -20,7 +20,7 @@
                     },
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -68,7 +68,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:Note"
+                                "lc:RT:bf2:Title:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -79,7 +79,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
-                "id": "profile:bf2:InstanceTitle",
+                "id": "lc:RT:bf2:InstanceTitle",
                 "resourceLabel": "Instance Title",
                 "remark": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
@@ -88,7 +88,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -107,7 +107,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:Note"
+                                "lc:RT:bf2:Title:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -118,7 +118,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
-                "id": "profile:bflc:TranscribedTitle",
+                "id": "lc:RT:bflc:TranscribedTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/TransliteratedTitle",
                 "resourceLabel": "Transliterated Title"
             },
@@ -126,14 +126,17 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            "valueDataType": {
+                                "dataTypeURI": ""
+                            },
+                            "defaults": [],
+                            "remark": ""
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Preferred Title for Work",
@@ -174,7 +177,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:Note"
+                                "lc:RT:bf2:Title:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -185,14 +188,14 @@
                     }
                 ],
                 "resourceLabel": "Work Title",
-                "id": "profile:bf2:WorkTitle",
+                "id": "lc:RT:bf2:WorkTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -212,7 +215,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:Note"
+                                "lc:RT:bf2:Title:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -223,7 +226,7 @@
                     }
                 ],
                 "resourceLabel": "Work Title Variation",
-                "id": "profile:bf2:WorkVariantTitle",
+                "id": "lc:RT:bf2:WorkVariantTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle"
             },
             {
@@ -243,7 +246,7 @@
                         "propertyLabel": "Note Text"
                     }
                 ],
-                "id": "profile:bf2:Title:Note",
+                "id": "lc:RT:bf2:Title:Note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Title note"
             },
@@ -251,7 +254,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -279,7 +282,7 @@
                         "propertyLabel": "Variant title type"
                     }
                 ],
-                "id": "profile:bf2:Title:VarTitle",
+                "id": "lc:RT:bf2:Title:VarTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
                 "resourceLabel": "Variant Title"
             },
@@ -287,7 +290,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -322,7 +325,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Title:Note"
+                                "lc:RT:bf2:Title:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -333,7 +336,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     }
                 ],
-                "id": "profile:bf2:ParallelTitle",
+                "id": "lc:RT:bf2:ParallelTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ParallelTitle",
                 "resourceLabel": "Parallel Title"
             },
@@ -341,7 +344,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -355,14 +358,14 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/KeyTitle",
-                "id": "profile:bf2:Title:KeyTitle",
+                "id": "lc:RT:bf2:Title:KeyTitle",
                 "resourceLabel": "Key Title"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -376,14 +379,14 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle",
-                "id": "profile:bf2:Title:AbbrTitle",
+                "id": "lc:RT:bf2:Title:AbbrTitle",
                 "resourceLabel": "Abbreviated Title"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -396,7 +399,7 @@
                         "propertyLabel": "Collective Title"
                     }
                 ],
-                "id": "profile:bf2:Title:CollTitle",
+                "id": "lc:RT:bf2:Title:CollTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CollectiveTitle",
                 "resourceLabel": "Collective Title"
             },
@@ -557,7 +560,7 @@
                         "propertyLabel": "LC Extension: titleSortKey"
                     }
                 ],
-                "id": "profile:bf2:BflcTitle",
+                "id": "lc:RT:bf2:BflcTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc",
                 "resourceLabel": "Title: BIBFRAME 2.0 LC Extension"
             }
@@ -565,7 +568,7 @@
         "title": "BIBFRAME 2.0 Title Information",
         "date": "2017-05-26",
         "author": "NDMSO",
-        "id": "bf2:Title",
+        "id": "lc:profile:bf2:Title",
         "remark": "",
         "description": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc."
     }

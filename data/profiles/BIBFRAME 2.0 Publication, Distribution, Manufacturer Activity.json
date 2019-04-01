@@ -10,7 +10,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Place"
+                                "lc:RT:bf2:Provision:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -29,7 +29,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Name"
+                                "lc:RT:bf2:Provision:Name"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -63,7 +63,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -74,7 +74,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.7.html"
                     }
                 ],
-                "id": "profile:bf2:PublicationInformation",
+                "id": "lc:RT:bf2:PublicationInformation",
                 "contact": "",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
                 "resourceLabel": "Publication"
@@ -88,7 +88,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Place"
+                                "lc:RT:bf2:Provision:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -107,7 +107,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Name"
+                                "lc:RT:bf2:Provision:Name"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -141,7 +141,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -158,7 +158,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -170,7 +170,7 @@
                     }
                 ],
                 "resourceLabel": "Distribution",
-                "id": "profile:bf2:DistributionInformation",
+                "id": "lc:RT:bf2:DistributionInformation",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution"
             },
             {
@@ -182,7 +182,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Place"
+                                "lc:RT:bf2:Provision:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -203,7 +203,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:Name"
+                                "lc:RT:bf2:Provision:Name"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -239,7 +239,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -250,7 +250,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.9.html"
                     }
                 ],
-                "id": "profile:bf2:ManufactureInformation",
+                "id": "lc:RT:bf2:ManufactureInformation",
                 "resourceLabel": "Manufacture",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture"
             },
@@ -278,7 +278,7 @@
                         "remark": "http://access.rdatoolkit.org/2.10.2.html"
                     }
                 ],
-                "id": "profile:bf2:Provision:Place",
+                "id": "lc:RT:bf2:Provision:Place",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "resourceLabel": "Place"
             },
@@ -320,7 +320,7 @@
                         "propertyLabel": "Record Name (if it does not appear above)"
                     }
                 ],
-                "id": "profile:bf2:Provision:Name",
+                "id": "lc:RT:bf2:Provision:Name",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
                 "resourceLabel": "Name"
             },
@@ -352,7 +352,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Provision:NameTest"
+                                "lc:RT:bf2:Provision:NameTest"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -376,12 +376,12 @@
                         "propertyLabel": "Date"
                     }
                 ],
-                "id": "profile:bf2:PublicationInformationTest",
+                "id": "lc:RT:bf2:PublicationInformationTest",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
                 "resourceLabel": "Publication Test"
             }
         ],
-        "id": "profile:bf2:PublicationDistributionManufactureInformation",
+        "id": "lc:profile:bf2:PublicationDistributionManufactureInformation",
         "title": "BIBFRAME 2.0 Publication, Distribution, Manufacturer Activity",
         "description": "Publication, Distribution, Manufacture Activity",
         "date": "2017-06-02",

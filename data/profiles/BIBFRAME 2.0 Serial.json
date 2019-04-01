@@ -28,29 +28,29 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bflc:Agents:PrimaryContribution"
+                                "lc:RT:bflc:Agents:PrimaryContribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
                             },
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Creator of Work",
                         "remark": "http://access.rdatoolkit.org/19.2.html"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:WorkTitle",
-                                "profile:bf2:WorkVariantTitle",
-                                "profile:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkTitle",
+                                "lc:RT:bf2:WorkVariantTitle",
+                                "lc:RT:bflc:TranscribedTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -66,12 +66,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form"
+                                "lc:RT:bf2:Form"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
                         "propertyLabel": "Form of Work",
@@ -99,11 +99,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Place"
+                                "lc:RT:bf2:Place"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
                         "propertyLabel": "Place of Origin of the Work",
@@ -116,12 +117,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Form:Geog"
+                                "lc:RT:bf2:Form:Geog"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
                         "propertyLabel": "(Geographic) Coverage of the Content"
@@ -167,12 +168,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Agents:Contribution"
+                                "lc:RT:bf2:Agents:Contribution"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": [],
-                            "editable": "false"
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
                         "propertyLabel": "Contribution",
@@ -185,11 +186,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Components"
+                                "lc:RT:bf2:Components"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [],
+                            "editable": "true"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
                         "propertyLabel": "Subject of the Work",
@@ -202,7 +204,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -218,8 +220,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:LCC",
-                                "profile:bf2:DDC"
+                                "lc:RT:bf2:LCC",
+                                "lc:RT:bf2:DDC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -235,7 +237,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -251,7 +253,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Summary"
+                                "lc:RT:bf2:Summary"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -293,7 +295,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Language2"
+                                "lc:RT:bf2:Language2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -314,7 +316,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Script"
+                                "lc:RT:bf2:Script"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -350,7 +352,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -367,7 +369,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SupplContent"
+                                "lc:RT:bf2:SupplContent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -383,7 +385,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:RelatedWork"
+                                "lc:RT:bf2:Serial:RelatedWork"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -402,7 +404,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:RelatedExpression"
+                                "lc:RT:bf2:RelatedExpression"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -419,7 +421,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:RelatedInstance"
+                                "lc:RT:bf2:Serial:RelatedInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -436,7 +438,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:Instance"
+                                "lc:RT:bf2:Serial:Instance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -446,12 +448,12 @@
                         "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
-                "id": "profile:bf2:Serial:Work",
+                "id": "lc:RT:bf2:Serial:Work",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work"
             },
             {
-                "id": "profile:bf2:Serial:Instance",
+                "id": "lc:RT:bf2:Serial:Instance",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Instance of",
@@ -460,7 +462,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:Work"
+                                "lc:RT:bf2:Serial:Work"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -475,12 +477,12 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:InstanceTitle",
-                                "profile:bf2:Title:VarTitle",
-                                "profile:bf2:Title:KeyTitle",
-                                "profile:bf2:Title:AbbrTitle",
-                                "profile:bf2:ParallelTitle",
-                                "profile:bflc:TranscribedTitle"
+                                "lc:RT:bf2:InstanceTitle",
+                                "lc:RT:bf2:Title:VarTitle",
+                                "lc:RT:bf2:Title:KeyTitle",
+                                "lc:RT:bf2:Title:AbbrTitle",
+                                "lc:RT:bf2:ParallelTitle",
+                                "lc:RT:bflc:TranscribedTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -488,7 +490,7 @@
                             },
                             "defaults": []
                         },
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "remark": ""
@@ -530,9 +532,9 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PublicationInformation",
-                                "profile:bf2:DistributionInformation",
-                                "profile:bf2:ManufactureInformation"
+                                "lc:RT:bf2:PublicationInformation",
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ManufactureInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -579,7 +581,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:SeriesInformation"
+                                "lc:RT:bf2:SeriesInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -622,7 +624,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:Frequency"
+                                "lc:RT:bf2:Serial:Frequency"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -641,10 +643,10 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISSN",
-                                "profile:bf2:Identifiers:ISSNL",
-                                "profile:bf2:Identifiers:Other",
-                                "profile:bf2:Identifiers:Local"
+                                "lc:RT:bf2:Identifiers:ISSN",
+                                "lc:RT:bf2:Identifiers:ISSNL",
+                                "lc:RT:bf2:Identifiers:Other",
+                                "lc:RT:bf2:Identifiers:Local"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -712,7 +714,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Extent"
+                                "lc:RT:bf2:Extent"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -745,7 +747,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:RelatedInstance"
+                                "lc:RT:bf2:Serial:RelatedInstance"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -761,7 +763,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -778,7 +780,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:Item"
+                                "lc:RT:bf2:Serial:Item"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -804,13 +806,13 @@
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LCCN"
+                                "lc:RT:bf2:Identifiers:LCCN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -821,13 +823,13 @@
                         "remark": ""
                     },
                     {
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -856,7 +858,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance"
             },
             {
-                "id": "profile:bf2:Serial:Item",
+                "id": "lc:RT:bf2:Serial:Item",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Held by",
@@ -913,7 +915,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:Barcode"
+                                "lc:RT:bf2:Identifiers:Barcode"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -929,7 +931,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -945,9 +947,9 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:Access",
-                                "profile:bf2:Item:Use",
-                                "profile:bf2:Item:Retention"
+                                "lc:RT:bf2:Item:Access",
+                                "lc:RT:bf2:Item:Use",
+                                "lc:RT:bf2:Item:Retention"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -963,7 +965,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:LC"
+                                "lc:RT:bf2:Identifiers:LC"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -980,7 +982,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Serial:EnumerationAndChronology"
+                                "lc:RT:bf2:Serial:EnumerationAndChronology"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -996,7 +998,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Item:ImmAcqSource"
+                                "lc:RT:bf2:Item:ImmAcqSource"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1072,7 +1074,7 @@
                         "remark": "http://access.rdatoolkit.org/2.3.1.7.html"
                     }
                 ],
-                "id": "profile:bf2:Serial:Title",
+                "id": "lc:RT:bf2:Serial:Title",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
                 "resourceLabel": "Title",
                 "author": "NDMSO"
@@ -1317,7 +1319,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1328,7 +1330,7 @@
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
-                "id": "profile:bf2:Serial:RelatedWork",
+                "id": "lc:RT:bf2:Serial:RelatedWork",
                 "resourceLabel": "Related Work"
             },
             {
@@ -1388,7 +1390,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Identifiers:ISSN"
+                                "lc:RT:bf2:Identifiers:ISSN"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1434,7 +1436,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1444,7 +1446,7 @@
                         "propertyLabel": "Description of Related Manifestation"
                     }
                 ],
-                "id": "profile:bf2:Serial:RelatedInstance",
+                "id": "lc:RT:bf2:Serial:RelatedInstance",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance"
             },
@@ -1511,7 +1513,7 @@
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-5813.html"
                     }
                 ],
-                "id": "profile:bf2:Serial:EnumerationAndChronology",
+                "id": "lc:RT:bf2:Serial:EnumerationAndChronology",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology",
                 "resourceLabel": "Enumeration And Chronology"
             },
@@ -1519,7 +1521,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "target",
                         "resourceTemplates": [],
                         "valueConstraint": {
@@ -1543,7 +1545,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Note"
+                                "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1554,7 +1556,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.12.html"
                     }
                 ],
-                "id": "profile:bf2:Serial:Frequency",
+                "id": "lc:RT:bf2:Serial:Frequency",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Frequency",
                 "resourceLabel": "Frequency"
             }
@@ -1562,7 +1564,7 @@
         "author": "NDMSO",
         "date": "2017-05-20",
         "description": "Work, Instance, Item for Serials",
-        "id": "profile:bf2:Serial",
+        "id": "lc:profile:bf2:Serial",
         "title": "BIBFRAME 2.0 Serial",
         "remark": ""
     }
