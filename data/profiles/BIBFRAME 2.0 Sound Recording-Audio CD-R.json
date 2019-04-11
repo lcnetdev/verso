@@ -738,12 +738,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SoundCDR:Credits"
-                            ],
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
@@ -1168,27 +1166,6 @@
                 ],
                 "resourceLabel": "BIBFRAME Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Credits note"
-                    }
-                ],
-                "id": "lc:RT:bf2:SoundCDR:Credits",
-                "resourceLabel": "Credits note",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Credits"
             },
             {
                 "propertyTemplates": [
