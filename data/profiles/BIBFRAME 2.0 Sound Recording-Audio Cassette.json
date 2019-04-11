@@ -709,12 +709,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SoundRecording:Credits"
-                            ],
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "defaults": [],
                             "valueDataType": {}
