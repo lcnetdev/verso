@@ -684,12 +684,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:35mmFeatureFilm:Credits"
-                            ],
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
@@ -1320,27 +1318,6 @@
                 "id": "lc:RT:bf2:35mmFeatureFilm:Summary",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Cast/credits note"
-                    }
-                ],
-                "id": "lc:RT:bf2:35mmFeatureFilm:Credits",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Credits",
-                "resourceLabel": "Cast/Credits note"
             },
             {
                 "propertyTemplates": [
