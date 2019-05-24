@@ -280,6 +280,23 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/variantType",
                         "propertyLabel": "Variant title type"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Note"
+                            ],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+                        "propertyLabel": "Title note",
+                        "remark": ""
                     }
                 ],
                 "id": "lc:RT:bf2:Title:VarTitle",

@@ -1480,13 +1480,14 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "LC shelfmark"
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Item call number",
+                        "remark": ""
                     }
                 ],
                 "id": "lc:RT:bf2:Identifiers:LC",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
-                "resourceLabel": "LC shelfmark"
+                "resourceLabel": "LC item call number"
             },
             {
                 "propertyTemplates": [
@@ -1501,8 +1502,9 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "DDC shelfmark"
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Dewey call number",
+                        "remark": ""
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkDcc",
@@ -1522,8 +1524,9 @@
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "Accession or copy number"
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Accession or copy number",
+                        "remark": ""
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark",

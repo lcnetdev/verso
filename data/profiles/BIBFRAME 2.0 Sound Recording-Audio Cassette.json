@@ -537,8 +537,7 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:VarTitle",
-                                "lc:RT:bf2:ParallelTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:ParallelTitle"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -586,14 +585,15 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:ManufactureInformation",
-                                "lc:RT:bf2:DistributionInformation"
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
-                        "propertyLabel": "Publication, Distribution, Manufacture Information"
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production"
                     },
                     {
                         "mandatory": "false",
@@ -920,14 +920,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
                             "valueDataType": {}
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "propertyLabel": "Administrative Metadata for Instance"
+                        "propertyLabel": "Administrative Metadata"
                     },
                     {
                         "mandatory": "false",
