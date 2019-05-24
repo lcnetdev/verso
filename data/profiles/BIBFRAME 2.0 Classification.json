@@ -42,12 +42,49 @@
                 "id": "lc:RT:bf2:DDC",
                 "resourceLabel": "Dewey Decimal Classification",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
+                        "propertyLabel": "LC Classification Number"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemPortion",
+                        "propertyLabel": "Classification item number",
+                        "remark": ""
+                    }
+                ],
+                "id": "lc:RT:bf2:LCC",
+                "resourceLabel": "Library of Congress Classification",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc"
             }
         ],
-        "id": "lc:profile:bf2:DDC",
-        "description": "Dewey Decimal Classification",
-        "title": "BIBFRAME 2.0 DDC",
-        "date": "2017-07-28",
-        "author": "NDMSO"
+        "id": "lc:profile:bf2:Classification",
+        "description": "Classification (DDC and LCC)",
+        "title": "BIBFRAME 2.0 Classification",
+        "date": "2019-05-01",
+        "author": "NDMSO",
+        "adherence": "RDA"
     }
 }

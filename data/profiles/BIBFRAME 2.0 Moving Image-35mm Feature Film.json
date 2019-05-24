@@ -29,8 +29,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:WorkTitle",
-                                "lc:RT:bf2:WorkVariantTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkVariantTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -505,22 +504,6 @@
                 "id": "lc:RT:bf2:35mmFeatureFilm:Instance",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Instance Of",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/instanceOf",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:35mmFeatureFilm:Work"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "resourceTemplates": [],
-                        "mandatory": "false",
-                        "repeatable": "true"
-                    },
-                    {
                         "propertyLabel": "Title Information",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
                         "resourceTemplates": [],
@@ -580,14 +563,15 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:DistributionInformation",
-                                "lc:RT:bf2:ManufactureInformation"
+                                "lc:RT:bf2:ManufactureInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
-                        "propertyLabel": "Publication, Distribution, Manufacture Information",
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
                         "remark": ""
                     },
                     {
@@ -964,13 +948,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Administrative Metadata for Instance",
+                        "propertyLabel": "Administrative Metadata",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata"
                     },
                     {
@@ -1086,7 +1070,12 @@
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": "c-Motion pic & TV/MBRS"
+                                }
+                            ]
                         },
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1337,7 +1326,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "Color Content",
+                        "propertyLabel": "Color content",
                         "remark": "http://access.rdatoolkit.org/7.17.html"
                     },
                     {

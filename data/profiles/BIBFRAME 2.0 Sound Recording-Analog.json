@@ -49,8 +49,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:WorkTitle",
-                                "lc:RT:bf2:WorkVariantTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkVariantTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -566,8 +565,7 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:VarTitle",
-                                "lc:RT:bf2:ParallelTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:ParallelTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -613,7 +611,7 @@
                         "remark": "http://access.rdatoolkit.org/2.5.html"
                     },
                     {
-                        "propertyLabel": "Publication, Distribution, Manufacture Information",
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
                         "resourceTemplates": [],
                         "type": "resource",
@@ -621,7 +619,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:ManufactureInformation",
-                                "lc:RT:bf2:DistributionInformation"
+                                "lc:RT:bf2:DistributionInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -996,13 +995,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Administrative Metadata for Instance",
+                        "propertyLabel": "Administrative Metadata",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata"
                     },
                     {
