@@ -29,8 +29,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:WorkTitle",
-                                "lc:RT:bf2:WorkVariantTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkVariantTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -252,6 +251,23 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
+                                "lc:RT:bf2:LCC",
+                                "lc:RT:bf2:DDC"
+                            ],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/classification",
+                        "propertyLabel": "Classification numbers"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
                                 "lc:RT:bf2:Note"
                             ],
                             "useValuesFrom": [],
@@ -292,23 +308,6 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/summary",
                         "propertyLabel": "Summary"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:LCC",
-                                "lc:RT:bf2:DDC"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/classification",
-                        "propertyLabel": "Classification numbers"
                     },
                     {
                         "mandatory": "false",
@@ -626,7 +625,7 @@
                         "remark": "http://access.rdatoolkit.org/2.5.html"
                     },
                     {
-                        "propertyLabel": "Publication, Distribution, Manufacture Information",
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
                         "resourceTemplates": [],
                         "type": "resource",
@@ -634,7 +633,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:DistributionInformation",
-                                "lc:RT:bf2:ManufactureInformation"
+                                "lc:RT:bf2:ManufactureInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1102,7 +1102,7 @@
                             "defaults": [],
                             "editable": "false"
                         },
-                        "propertyLabel": "Persons, Families, Corporate Bodies Associated with the Manifestation (RDA 21.1.2)",
+                        "propertyLabel": "Contribution",
                         "remark": "http://access.rdatoolkit.org/rdachp21_rda21-74.html",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution"
                     },
@@ -1164,13 +1164,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Administrative Metadata for Instance",
+                        "propertyLabel": "Administrative Metadata",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata"
                     },
                     {
@@ -1286,7 +1286,12 @@
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
                             "valueDataType": {},
-                            "defaults": []
+                            "defaults": [
+                                {
+                                    "defaultURI": "",
+                                    "defaultLiteral": "c-Motion Pic & TV/MBRS"
+                                }
+                            ]
                         },
                         "mandatory": "false",
                         "repeatable": "true",
@@ -1432,7 +1437,7 @@
                             "defaults": []
                         },
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "Color Content",
+                        "propertyLabel": "Color content",
                         "remark": "http://access.rdatoolkit.org/7.17.html"
                     },
                     {

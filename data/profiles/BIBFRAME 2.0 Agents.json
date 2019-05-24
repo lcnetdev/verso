@@ -2,7 +2,7 @@
     "Profile": {
         "resourceTemplates": [
             {
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#PersonalName",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
                 "id": "lc:RT:bf2:Agent:Person",
                 "resourceLabel": "Person",
                 "propertyTemplates": [
@@ -21,7 +21,7 @@
                             "defaults": [],
                             "editable": "true"
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#PersonalName",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -185,7 +185,7 @@
                 "remark": ""
             },
             {
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#FamilyName",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
                 "id": "lc:RT:bf2:Agent:Family",
                 "resourceLabel": "Family",
                 "propertyTemplates": [
@@ -203,7 +203,7 @@
                             "defaults": [],
                             "editable": "true"
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#FamilyName",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -429,7 +429,7 @@
                 ]
             },
             {
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#CorporateName",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
                 "id": "lc:RT:bf2:Agent:CorporateBody",
                 "resourceLabel": "Corporate Body",
                 "propertyTemplates": [
@@ -447,7 +447,7 @@
                             "defaults": [],
                             "editable": "true"
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#CorporateName",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -689,7 +689,7 @@
                 ]
             },
             {
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#ConferenceName",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
                 "id": "lc:RT:bf2:Agent:Conference",
                 "resourceLabel": "Conference",
                 "propertyTemplates": [
@@ -707,7 +707,7 @@
                             "defaults": [],
                             "editable": "true"
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#ConferenceName",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -947,12 +947,12 @@
                 ]
             },
             {
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
                 "id": "lc:RT:bf2:Agent:Jurisdiction",
                 "resourceLabel": "Jurisdiction",
                 "propertyTemplates": [
                     {
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Search LCNAF",
                         "type": "lookup",
                         "mandatory": "false",
@@ -968,7 +968,8 @@
                             },
                             "repeatable": "true",
                             "defaults": [],
-                            "editable": "true"
+                            "editable": "true",
+                            "remark": "http://www.loc.gov/mads/rdf/v1#Geographic"
                         }
                     },
                     {
