@@ -52,7 +52,7 @@
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Topic"
                             },
-                            "editable": "true"
+                            "editable": "false"
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/Topic",
                         "propertyLabel": "Lookup"
@@ -298,7 +298,6 @@
                                 "lc:RT:bf2:Agent:Person",
                                 "lc:RT:bf2:Agent:CorporateBody",
                                 "lc:RT:bf2:Agent:Conference",
-                                "lc:RT:bf2:Agent:Family",
                                 "lc:RT:bf2:Topic:madsTopic",
                                 "lc:RT:bf2:Topic:madsGeographic",
                                 "lc:RT:bf2:Topic:madsTemporal",
@@ -347,7 +346,8 @@
                                 "lc:RT:bf2:Topic:madsTopic",
                                 "lc:RT:bf2:Topic:madsGeographic",
                                 "lc:RT:bf2:Topic:ChronologyTest",
-                                "lc:RT:bf2:Topic:madsGenreForm"
+                                "lc:RT:bf2:Topic:madsGenreForm",
+                                "lc:RT:bf2:Topic:madsTopicSub"
                             ],
                             "useValuesFrom": [],
                             "defaults": [],
@@ -413,6 +413,29 @@
                 "id": "lc:RT:bf2:Topic:ChronologyTest",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
                 "resourceLabel": "Chronological subdivision test"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/subjects"
+                            ],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
+                        "propertyLabel": "Search LCSH"
+                    }
+                ],
+                "id": "lc:RT:bf2:Topic:madsTopicSub",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
+                "resourceLabel": "Topical subdivision"
             }
         ],
         "id": "lc:profile:bf2:Topic",

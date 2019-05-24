@@ -50,7 +50,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:WorkTitle",
                                 "lc:RT:bf2:WorkVariantTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:Title:KeyTitle",
+                                "lc:RT:bf2:Title:AbbrTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -148,6 +149,24 @@
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Identifiers:ISSN",
+                                "lc:RT:bf2:Identifiers:ISSNL"
+                            ],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+                        "propertyLabel": "Identifiers",
+                        "remark": ""
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/maudience"
@@ -204,22 +223,6 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Notes about the Work"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
                                 "lc:RT:bf2:LCC",
                                 "lc:RT:bf2:DDC"
                             ],
@@ -229,6 +232,22 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/classification",
                         "propertyLabel": "Classification numbers"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Note"
+                            ],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+                        "propertyLabel": "Notes about the Work"
                     },
                     {
                         "mandatory": "false",
@@ -430,22 +449,6 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
                         "propertyLabel": "Related Manifestations",
                         "remark": "http://access.rdatoolkit.org/rdachp27_rda27-40.html"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Serial:Instance"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
-                        "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
                 "id": "lc:RT:bf2:Serial:Work",
@@ -479,10 +482,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:VarTitle",
-                                "lc:RT:bf2:Title:KeyTitle",
                                 "lc:RT:bf2:Title:AbbrTitle",
-                                "lc:RT:bf2:ParallelTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:ParallelTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {
@@ -526,7 +527,7 @@
                         "remark": "http://access.rdatoolkit.org/2.5.html"
                     },
                     {
-                        "propertyLabel": "Publication, Distribution, Manufacture Information",
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
                         "resourceTemplates": [],
                         "type": "resource",
@@ -534,7 +535,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:DistributionInformation",
-                                "lc:RT:bf2:ManufactureInformation"
+                                "lc:RT:bf2:ManufactureInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -643,8 +645,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Identifiers:ISSN",
-                                "lc:RT:bf2:Identifiers:ISSNL",
                                 "lc:RT:bf2:Identifiers:Other",
                                 "lc:RT:bf2:Identifiers:Local"
                             ],
@@ -829,14 +829,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "propertyLabel": "Administrative Metadata for Instance"
+                        "propertyLabel": "Administrative Metadata"
                     },
                     {
                         "mandatory": "false",

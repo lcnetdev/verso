@@ -9,24 +9,6 @@
                         "type": "resource",
                         "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "http://mlvlp04.loc.gov:8230/resources/works"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
-                            },
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
-                        "propertyLabel": "Lookup BIBFRAME works"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bflc:Agents:PrimaryContribution"
                             ],
@@ -43,6 +25,24 @@
                         "remark": "http://access.rdatoolkit.org/19.2.html"
                     },
                     {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [
+                                "http://mlvlp04.loc.gov:8230/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            },
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                        "propertyLabel": "Lookup BIBFRAME works"
+                    },
+                    {
                         "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
@@ -50,8 +50,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:WorkTitle",
-                                "lc:RT:bf2:WorkVariantTitle",
-                                "lc:RT:bflc:TranscribedTitle"
+                                "lc:RT:bf2:WorkVariantTitle"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -133,46 +132,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMed"
+                                "lc:RT:bf2:PMOMedPerf:DecMedTest"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMedium",
-                        "propertyLabel": "Medium of Performance"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMed"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/alternateMediumOfPerformance",
-                        "propertyLabel": "Alternate Declared Medium"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:Doubling"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyLabel": "Doubling Declared Medium",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasMediumPart"
+                        "propertyLabel": "Declared/Doubling/Alternate Medium"
                     },
                     {
                         "mandatory": "false",
@@ -279,6 +246,23 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
+                                "lc:RT:bf2:LCC",
+                                "lc:RT:bf2:DDC"
+                            ],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/classification",
+                        "propertyLabel": "Classification numbers"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
                                 "lc:RT:bf2:Components"
                             ],
                             "useValuesFrom": [],
@@ -313,23 +297,6 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:LCC",
-                                "lc:RT:bf2:DDC"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/classification",
-                        "propertyLabel": "Classification numbers"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
                                 "lc:RT:bf2:Contents"
                             ],
                             "useValuesFrom": [],
@@ -338,22 +305,6 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/tableOfContents",
                         "propertyLabel": "Contents"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Summary"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/summary",
-                        "propertyLabel": "Summary"
                     },
                     {
                         "mandatory": "false",
@@ -416,6 +367,22 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/notation",
                         "propertyLabel": "Script",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Summary"
+                            ],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/summary",
+                        "propertyLabel": "Summary"
                     },
                     {
                         "mandatory": "false",
@@ -568,22 +535,6 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
                         "propertyLabel": "Add BIBFRAME Instance"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMedTest"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasMedium",
-                        "propertyLabel": "Declared Medium Test"
                     }
                 ],
                 "id": "lc:RT:bf2:NotatedMusic:Work",
@@ -723,46 +674,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMed"
+                                "lc:RT:bf2:PMOMedPerf:DecMedTest"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMedium",
-                        "propertyLabel": "Declared Medium"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMed"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyLabel": "Alternate Declared Medium",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/alternateMediumOfPerformance"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:DecMed"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance",
-                        "propertyLabel": "Doubling Declared Medium"
+                        "propertyLabel": "Declared/Doubling/Alternate Medium"
                     },
                     {
                         "mandatory": "false",
@@ -953,7 +872,6 @@
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:VarTitle",
                                 "lc:RT:bf2:ParallelTitle",
-                                "lc:RT:bflc:TranscribedTitle",
                                 "lc:RT:bf2:Title:CollTitle"
                             ],
                             "useValuesFrom": [],
@@ -1002,14 +920,15 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:DistributionInformation",
-                                "lc:RT:bf2:ManufactureInformation"
+                                "lc:RT:bf2:ManufactureInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
-                        "propertyLabel": "Publication, Distribution, Manufacture Information"
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production"
                     },
                     {
                         "mandatory": "false",
@@ -1296,14 +1215,14 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "propertyLabel": "Administrative Metadata for Instance"
+                        "propertyLabel": "Administrative Metadata"
                     },
                     {
                         "mandatory": "false",
@@ -1356,7 +1275,6 @@
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:VarTitle",
                                 "lc:RT:bf2:ParallelTitle",
-                                "lc:RT:bflc:TranscribedTitle",
                                 "lc:RT:bf2:Title:CollTitle"
                             ],
                             "useValuesFrom": [],
@@ -1401,7 +1319,7 @@
                         "remark": "http://access.rdatoolkit.org/2.5.html"
                     },
                     {
-                        "propertyLabel": "Publication, Distribution, Manufacture Information",
+                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
                         "resourceTemplates": [],
                         "type": "resource",
@@ -1409,7 +1327,8 @@
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PublicationInformation",
                                 "lc:RT:bf2:DistributionInformation",
-                                "lc:RT:bf2:ManufactureInformation"
+                                "lc:RT:bf2:ManufactureInformation",
+                                "lc:RT:bf2:ProductionInformation"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -1713,13 +1632,13 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:AdminMetadata"
+                                "lc:RT:bf2:AdminMetadata:BFDB"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
                             "defaults": []
                         },
-                        "propertyLabel": "Administrative Metadata for Instance",
+                        "propertyLabel": "Administrative Metadata",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata"
                     },
                     {
