@@ -701,8 +701,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
-                            ],
-                            "remark": "http://www.loc.gov/mads/rdf/v1#Geographic"
+                            ]
                         }
                     },
                     {
@@ -716,7 +715,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Identifier"
