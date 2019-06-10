@@ -7,7 +7,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Person",
@@ -15,12 +14,7 @@
                                 "lc:RT:bf2:Agent:CorporateBody",
                                 "lc:RT:bf2:Agent:Jurisdiction",
                                 "lc:RT:bf2:Agent:Conference"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "repeatable": "true",
-                            "editable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "propertyLabel": "Primary Contributor"
@@ -29,16 +23,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Role"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "repeatable": "true",
-                            "defaults": [],
-                            "editable": "true"
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                         "propertyLabel": "Relationship Designator (RDA Appendix I)",
@@ -47,7 +35,10 @@
                 ],
                 "id": "lc:RT:bflc:Agents:PrimaryContribution",
                 "resourceLabel": "Primary Contribution",
-                "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
+                "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -55,7 +46,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:bfPerson",
@@ -63,10 +53,7 @@
                                 "lc:RT:bf2:Agent:CorporateBody",
                                 "lc:RT:bf2:Agent:Jurisdiction",
                                 "lc:RT:bf2:Agent:Conference"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "propertyLabel": "Primary Contributor"
@@ -75,14 +62,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Role"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                         "propertyLabel": "Relationship Designator (RDA Appendix I)",
@@ -91,13 +74,17 @@
                 ],
                 "id": "lc:RT:bflc:Agents:bfPrimaryContribution",
                 "resourceLabel": "Primary Contribution (test)",
-                "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
+                "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "author": "NDMSO",
         "id": "lc:profile:bflc:PrimaryContribution",
         "title": "BIBFRAME 2.0 Agents Primary Contribution",
         "description": "Primary Contribution",
-        "date": "2017-07-18"
+        "date": "2017-07-18",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }

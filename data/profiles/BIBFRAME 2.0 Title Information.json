@@ -7,13 +7,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Main Title",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3376.html"
@@ -22,13 +15,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
                         "propertyLabel": "Subtitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3782.html"
@@ -37,13 +23,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Part number",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber"
                     },
@@ -51,13 +30,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Part name",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName"
                     },
@@ -65,14 +37,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Title:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note",
@@ -82,7 +50,10 @@
                 "id": "lc:RT:bf2:InstanceTitle",
                 "resourceLabel": "Instance Title",
                 "remark": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -90,13 +61,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Title"
                     },
@@ -104,14 +68,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Title:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note",
@@ -120,7 +80,10 @@
                 ],
                 "id": "lc:RT:bflc:TranscribedTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/TransliteratedTitle",
-                "resourceLabel": "Transliterated Title"
+                "resourceLabel": "Transliterated Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -128,16 +91,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "defaults": [],
-                            "remark": ""
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Preferred Title for Work",
                         "remark": "http://access.rdatoolkit.org/rdachp6_rda6-2036.html"
@@ -146,13 +99,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber",
                         "propertyLabel": "Part number"
                     },
@@ -160,13 +106,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
                         "propertyLabel": "Part name"
                     },
@@ -174,14 +113,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Title:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note"
@@ -189,7 +124,10 @@
                 ],
                 "resourceLabel": "Work Title",
                 "id": "lc:RT:bf2:WorkTitle",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -197,13 +135,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Variant Title for Work",
                         "remark": "http://access.rdatoolkit.org/rdachp6_rda6-2658.html",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle"
@@ -212,14 +143,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Title:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note"
@@ -227,7 +154,10 @@
                 ],
                 "resourceLabel": "Work Title Variation",
                 "id": "lc:RT:bf2:WorkVariantTitle",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -235,20 +165,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Note Text"
                     }
                 ],
                 "id": "lc:RT:bf2:Title:Note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
-                "resourceLabel": "Title note"
+                "resourceLabel": "Title note",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -256,13 +182,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Variant Title",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-4013.html"
@@ -271,13 +190,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/variantType",
                         "propertyLabel": "Variant title type"
                     },
@@ -285,23 +197,21 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Title note",
-                        "remark": ""
+                        "propertyLabel": "Title note"
                     }
                 ],
                 "id": "lc:RT:bf2:Title:VarTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
-                "resourceLabel": "Variant Title"
+                "resourceLabel": "Variant Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -309,13 +219,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Parallel Title",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3695.html"
@@ -324,13 +227,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
                         "propertyLabel": "Subtitle",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3939.html"
@@ -339,14 +235,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Title:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note",
@@ -355,7 +247,10 @@
                 ],
                 "id": "lc:RT:bf2:ParallelTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ParallelTitle",
-                "resourceLabel": "Parallel Title"
+                "resourceLabel": "Parallel Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -363,20 +258,16 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Key Title"
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/KeyTitle",
                 "id": "lc:RT:bf2:Title:KeyTitle",
-                "resourceLabel": "Key Title"
+                "resourceLabel": "Key Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -384,20 +275,16 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Abbreviated Title"
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle",
                 "id": "lc:RT:bf2:Title:AbbrTitle",
-                "resourceLabel": "Abbreviated Title"
+                "resourceLabel": "Abbreviated Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -405,20 +292,16 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
                         "propertyLabel": "Collective Title"
                     }
                 ],
                 "id": "lc:RT:bf2:Title:CollTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CollectiveTitle",
-                "resourceLabel": "Collective Title"
+                "resourceLabel": "Collective Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -426,13 +309,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title00MarcKey",
                         "propertyLabel": "LC Extension: title00MarcKey"
                     },
@@ -440,13 +316,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title00MatchKey",
                         "propertyLabel": "LC Extension: title00MatchKey"
                     },
@@ -454,13 +323,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title10MarcKey",
                         "propertyLabel": "LC Extension: title10MarcKey"
                     },
@@ -468,13 +330,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title10MatchKey",
                         "propertyLabel": "LC Extension: title10MatchKey"
                     },
@@ -482,13 +337,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title11MarcKey",
                         "propertyLabel": "LC Extension: title11MarcKey"
                     },
@@ -496,13 +344,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title11MatchKey",
                         "propertyLabel": "LC Extension: title11MatchKey"
                     },
@@ -510,13 +351,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title30MarcKey",
                         "propertyLabel": "LC Extension: title30MarcKey"
                     },
@@ -524,13 +358,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title30MatchKey",
                         "propertyLabel": "LC Extension: title30MatchKey"
                     },
@@ -538,13 +365,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title40MarcKey",
                         "propertyLabel": "LC Extension: title40MarcKey"
                     },
@@ -552,13 +372,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/title40MatchKey",
                         "propertyLabel": "LC Extension: title40MatchKey"
                     },
@@ -566,27 +379,23 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/titleSortKey",
                         "propertyLabel": "LC Extension: titleSortKey"
                     }
                 ],
                 "id": "lc:RT:bf2:BflcTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc",
-                "resourceLabel": "Title: BIBFRAME 2.0 LC Extension"
+                "resourceLabel": "Title: BIBFRAME 2.0 LC Extension",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "title": "BIBFRAME 2.0 Title Information",
         "date": "2017-05-26",
         "author": "NDMSO",
         "id": "lc:profile:bf2:Title",
-        "remark": "",
-        "description": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc."
+        "description": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }
