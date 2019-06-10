@@ -9,23 +9,18 @@
                     {
                         "propertyLabel": "Agent",
                         "valueConstraint": {
-                            "repeatable": "true",
-                            "useValuesFrom": [],
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Person",
                                 "lc:RT:bf2:Agent:Family",
                                 "lc:RT:bf2:Agent:CorporateBody",
                                 "lc:RT:bf2:Agent:Jurisdiction",
                                 "lc:RT:bf2:Agent:Conference"
-                            ],
-                            "editable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "type": "resource",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "resourceTemplates": []
+                        "repeatable": "true"
                     },
                     {
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
@@ -33,19 +28,17 @@
                         "type": "resource",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Role"
-                            ],
-                            "useValuesFrom": [],
-                            "editable": "true",
-                            "repeatable": "true",
-                            "defaults": []
+                            ]
                         },
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
-                ]
+                ],
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
@@ -55,22 +48,18 @@
                     {
                         "propertyLabel": "Agent",
                         "valueConstraint": {
-                            "repeatable": "true",
-                            "useValuesFrom": [],
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:bfPerson",
                                 "lc:RT:bf2:Agent:Family",
                                 "lc:RT:bf2:Agent:CorporateBody",
                                 "lc:RT:bf2:Agent:Jurisdiction",
                                 "lc:RT:bf2:Agent:Conference"
-                            ],
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "type": "resource",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "resourceTemplates": []
+                        "repeatable": "true"
                     },
                     {
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
@@ -78,23 +67,24 @@
                         "type": "resource",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Role"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": []
+                            ]
                         },
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
-                ]
+                ],
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:AgentsContribution",
         "title": "BIBFRAME 2.0 Agents Contribution",
         "date": "2017-05-13",
         "description": "Creators and Contributors",
-        "author": "NDMSO"
+        "author": "NDMSO",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }

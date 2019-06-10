@@ -7,13 +7,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Series Statement and ISSN",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
                         "remark": "http://access.rdatoolkit.org/2.12.html"
@@ -22,13 +15,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
                         "propertyLabel": "Series Numbering",
                         "remark": "http://access.rdatoolkit.org/2.12.9.html"
@@ -37,13 +23,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subseriesStatement",
                         "propertyLabel": "Subseries Title and ISSN",
                         "remark": "http://access.rdatoolkit.org/2.12.10.html"
@@ -52,13 +31,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subseriesEnumeration",
                         "propertyLabel": "Numbering within Subseries",
                         "remark": "http://access.rdatoolkit.org/2.12.17.html"
@@ -67,14 +39,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note"
@@ -83,13 +51,17 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "id": "lc:RT:bf2:SeriesInformation",
                 "resourceLabel": "Series Statement",
-                "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html"
+                "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:SeriesInformation",
         "title": "BIBFRAME 2.0 Series Information",
         "date": "2017-06-07",
         "author": "NDMSO",
-        "description": "Instance, Series Information"
+        "description": "Instance, Series Information",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }

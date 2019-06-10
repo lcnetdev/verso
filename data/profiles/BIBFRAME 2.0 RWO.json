@@ -7,16 +7,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Affiliation"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -25,16 +22,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
-                                "dataTypeURI": "",
                                 "dataTypeLabel": "SKOS"
-                            },
-                            "defaultURI": "",
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
                         "propertyLabel": "Input Affiliation (RDA 9.13, RDA 11.5)"
@@ -43,13 +34,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Affiliation Start Date",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationStart"
                     },
@@ -57,20 +41,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationEnd",
                         "propertyLabel": "Affiliation End Date"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:Affiliation",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
-                "resourceLabel": "Affiliation"
+                "resourceLabel": "Affiliation",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -78,16 +58,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/languages"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Language"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Language of Agent (RDA 9.14, RDA 10.8, RDA 11.8)",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLanguage"
@@ -95,7 +72,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:AssociatedLanguage",
                 "resourceLabel": "Associated Language",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Language"
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Language",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -103,16 +83,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#birthPlace"
@@ -121,13 +98,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#birthPlace",
                         "propertyLabel": "Input Place of Birth (RDA 9.8)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5029.html"
@@ -135,7 +105,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:PlaceofBirth",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Associated Locale: Place of Birth"
+                "resourceLabel": "Associated Locale: Place of Birth",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -143,16 +116,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#deathPlace"
@@ -161,13 +131,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#deathPlace",
                         "propertyLabel": "Input Place of Death (RDA 9.9)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5062.html"
@@ -175,7 +138,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:PlaceofDeath",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Associated Locale: Place of Death"
+                "resourceLabel": "Associated Locale: Place of Death",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -183,16 +149,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Country"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -201,13 +164,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Input Country Associated with Person (RDA 9.10)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5089.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -216,13 +172,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate",
                         "propertyLabel": "Start Date Associated with Country"
                     },
@@ -230,20 +179,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "End Date Associated with Country"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:Country",
                 "resourceLabel": "Associated Locale: Country",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -251,17 +196,14 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
                                 "http://id.loc.gov/authorities/subjects"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF/LCSH",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -270,13 +212,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Input Place of Residence (RDA 9.11)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5121.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -285,13 +220,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Place of Residence Start Date",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate"
                     },
@@ -299,20 +227,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "Place of Residence End Date"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:PlaceOfResidence",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Associated Locale: Place of Residence"
+                "resourceLabel": "Associated Locale: Place of Residence",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -320,17 +244,14 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
                                 "http://id.loc.gov/authorities/subjects"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search Location",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -339,13 +260,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Input Location of Conference, Etc. (RDA 11.3.2)",
                         "remark": "http://access.rdatoolkit.org/rdachp11_rda11-4164.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -353,7 +267,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:LocationOfConference",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Associated Locale: Location of Conference"
+                "resourceLabel": "Associated Locale: Location of Conference",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -361,17 +278,14 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
                                 "http://id.loc.gov/authorities/subjects"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCNAF/LCSH",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -380,13 +294,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Input Other Place Associated with Corporate Body (RDA 11.3.3)",
                         "remark": "http://access.rdatoolkit.org/rdachp11_rda11-4260.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLocale"
@@ -395,13 +302,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Other Place Start Date",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate"
                     },
@@ -409,20 +309,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "Other Place End Date"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:OtherPlace",
                 "resourceLabel": "Associated Locale: Other Associated Place",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -430,13 +326,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate",
                         "propertyLabel": "Period of Activity Start Date"
                     },
@@ -444,13 +333,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "Period of Activity End Date"
                     },
@@ -458,13 +340,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#establishDate",
                         "propertyLabel": "Establishment Date"
                     },
@@ -472,20 +347,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#terminateDate",
                         "propertyLabel": "Termination Date"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:Dates",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
-                "resourceLabel": "Dates"
+                "resourceLabel": "Dates",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -493,16 +364,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#fieldOfActivity"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#fieldOfActivity",
                         "propertyLabel": "Search LCSH"
@@ -511,14 +379,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#fieldOfActivity"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Input Field of Activity (RDA 9.15, RDA 11.10)"
@@ -527,13 +391,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Field of Activity Start Date",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate"
                     },
@@ -541,20 +398,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "Field of Activity End Date"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:FieldofActivity",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
-                "resourceLabel": "Field of Activity"
+                "resourceLabel": "Field of Activity",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -562,17 +415,14 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/demographicTerms",
                                 "http://id.loc.gov/authorities/subjects"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#gender"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#gender",
                         "propertyLabel": "Search LCDGT/LCSH"
@@ -581,14 +431,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:Dates"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Dates Associated with Gender",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#DateNameElement"
@@ -596,7 +442,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:Gender",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
-                "resourceLabel": "Gender"
+                "resourceLabel": "Gender",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -604,17 +453,14 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects",
                                 "http://id.loc.gov/authorities/demographicTerms"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Occupation"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyLabel": "Search LCSH/LCDGT",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -623,14 +469,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#Occupation"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Input Profession or Occupation (RDA 9.16)",
@@ -640,13 +482,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Start Date Associated with Profession or Occupation",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityStartDate"
                     },
@@ -654,20 +489,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#activityEndDate",
                         "propertyLabel": "End Date Associated with Profession or Occupation"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:Occupation",
                 "resourceLabel": "Occupation",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Occupation"
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Occupation",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -675,16 +506,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#prominentFamilyMember"
-                            },
-                            "defaults": []
+                            }
                         },
                         "remark": "http://access.rdatoolkit.org/rdachp10_rda10-549.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
@@ -693,7 +521,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:ProminentFamilyMember",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#prominentFamilyMember",
-                "resourceLabel": "Prominent Family Member"
+                "resourceLabel": "Prominent Family Member",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -701,13 +532,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#honoraryTitle",
                         "propertyLabel": "Honorary Title (RDA 9.4)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4631.html"
@@ -715,7 +539,10 @@
                 ],
                 "id": "lc:RT:bf2:Agents:RWO:HonoraryTitle",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#honoraryTitle",
-                "resourceLabel": "Honorary Title"
+                "resourceLabel": "Honorary Title",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -723,21 +550,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Label",
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "remark": ""
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label"
                     }
                 ],
                 "id": "lc:RT:bf2:Agents:skosConcept",
                 "resourceLabel": "Concept",
-                "resourceURI": "http://www.w3.org/2004/02/skos/core#Concept"
+                "resourceURI": "http://www.w3.org/2004/02/skos/core#Concept",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -745,13 +567,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Authorized Access Point for the Person (RDA 9.19)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5464.html",
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label"
@@ -760,13 +575,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Date of Birth (RDA 9.3.2) CORE ELEMENT",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4490.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#birthDate"
@@ -775,13 +583,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Date of Death (RDA 9.3.3) CORE ELEMENT",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4542.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#deathDate"
@@ -790,14 +591,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:Dates"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Period of Activity of Person (RDA 9.3.4) CORE IF...",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4588.html",
@@ -807,13 +604,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Title of Person (RDA 9.4) CORE IF ...",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4631.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#TermsOfAddressNameElement"
@@ -822,13 +612,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#honoraryTitle",
                         "propertyLabel": "Honorary Title (RDA 9.4)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4631.html"
@@ -837,13 +620,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyLabel": "Other Designation Associated with Person (RDA 9.6) CORE IF ...",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-4980.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#entityDescriptor"
@@ -852,14 +628,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:AssociatedLanguage"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Language of Person (RDA 9.14)",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#associatedLanguage",
@@ -869,14 +641,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:Gender"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Gender (RDA 9.7)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5004.html",
@@ -886,17 +654,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:PlaceofBirth",
                                 "lc:RT:bf2:Agents:RWO:PlaceofDeath",
                                 "lc:RT:bf2:Agents:RWO:Country",
                                 "lc:RT:bf2:Agents:RWO:PlaceOfResidence"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Associated Places for Persons (RDA 9.8 - 9.11)",
                         "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5029.html",
@@ -906,14 +670,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:Affiliation"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Affilation (RDA 9.13)",
                         "remark": "http://access.rdatoolkit.org/rdachp11_rda11-5022.html",
@@ -923,14 +683,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:FieldofActivity"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#fieldOfActivity",
                         "propertyLabel": "Field of Activity of Person (RDA 9.15)",
@@ -940,14 +696,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agents:RWO:Occupation"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#occupation",
                         "propertyLabel": "Profession or Occupation (RDA 9.16)",
@@ -957,14 +709,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
-                            ],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "remark": "http://access.rdatoolkit.org/rdachp10_rda10-549.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#prominentFamilyMember",
@@ -974,13 +722,16 @@
                 "id": "lc:RT:bf2:Agent:RWO",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Other Identifying Attributes",
-                "author": "NDMSO"
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "title": "BIBFRAME 2.0 RWO",
         "id": "lc:profile:bf2:Agents:RWO",
         "description": "A madsrdf:RWO is an abstract entity and identifies a Real World Object (RWO) identified by the label of a madsrdf:Authority or madsrdf:DeprecatedAuthority",
         "author": "NDMSO",
-        "date": "2017-05-17"
+        "date": "2017-05-17",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }
