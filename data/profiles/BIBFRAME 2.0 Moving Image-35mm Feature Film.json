@@ -280,10 +280,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Capture"
-                            ],
-                            "valueDataType": {
-                                "dataTypeLabel": "Place of capture:"
-                            }
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/capture",
                         "propertyLabel": "Capture information"

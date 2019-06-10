@@ -22,11 +22,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeLabel": "SKOS"
-                            }
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
                         "propertyLabel": "Input Affiliation (RDA 9.13, RDA 11.5)"
                     },
