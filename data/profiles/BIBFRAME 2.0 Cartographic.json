@@ -549,7 +549,6 @@
                                 "http://id.loc.gov/vocabulary/mpolarity"
                             ],
                             "valueDataType": {
-                                "dataTypeLabel": "Polarity",
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Polarity"
                             }
                         },
@@ -897,7 +896,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {},
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "Geographic Classification"
                     }

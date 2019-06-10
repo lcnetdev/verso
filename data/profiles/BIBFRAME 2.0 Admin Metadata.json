@@ -7,11 +7,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "remark": "http://id.loc.gov/ontologies/bflc/catalogerId"
-                            }
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
                         "propertyLabel": "Your cataloger ID (Windows ID)"
                     },
@@ -21,7 +16,6 @@
                         "type": "literal",
                         "valueConstraint": {
                             "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the original metadata first created.",
                                 "dataTypeURI": "http://www.w3.org/2001/XMLSchema#date"
                             }
                         },
@@ -34,7 +28,6 @@
                         "type": "literal",
                         "valueConstraint": {
                             "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the metadata was modified.",
                                 "dataTypeURI": "http://www.w3.org/2001/XMLSchema#dateTime"
                             }
                         },
@@ -165,7 +158,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {},
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/profile",
                         "propertyLabel": "Profile",
                         "remark": "The profile code for the resource"
@@ -228,11 +220,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the metadata was modified."
-                            }
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
                         "propertyLabel": "Change date"
                     },
@@ -367,7 +354,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {},
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/profile",
                         "propertyLabel": "Profile",
                         "remark": "The profile code for the resource"
@@ -376,11 +362,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "remark": "http://id.loc.gov/ontologies/bflc/catalogerId"
-                            }
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
                         "propertyLabel": "Your cataloger ID (Windows ID)"
                     },
@@ -388,11 +369,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeLabelHint": "Date or date and time on which the original metadata first created."
-                            }
-                        },
                         "propertyLabel": "Creation date",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate"
                     }
