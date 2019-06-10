@@ -65,9 +65,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "valueDataType": {
-                                "dataTypeURI": "http://www.loc.gov/standards/datetime/pre-submission.html",
-                                "dataTypeLabel": "EDTF",
-                                "dataTypeLabelHint": "ISO"
+                                "dataTypeURI": "http://www.loc.gov/standards/datetime/pre-submission.html"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/originDate",
@@ -601,11 +599,6 @@
                     {
                         "propertyLabel": "Dimensions",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/dimensions",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeLabelHint": "4 3/4 in."
-                            }
-                        },
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",

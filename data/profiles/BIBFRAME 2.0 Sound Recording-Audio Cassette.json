@@ -65,8 +65,7 @@
                         "type": "literal",
                         "valueConstraint": {
                             "valueDataType": {
-                                "dataTypeURI": "http://www.loc.gov/standards/datetime/pre-submission.html",
-                                "dataTypeLabelHint": "ISO"
+                                "dataTypeURI": "http://www.loc.gov/standards/datetime/pre-submission.html"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/originDate",

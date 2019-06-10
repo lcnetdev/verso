@@ -56,8 +56,7 @@
                                 "lc:RT:bf2:Form"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
-                                "dataTypeLabel": "Series enumeration"
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
