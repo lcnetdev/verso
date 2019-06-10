@@ -23,11 +23,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "remark": "http://id.loc.gov/ontologies/bibframe/Place"
-                            }
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Record Place (if it does not appear above)",
                         "remark": "http://access.rdatoolkit.org/6.5.html"
