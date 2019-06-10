@@ -7,14 +7,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Identifiers:Barcode"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                         "propertyLabel": "Barcode"
@@ -23,16 +19,12 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Identifiers:LC",
                                 "lc:RT:bf2:Identifiers:DDC",
                                 "lc:RT:bf2:Identifiers:Shelfmark"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                         "propertyLabel": "Call numbers"
@@ -41,13 +33,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/enumerationAndChronology",
                         "propertyLabel": "Enumeration and chronology"
                     },
@@ -55,10 +40,7 @@
                         "mandatory": "true",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -76,13 +58,6 @@
                         "mandatory": "true",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
                         "propertyLabel": "Shelving location"
                     },
@@ -90,13 +65,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
                         "propertyLabel": "Electronic location"
                     },
@@ -104,13 +72,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy",
                         "propertyLabel": "Usage and access policy"
                     },
@@ -118,13 +79,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note"
                     },
@@ -132,13 +86,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/acquisitionSource",
                         "propertyLabel": "Contact information (RDA 4.3)",
                         "remark": "http://access.rdatoolkit.org/rdachp4_rda4-93.html"
@@ -146,7 +93,10 @@
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "resourceLabel": "BIBFRAME 2.0 Item",
-                "id": "lc:RT:bf2:Item"
+                "id": "lc:RT:bf2:Item",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -154,14 +104,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Lending or Access Policy"
@@ -169,7 +115,10 @@
                 ],
                 "id": "lc:RT:bf2:Item:Access",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy",
-                "resourceLabel": "Lending or Access Policy"
+                "resourceLabel": "Lending or Access Policy",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -177,14 +126,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Use or Reproduction Policy"
@@ -192,7 +137,10 @@
                 ],
                 "id": "lc:RT:bf2:Item:Use",
                 "resourceLabel": "Use or Reproduction Policy",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -200,14 +148,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Retention Policy"
@@ -215,7 +159,10 @@
                 ],
                 "id": "lc:RT:bf2:Item:Retention",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy",
-                "resourceLabel": "Retention Policy"
+                "resourceLabel": "Retention Policy",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -223,13 +170,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Immediate Source of Acquisition of Item (RDA 2.19)",
                         "remark": "http://access.rdatoolkit.org/2.19.html"
@@ -237,7 +177,10 @@
                 ],
                 "id": "lc:RT:bf2:Item:ImmAcqSource",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition",
-                "resourceLabel": "Immediate Source of Acquisition"
+                "resourceLabel": "Immediate Source of Acquisition",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -245,20 +188,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Enumeration"
                     }
                 ],
                 "id": "lc:RT:bf2:Item:Enumeration",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Enumeration",
-                "resourceLabel": "Enumeration"
+                "resourceLabel": "Enumeration",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -266,20 +205,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Chronology"
                     }
                 ],
                 "id": "lc:RT:bf2:Item:Chronology",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Chronology",
-                "resourceLabel": "Chronology"
+                "resourceLabel": "Chronology",
+                "author": "NDMSO",
+                "date": "2019-06-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Item",
@@ -287,6 +222,6 @@
         "description": "Item for all formats (testing)",
         "date": "2017-08-08",
         "author": "NDMSO",
-        "remark": ""
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
     }
 }
