@@ -374,7 +374,7 @@
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:SoundCDR:Instance",
@@ -744,7 +744,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:SoundCDR:Item",
@@ -754,6 +754,9 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
                         "type": "resource",
                         "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -836,7 +839,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -868,7 +871,7 @@
                 "resourceLabel": "Production Method",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "author": "NDMSO",
@@ -876,6 +879,6 @@
         "description": "Work, Instance, Item for Audio CD-R",
         "id": "lc:profile:bf2:SoundCDR",
         "title": "BIBFRAME 2.0 Sound Recording-Audio CD-R",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }

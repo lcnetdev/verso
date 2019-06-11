@@ -31,7 +31,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -55,7 +55,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Classification",
@@ -64,6 +64,6 @@
         "date": "2019-05-01",
         "author": "NDMSO",
         "adherence": "RDA",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }
