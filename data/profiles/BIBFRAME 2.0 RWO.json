@@ -44,7 +44,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
                 "resourceLabel": "Affiliation",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -69,7 +69,7 @@
                 "resourceLabel": "Associated Language",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Language",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -102,7 +102,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "resourceLabel": "Associated Locale: Place of Birth",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -135,7 +135,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "resourceLabel": "Associated Locale: Place of Death",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -182,7 +182,7 @@
                 "resourceLabel": "Associated Locale: Country",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -230,7 +230,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "resourceLabel": "Associated Locale: Place of Residence",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -264,7 +264,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "resourceLabel": "Associated Locale: Location of Conference",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -312,7 +312,7 @@
                 "resourceLabel": "Associated Locale: Other Associated Place",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -350,7 +350,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Dates",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -401,7 +401,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Field of Activity",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -439,7 +439,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Gender",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -492,7 +492,7 @@
                 "resourceLabel": "Occupation",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Occupation",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -518,7 +518,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#prominentFamilyMember",
                 "resourceLabel": "Prominent Family Member",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -536,7 +536,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#honoraryTitle",
                 "resourceLabel": "Honorary Title",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -553,7 +553,7 @@
                 "resourceLabel": "Concept",
                 "resourceURI": "http://www.w3.org/2004/02/skos/core#Concept",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -718,7 +718,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Other Identifying Attributes",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],

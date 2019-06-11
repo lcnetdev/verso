@@ -65,7 +65,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -108,7 +108,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium of Performance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -151,7 +151,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/PerformedMedium",
                 "resourceLabel": "Performed Medium",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -174,7 +174,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Declared",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -225,7 +225,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Performed",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -264,7 +264,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance",
                 "resourceLabel": "Individual Medium of Performance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -296,7 +296,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance",
                 "resourceLabel": "Ensemble Medium of Performance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -345,7 +345,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
                 "resourceLabel": "Agent, Role, Medium of Performance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -368,7 +368,7 @@
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Doubling Medium of Performance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
