@@ -21,7 +21,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "Form/Genre",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -56,7 +56,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
                 "resourceLabel": "Geographic coverage",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -78,7 +78,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "Form/Genre Test",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
