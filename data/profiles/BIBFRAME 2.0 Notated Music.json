@@ -391,7 +391,7 @@
                 "resourceLabel": "New BIBFRAME Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -632,7 +632,7 @@
                 "resourceLabel": "Search Existing BIBFRAME Work and Add Expression Elements to Create New BIBFRAME Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -926,7 +926,7 @@
                 "resourceLabel": "Add BIBFRAME Instance",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:NotatedMusic:Instance",
@@ -1247,7 +1247,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:NotatedMusic:Item",
@@ -1257,6 +1257,9 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
                         "type": "resource",
                         "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -1339,7 +1342,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1378,7 +1381,7 @@
                 "resourceLabel": "Form of Musical Notation",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1433,7 +1436,7 @@
                 "resourceLabel": "Medium of Performance: Combining Facets",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1571,7 +1574,7 @@
                 "resourceLabel": "Medium of Performance: Individual Facets",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "author": "NDMSO",
@@ -1579,6 +1582,6 @@
         "description": "Work, Expression, Instance for Notated Music",
         "id": "lc:profile:bf2:NotatedMusic",
         "title": "BIBFRAME 2.0 Notated Music",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }

@@ -22,7 +22,7 @@
                 "resourceLabel": "Search subjects",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -67,7 +67,7 @@
                 "resourceLabel": "Subject components",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -106,7 +106,7 @@
                 "resourceLabel": "Input subject strings",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -129,7 +129,7 @@
                 "resourceLabel": "Heading or Topical subdivision",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -151,7 +151,7 @@
                 "resourceLabel": "Form subdivision",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -173,7 +173,7 @@
                 "resourceLabel": "Chronological subdivision",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -203,7 +203,7 @@
                 "resourceLabel": "Geographic heading or subdivision",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -225,7 +225,7 @@
                 "resourceLabel": "Subject-Topic",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -253,7 +253,7 @@
                 "resourceLabel": "Subject-Agent",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -305,7 +305,7 @@
                 "resourceLabel": "Expanded subjects",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -334,7 +334,7 @@
                 "resourceLabel": "Chronological subdivision test",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -356,7 +356,7 @@
                 "resourceLabel": "Topical subdivision",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -378,7 +378,7 @@
                 "resourceLabel": "Subject-Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Topic",
@@ -386,6 +386,6 @@
         "description": "Subject of Work",
         "date": "2017-05-13",
         "author": "NDMSO",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }
