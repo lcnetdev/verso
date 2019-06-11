@@ -51,7 +51,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Work",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -104,7 +104,7 @@
                 "id": "lc:RT:bf2:RelatedExpression",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -156,7 +156,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -174,7 +174,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "remark": "used in rare materials profile",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],

@@ -370,7 +370,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -707,7 +707,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "resourceLabel": "BIBFRAME Instance",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -799,7 +799,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "resourceLabel": "BIBFRAME Item",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -816,7 +816,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Credits",
                 "resourceLabel": "Credits note",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -841,7 +841,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PlayingSpeed",
                 "resourceLabel": "Playing Speed",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],

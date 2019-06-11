@@ -95,7 +95,7 @@
                 "resourceLabel": "BIBFRAME 2.0 Item",
                 "id": "lc:RT:bf2:Item",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -117,7 +117,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy",
                 "resourceLabel": "Lending or Access Policy",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -139,7 +139,7 @@
                 "resourceLabel": "Use or Reproduction Policy",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -161,7 +161,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy",
                 "resourceLabel": "Retention Policy",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -179,7 +179,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition",
                 "resourceLabel": "Immediate Source of Acquisition",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -196,7 +196,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Enumeration",
                 "resourceLabel": "Enumeration",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             },
             {
@@ -213,7 +213,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Chronology",
                 "resourceLabel": "Chronology",
                 "author": "NDMSO",
-                "date": "2019-06-10",
+                "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
             }
         ],
