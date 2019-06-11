@@ -54,7 +54,7 @@
                 "resourceLabel": "Publication",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -122,7 +122,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -177,7 +177,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -203,7 +203,7 @@
                 "resourceLabel": "Place",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -236,7 +236,7 @@
                 "resourceLabel": "Name",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -290,7 +290,7 @@
                 "resourceLabel": "Production",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:PublicationDistributionManufactureInformation",
@@ -298,6 +298,6 @@
         "description": "Publication, Distribution, Manufacture Activity",
         "date": "2017-06-02",
         "author": "NDMSO",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }

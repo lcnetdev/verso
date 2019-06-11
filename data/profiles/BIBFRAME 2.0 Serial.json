@@ -342,7 +342,7 @@
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:Serial:Instance",
@@ -627,7 +627,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "id": "lc:RT:bf2:Serial:Item",
@@ -637,6 +637,9 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
                         "type": "resource",
                         "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
                             },
@@ -751,7 +754,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -785,7 +788,7 @@
                 "resourceLabel": "Title",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -924,7 +927,7 @@
                 "resourceLabel": "Related Work",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1005,7 +1008,7 @@
                 "resourceLabel": "Related Instance",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1047,7 +1050,7 @@
                 "resourceLabel": "Enumeration And Chronology",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -1086,7 +1089,7 @@
                 "resourceLabel": "Frequency",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "author": "NDMSO",
@@ -1094,6 +1097,6 @@
         "description": "Work, Instance, Item for Serials",
         "id": "lc:profile:bf2:Serial",
         "title": "BIBFRAME 2.0 Serial",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }

@@ -35,7 +35,7 @@
                 "resourceLabel": "Broadcast Standard",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -85,7 +85,7 @@
                 "resourceLabel": "Capture information",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -115,7 +115,7 @@
                 "resourceLabel": "Place of capture",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -137,7 +137,7 @@
                 "id": "lc:RT:bf2:CaptureStorage",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -160,7 +160,7 @@
                 "resourceLabel": "Digital Characteristics",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -185,7 +185,7 @@
                 "resourceLabel": "Encoding Format",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -215,7 +215,7 @@
                 "resourceLabel": "Extent",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -233,7 +233,7 @@
                 "resourceLabel": "File Size",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -275,7 +275,7 @@
                 "resourceLabel": "File Type",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -310,7 +310,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/IntendedAudience",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -352,7 +352,7 @@
                 "resourceLabel": "Playback Channels",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -377,7 +377,7 @@
                 "resourceLabel": "Playing Speed",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -412,7 +412,7 @@
                 "resourceLabel": "Presentation Format",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -448,7 +448,7 @@
                 "resourceLabel": "Production Method",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -477,7 +477,7 @@
                 "resourceLabel": "Projection Speed",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -519,7 +519,7 @@
                 "resourceLabel": "Recording Medium (Optical)",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -560,7 +560,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RecordingMedium",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -583,7 +583,7 @@
                 "resourceLabel": "Regional Encoding",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -601,7 +601,7 @@
                 "resourceLabel": "Resolution",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -643,7 +643,7 @@
                 "resourceLabel": "Sound Content",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -678,7 +678,7 @@
                 "resourceLabel": "Special Playback Characteristic",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -720,7 +720,7 @@
                 "resourceLabel": "Type of Recording (Digital)",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -761,7 +761,7 @@
                 "resourceLabel": "Type of Recording (Analog)",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -809,7 +809,7 @@
                 "resourceLabel": "Instrument",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -857,7 +857,7 @@
                 "resourceLabel": "Voice",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -905,7 +905,7 @@
                 "resourceLabel": "Ensemble",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -923,7 +923,7 @@
                 "resourceLabel": "Medium of Performance Statement",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -941,7 +941,7 @@
                 "resourceLabel": "Encoding Format",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -973,7 +973,7 @@
                 "resourceLabel": "File Type",
                 "author": "NDMSO",
                 "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Xtras",
@@ -981,6 +981,6 @@
         "date": "2018-09-26",
         "author": "NDMSO",
         "description": "Extra submenus for format profiles",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }
