@@ -53,7 +53,7 @@
                 "resourceLabel": "Series Statement",
                 "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
