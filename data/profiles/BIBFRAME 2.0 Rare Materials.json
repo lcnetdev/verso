@@ -769,21 +769,16 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Illustration"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Illustrative Content",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Illustration",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/7.15.html"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Illustrative Content (if not on list)"
                     }
                 ],
                 "id": "lc:RT:bf2:RareMat:Illus",
