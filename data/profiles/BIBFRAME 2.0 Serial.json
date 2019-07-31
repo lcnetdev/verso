@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -73,11 +73,15 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Place"
-                            ]
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names",
+                                "http://id.loc.gov/authorities/subjects"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
                         "propertyLabel": "Place of Origin of the Work",
@@ -119,7 +123,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/maudience"
@@ -210,7 +214,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/contentTypes"
@@ -260,7 +264,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/millus"
@@ -329,19 +333,18 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Serial:RelatedInstance"
+                                "lc:RT:bf2:Serial:Instance"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
-                        "propertyLabel": "Related Manifestations",
-                        "remark": "http://access.rdatoolkit.org/rdachp27_rda27-40.html"
+                        "propertyLabel": "Has BIBFRAME Instance"
                     }
                 ],
                 "id": "lc:RT:bf2:Serial:Work",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -436,7 +439,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/issuance"
@@ -484,7 +487,7 @@
                         "propertyLabel": "Media type",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mediaTypes"
@@ -506,7 +509,7 @@
                         "propertyLabel": "Carrier type",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/carriers"
@@ -626,7 +629,7 @@
                 "resourceLabel": "BIBFRAME Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -635,7 +638,7 @@
                     {
                         "propertyLabel": "Held by",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/organizations"
@@ -707,7 +710,7 @@
                     },
                     {
                         "propertyLabel": "Shelving call numbers",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifedBy",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMark",
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Identifiers:LC"
@@ -753,7 +756,7 @@
                 "resourceLabel": "BIBFRAME Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -787,7 +790,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
                 "resourceLabel": "Title",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -795,7 +798,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -926,7 +929,7 @@
                 "id": "lc:RT:bf2:Serial:RelatedWork",
                 "resourceLabel": "Related Work",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -934,7 +937,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -950,7 +953,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
                         "propertyLabel": "Record Related Manifestation Authorized Access Point",
                         "remark": "http://access.rdatoolkit.org/27.html"
                     },
@@ -1007,7 +1010,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1049,7 +1052,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology",
                 "resourceLabel": "Enumeration And Chronology",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1057,7 +1060,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "target",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/frequencies"
@@ -1088,7 +1091,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Frequency",
                 "resourceLabel": "Frequency",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

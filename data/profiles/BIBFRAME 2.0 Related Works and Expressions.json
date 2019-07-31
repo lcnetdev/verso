@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -30,6 +30,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/Relation"
+                            }
+                        },
                         "propertyLabel": "Relationship Designator for Related Work (RDA Appendix J)",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
                         "remark": "http://access.rdatoolkit.org/rdaappj_rdaj-16.html"
@@ -51,7 +56,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Work",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -59,7 +64,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -104,7 +109,7 @@
                 "id": "lc:RT:bf2:RelatedExpression",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -112,7 +117,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "target",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/instances"
@@ -156,7 +161,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -174,7 +179,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "remark": "used in rare materials profile",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-07-31",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
