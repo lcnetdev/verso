@@ -1078,22 +1078,16 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Aspect Ratio",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/7.19.1.4.html"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Details of Aspect Ratio",
-                        "remark": "http://access.rdatoolkit.org/7.19.1.4.1.4.html"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Aspect Ratio (if not on list)"
                     },
                     {
                         "mandatory": "false",
@@ -1184,22 +1178,16 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Playback Channels",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.8.html"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note",
-                        "remark": "http://access.rdatoolkit.org/3.16.8.4.html"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Playback Channels (if not on list)"
                     }
                 ],
                 "id": "lc:RT:bf2:MIBluRayDVD:Playback",
@@ -1241,11 +1229,21 @@
                                     "defaultURI": "http://id.loc.gov/vocabulary/mfiletype/video",
                                     "defaultLiteral": "video file"
                                 }
-                            ]
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/FileType"
+                            }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/FileType",
                         "propertyLabel": "File Type",
                         "remark": "http://access.rdatoolkit.org/3.19.2.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/FileType",
+                        "propertyLabel": "Input File Type (if not on list)"
                     }
                 ],
                 "id": "lc:RT:bf2:MIBluRayDVD:FileType",
