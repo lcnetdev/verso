@@ -389,7 +389,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -746,7 +746,7 @@
                 "resourceLabel": "BIBFRAME Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -841,7 +841,7 @@
                 "resourceLabel": "BIBFRAME Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -875,7 +875,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic",
                 "resourceLabel": "Groove Characteristic",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -893,7 +893,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PlayingSpeed",
                 "resourceLabel": "Playing Speed",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

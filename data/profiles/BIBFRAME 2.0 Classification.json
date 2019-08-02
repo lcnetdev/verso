@@ -30,7 +30,7 @@
                 "resourceLabel": "Dewey Decimal Classification",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -54,7 +54,7 @@
                 "resourceLabel": "Library of Congress Classification",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

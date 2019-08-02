@@ -15,20 +15,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents"
-                            }
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "URI for contents"
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "URL for Contents note",
+                        "remark": "Idiomatic property used for structured values."
                     }
                 ],
                 "id": "lc:RT:bf2:Contents",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
                 "resourceLabel": "Contents note",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -45,7 +41,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -62,7 +58,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Script",
                 "resourceLabel": "Script",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -80,7 +76,7 @@
                 "resourceLabel": "Source Consulted",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -98,7 +94,7 @@
                 "resourceLabel": "Summary note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -120,20 +116,16 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent"
-                            }
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "URI for Supplementary Content"
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "URI for Supplementary Content",
+                        "remark": "Idiomatic property used for structured values."
                     }
                 ],
                 "id": "lc:RT:bf2:SupplContent",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent",
                 "resourceLabel": "Supplementary Content",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -151,7 +143,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/SystemRequirement",
                 "resourceLabel": "System Requirement",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
