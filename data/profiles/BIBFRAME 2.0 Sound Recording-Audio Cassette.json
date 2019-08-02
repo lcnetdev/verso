@@ -75,7 +75,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
@@ -85,7 +85,7 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
                         "propertyLabel": "Place of Origin of the Work",
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },

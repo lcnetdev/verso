@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -760,7 +760,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/millus"
@@ -793,7 +793,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -802,7 +802,7 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                         "propertyLabel": "Search works"
                     },
                     {
@@ -842,7 +842,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "https://lookup.ld4l.org/qa/search/linked_data/getty_aat_ld4l_cache"
