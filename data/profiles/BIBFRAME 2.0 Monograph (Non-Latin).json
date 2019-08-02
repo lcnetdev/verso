@@ -255,7 +255,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
+                                "lc:RT:bf2:ColorContent"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/colorContent",
@@ -559,7 +559,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Monograph:RelatedInstance"
+                                "lc:RT:bf2:MonographNR:RelatedInstance"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
@@ -727,7 +727,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
                         "propertyLabel": "Related Manifestations",
                         "remark": "http://access.rdatoolkit.org/27.1.html"
                     },
@@ -766,10 +766,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "propertyLabel": "Record Relationship Designator for Related Manifestation (RDA Appendix J)",
+                        "type": "resource",
+                        "propertyLabel": "Relationship Designator",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
-                        "remark": "http://access.rdatoolkit.org/J.4.html"
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Relation"
+                            ]
+                        }
                     }
                 ],
                 "id": "lc:RT:bf2:MonographNR:RelatedInstance",
@@ -814,7 +818,7 @@
                 ],
                 "id": "lc:RT:bf2:MonographNR:InstTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
-                "resourceLabel": "Native Script Title",
+                "resourceLabel": "Vernacular Title",
                 "author": "NDMSO",
                 "date": "2019-06-11",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
@@ -833,7 +837,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -863,7 +867,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
                 "resourceLabel": "Contents note",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -881,7 +885,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note",
                 "author": "NDMSO",
-                "date": "2019-07-31",
+                "date": "2019-08-02",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
