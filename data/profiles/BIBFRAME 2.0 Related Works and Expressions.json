@@ -130,7 +130,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "target",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/instances"

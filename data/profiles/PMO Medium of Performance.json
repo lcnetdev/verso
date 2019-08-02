@@ -190,7 +190,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/performanceMediums"
@@ -229,7 +229,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/performanceMediums"

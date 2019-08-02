@@ -6,14 +6,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/genreForms"
                             ]
                         },
                         "propertyLabel": "Search LCGFT",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     }
                 ],
@@ -29,7 +29,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/geographicAreas"
