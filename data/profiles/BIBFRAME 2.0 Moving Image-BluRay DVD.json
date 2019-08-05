@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/works"
@@ -59,13 +59,17 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Place"
-                            ]
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names",
+                                "http://id.loc.gov/authorities/subjects"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+                            }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
                         "propertyLabel": "Place of Origin of the Work",
                         "remark": "http://access.rdatoolkit.org/6.5.html"
                     },
@@ -214,7 +218,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/contentTypes"
@@ -303,7 +307,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:MIBluRayDVD:Color"
+                                "lc:RT:bf2:ColorContent"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/colorContent",
@@ -390,7 +394,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -485,7 +489,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/issuance"
@@ -572,7 +576,7 @@
                         "propertyLabel": "Media type",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mediaTypes"
@@ -594,7 +598,7 @@
                         "propertyLabel": "Carrier type",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/carriers"
@@ -847,7 +851,7 @@
                 "resourceLabel": "BIBFRAME Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -856,7 +860,7 @@
                     {
                         "propertyLabel": "Held by",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/organizations"
@@ -876,7 +880,7 @@
                     },
                     {
                         "propertyLabel": "Call numbers",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMark",
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Identifiers:LC",
@@ -988,7 +992,7 @@
                 "resourceLabel": "BIBFRAME Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1018,46 +1022,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note",
                 "author": "NDMSO",
-                "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/mcolor"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/ColorContent"
-                            }
-                        },
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "Color content",
-                        "remark": "http://access.rdatoolkit.org/7.17.html"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note",
-                        "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
-                    }
-                ],
-                "id": "lc:RT:bf2:MIBluRayDVD:Color",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ColorContent",
-                "resourceLabel": "Color content",
-                "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1065,7 +1030,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "target",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/maspect"
@@ -1074,22 +1039,16 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Aspect Ratio",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/7.19.1.4.html"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Details of Aspect Ratio",
-                        "remark": "http://access.rdatoolkit.org/7.19.1.4.1.4.html"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Aspect Ratio (if not on list)"
                     },
                     {
                         "mandatory": "false",
@@ -1109,7 +1068,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AspectRatio",
                 "resourceLabel": "Aspect Ratio",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1139,7 +1098,7 @@
                 "id": "lc:RT:bf2:MIBluRayDVD:URL",
                 "resourceLabel": "URL",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1163,7 +1122,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Event",
                 "resourceLabel": "Event",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1171,7 +1130,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "target",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mplayback"
@@ -1180,29 +1139,23 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "Playback Channels",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.8.html"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note",
-                        "remark": "http://access.rdatoolkit.org/3.16.8.4.html"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Playback Channels (if not on list)"
                     }
                 ],
                 "id": "lc:RT:bf2:MIBluRayDVD:Playback",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels",
                 "resourceLabel": "Playback Channels",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1219,54 +1172,7 @@
                 "id": "lc:RT:bf2:MIBluRayDVD:AccCont",
                 "resourceLabel": "Accessibility Content",
                 "author": "NDMSO",
-                "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "target",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/mfiletype"
-                            ],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/mfiletype/video",
-                                    "defaultLiteral": "video file"
-                                }
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                        "propertyLabel": "File Type",
-                        "remark": "http://access.rdatoolkit.org/3.19.2.html"
-                    }
-                ],
-                "id": "lc:RT:bf2:MIBluRayDVD:FileType",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/FileType",
-                "resourceLabel": "File Type",
-                "author": "NDMSO",
-                "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Encoding Format",
-                        "remark": "http://access.rdatoolkit.org/3.19.3.html"
-                    }
-                ],
-                "id": "lc:RT:bf2:MIBluRayDVD:EncFmt",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/EncodingFormat",
-                "resourceLabel": "Encoding Format",
-                "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

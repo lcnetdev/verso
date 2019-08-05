@@ -200,7 +200,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier",
                 "resourceLabel": "Identifiers",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -248,7 +248,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AudioIssueNumber",
                 "resourceLabel": "Audio Issue Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -265,7 +265,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Barcode",
                 "resourceLabel": "Barcode",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -306,7 +306,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CopyrightRegistration",
                 "resourceLabel": "Copyright Registration Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -342,7 +342,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Ean",
                 "resourceLabel": "EAN",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -371,7 +371,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Eidr",
                 "resourceLabel": "EIDR",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -400,7 +400,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Gtin14Number",
                 "resourceLabel": "GTIN-14",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -434,7 +434,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mstatus"
@@ -451,7 +451,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Isbn",
                 "resourceLabel": "ISBN",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -487,7 +487,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Ismn",
                 "resourceLabel": "ISMN",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -523,7 +523,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Isrc",
                 "resourceLabel": "ISRC",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -562,7 +562,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mstatus"
@@ -579,7 +579,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Issn",
                 "resourceLabel": "ISSN",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -618,7 +618,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mstatus"
@@ -635,7 +635,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/IssnL",
                 "resourceLabel": "ISSN-L",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -650,7 +650,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mstatus"
@@ -667,7 +667,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Lccn",
                 "resourceLabel": "LCCN",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -708,7 +708,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local",
                 "resourceLabel": "Local system number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -744,7 +744,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MatrixNumber",
                 "resourceLabel": "Matrix Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -793,7 +793,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicDistributorNumber",
                 "resourceLabel": "Music Distributor Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -841,7 +841,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicPlate",
                 "resourceLabel": "Music Plate Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -889,7 +889,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/MusicPublisherNumber",
                 "resourceLabel": "Music Publisher Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -925,7 +925,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier",
                 "resourceLabel": "Other Identifier",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -973,7 +973,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/PublisherNumber",
                 "resourceLabel": "Publisher Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1009,7 +1009,45 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Strn",
                 "resourceLabel": "Standard Technical Report Number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "Stock number"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/organizations"
+                            ],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
+                                    "defaultLiteral": "United States. Library of Congress"
+                                }
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+                        "propertyLabel": "Source of stock number"
+                    }
+                ],
+                "id": "lc:RT:bf2:Identifiers:StockNumber",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/StockNumber",
+                "resourceLabel": "Stock Number",
+                "author": "NDMSO",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1045,7 +1083,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Upc",
                 "resourceLabel": "Universal Product Code (UPC)",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1062,7 +1100,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1079,7 +1117,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
                 "resourceLabel": "Source",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1096,7 +1134,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
                 "resourceLabel": "LC item call number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1113,7 +1151,7 @@
                 "resourceLabel": "DDC shelfmark",
                 "id": "lc:RT:bf2:Identifiers:DDC",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1130,7 +1168,7 @@
                 "id": "lc:RT:bf2:Identifiers:Shelfmark",
                 "resourceLabel": "Accession or copy number",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
