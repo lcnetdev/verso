@@ -6,14 +6,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/genreForms"
                             ]
                         },
                         "propertyLabel": "Search LCGFT",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                         "remark": "http://access.rdatoolkit.org/6.3.html"
                     }
                 ],
@@ -21,7 +21,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "Form/Genre",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -29,56 +29,32 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "target",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/geographicAreas"
-                            ]
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage"
+                            }
                         },
-                        "propertyLabel": "(Geographic) Coverage of the Content",
+                        "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                        "propertyLabel": "Note"
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Geographic Coverage (if not on list)"
                     }
                 ],
                 "id": "lc:RT:bf2:Form:Geog",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
                 "resourceLabel": "Geographic coverage",
                 "author": "NDMSO",
-                "date": "2019-06-11",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "target",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/genreForms"
-                            ]
-                        },
-                        "propertyLabel": "Search LCGFT",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
-                    }
-                ],
-                "id": "lc:RT:bf2:FormTest",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
-                "resourceLabel": "Form/Genre Test",
-                "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
