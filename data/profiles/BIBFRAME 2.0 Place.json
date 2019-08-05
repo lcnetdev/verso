@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
@@ -32,7 +32,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "resourceLabel": "Place Associated with a Work",
                 "author": "NDMSO",
-                "date": "2019-06-11",
+                "date": "2019-08-05",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
