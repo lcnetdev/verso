@@ -21,7 +21,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
                 "resourceLabel": "Form/Genre",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -54,7 +54,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
                 "resourceLabel": "Geographic coverage",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

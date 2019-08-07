@@ -53,7 +53,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
                 "resourceLabel": "Publication",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -121,7 +121,7 @@
                 "id": "lc:RT:bf2:DistributionInformation",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -176,7 +176,7 @@
                 "resourceLabel": "Manufacture",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -230,7 +230,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Production",
                 "resourceLabel": "Production",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -256,7 +256,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "resourceLabel": "Place",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -289,7 +289,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
                 "resourceLabel": "Name",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

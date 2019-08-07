@@ -304,7 +304,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -654,7 +654,7 @@
                 "resourceLabel": "BIBFRAME Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -761,7 +761,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "resourceLabel": "BIBFRAME Item",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -810,7 +810,7 @@
                 "id": "lc:RT:bf2:Cartographic:Attributes",
                 "resourceLabel": "Cartographic Attributes",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -828,7 +828,7 @@
                 "id": "lc:RT:bf2:Cartographic:DataType",
                 "resourceLabel": "Cartographic Data Type",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -846,7 +846,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CartographicObjectType",
                 "resourceLabel": "Cartographic Object Type",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -887,7 +887,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Scale",
                 "resourceLabel": "Scale",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -904,7 +904,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
                 "resourceLabel": "Geographic Classification",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -939,7 +939,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Scale",
                 "resourceLabel": "Scale (original)",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
