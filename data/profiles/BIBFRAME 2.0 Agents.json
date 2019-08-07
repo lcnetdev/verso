@@ -133,7 +133,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -309,7 +309,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -499,7 +499,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -684,7 +684,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -774,7 +774,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -814,7 +814,7 @@
                 "resourceLabel": "Addresses",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -866,7 +866,7 @@
                 "resourceLabel": "Addresses, Extended",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -907,7 +907,7 @@
                 "id": "lc:RT:bf2:Agents:RelatedAgents",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Authority",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -959,7 +959,7 @@
                 "id": "lc:RT:bf2:Agents:Source",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Source",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -977,7 +977,7 @@
                 "resourceLabel": "Variant Access Points Representing Agents",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#hasVariant",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1006,7 +1006,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Role",
                 "resourceLabel": "Role",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1035,7 +1035,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Identifier",
                 "resourceLabel": "Identifier",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1052,7 +1052,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1069,7 +1069,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
                 "resourceLabel": "Source",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1103,7 +1103,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
                 "resourceLabel": "Bibframe Person",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
