@@ -60,7 +60,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Work",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -122,7 +122,7 @@
                 "id": "lc:RT:bf2:RelatedExpression",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -130,7 +130,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "target",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://mlvlp04.loc.gov:8230/resources/instances"
@@ -183,7 +183,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
                 "resourceLabel": "Related Instance",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -201,7 +201,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "remark": "used in rare materials profile",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -219,7 +219,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relation",
                 "resourceLabel": "Relationship Designator",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

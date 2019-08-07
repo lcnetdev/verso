@@ -24,7 +24,7 @@
                 "id": "lc:RT:bf2:Language2",
                 "resourceLabel": "Language",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -46,7 +46,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Language",
                 "resourceLabel": "Language of Content",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],

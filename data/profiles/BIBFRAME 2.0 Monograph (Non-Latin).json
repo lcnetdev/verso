@@ -837,7 +837,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -854,12 +854,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents"
-                            }
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
                         "propertyLabel": "URI for contents"
                     }
                 ],
@@ -867,7 +862,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
                 "resourceLabel": "Contents note",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -885,7 +880,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note",
                 "author": "NDMSO",
-                "date": "2019-08-05",
+                "date": "2019-08-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
