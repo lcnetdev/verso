@@ -13,14 +13,6 @@
                     },
                     {
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
-                        "propertyLabel": "Subtitle",
-                        "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3782.html"
-                    },
-                    {
-                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "propertyLabel": "Part number",
@@ -32,6 +24,14 @@
                         "type": "literal",
                         "propertyLabel": "Part name",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
+                        "propertyLabel": "Other Title Information",
+                        "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3782.html"
                     },
                     {
                         "mandatory": "false",
@@ -52,7 +52,7 @@
                 "remark": "Title information relating to a resource: work title, preferred title, instance title, transcribed title, translated title, variant form of title, etc.",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -82,7 +82,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/TransliteratedTitle",
                 "resourceLabel": "Transliterated Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -126,7 +126,7 @@
                 "id": "lc:RT:bf2:WorkTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -156,7 +156,7 @@
                 "id": "lc:RT:bf2:WorkVariantTitle",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -173,7 +173,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Title note",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -210,7 +210,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
                 "resourceLabel": "Variant Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -228,7 +228,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
-                        "propertyLabel": "Subtitle",
+                        "propertyLabel": "Other Title Information",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3939.html"
                     },
                     {
@@ -249,7 +249,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ParallelTitle",
                 "resourceLabel": "Parallel Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -266,7 +266,7 @@
                 "id": "lc:RT:bf2:Title:KeyTitle",
                 "resourceLabel": "Key Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -283,7 +283,7 @@
                 "id": "lc:RT:bf2:Title:AbbrTitle",
                 "resourceLabel": "Abbreviated Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -300,7 +300,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/CollectiveTitle",
                 "resourceLabel": "Collective Title",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -387,7 +387,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bflc",
                 "resourceLabel": "Title: BIBFRAME 2.0 LC Extension",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
