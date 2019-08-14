@@ -37,7 +37,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -76,7 +76,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
