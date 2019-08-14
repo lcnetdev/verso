@@ -45,7 +45,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:RWO"
+                                "lc:RT:bf2:Agents:RWO:IdentifiedbyAuthority"
                             ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
@@ -133,7 +133,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -309,7 +309,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -499,7 +499,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -684,7 +684,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -774,7 +774,7 @@
                     }
                 ],
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -814,7 +814,7 @@
                 "resourceLabel": "Addresses",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -866,7 +866,7 @@
                 "resourceLabel": "Addresses, Extended",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -907,7 +907,7 @@
                 "id": "lc:RT:bf2:Agents:RelatedAgents",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Authority",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -959,7 +959,7 @@
                 "id": "lc:RT:bf2:Agents:Source",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Source",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -977,7 +977,7 @@
                 "resourceLabel": "Variant Access Points Representing Agents",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#hasVariant",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1006,7 +1006,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Role",
                 "resourceLabel": "Role",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1035,7 +1035,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Identifier",
                 "resourceLabel": "Identifier",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1052,7 +1052,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1069,7 +1069,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
                 "resourceLabel": "Source",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1083,7 +1083,7 @@
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyLabel": "Search LCNAF",
+                        "propertyLabel": "Lookup",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person"
                     },
                     {
@@ -1096,14 +1096,150 @@
                             }
                         },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Preferred Name for Person (RDA 9.2.2) CORE ELEMENT"
+                        "propertyLabel": "Input name (if not found above)"
                     }
                 ],
                 "id": "lc:RT:bf2:Agent:bfPerson",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
-                "resourceLabel": "Bibframe Person",
+                "resourceLabel": "Person (test)",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookupResource",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Family",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Family"
+                            }
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input name (if not found above)"
+                    }
+                ],
+                "id": "lc:RT:bf2:Agent:bfFamily",
+                "resourceLabel": "Family (test)",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
+                "author": "NDMSO",
+                "date": "2019-08-14",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookupResource",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Organization"
+                            }
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input name (if not found above)"
+                    }
+                ],
+                "id": "lc:RT:bf2:Agent:bfCorp",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+                "resourceLabel": "Corporate body (test)",
+                "author": "NDMSO",
+                "date": "2019-08-14",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookupResource",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Meeting"
+                            }
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input name (if not found above)"
+                    }
+                ],
+                "id": "lc:RT:bf2:Agent:bfConf",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
+                "resourceLabel": "Conference (test)",
+                "author": "NDMSO",
+                "date": "2019-08-14",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookupResource",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction"
+                            }
+                        },
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input name (if not found above)"
+                    }
+                ],
+                "id": "lc:RT:bf2:Agent:bfJurisdiction",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+                "resourceLabel": "Jurisdiction (test)",
+                "author": "NDMSO",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
