@@ -362,7 +362,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
                 "resourceLabel": "BIBFRAME Work",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -708,7 +708,7 @@
                 "resourceLabel": "BIBFRAME Instance",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -930,7 +930,7 @@
                 "resourceLabel": "BIBFRAME Item",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -960,7 +960,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -984,7 +984,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Event",
                 "resourceLabel": "Event",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -1023,7 +1023,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/RecordingMethod",
                 "resourceLabel": "Type of Recording",
                 "author": "NDMSO",
-                "date": "2019-08-07",
+                "date": "2019-08-14",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
