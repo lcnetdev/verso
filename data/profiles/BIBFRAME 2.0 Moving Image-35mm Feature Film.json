@@ -920,7 +920,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:35mmFeatureFilm:Color"
+                                "lc:RT:bf2:ColorContent"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/colorContent",
