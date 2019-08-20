@@ -7,6 +7,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Contents note",
                         "remark": "http://access.rdatoolkit.org/lcpschp25_lcps25-354.html"
@@ -15,17 +22,22 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "URL for Contents note",
-                        "remark": "Idiomatic property used for structured values."
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyLabel": "URI for contents"
                     }
                 ],
                 "id": "lc:RT:bf2:Contents",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
-                "resourceLabel": "Contents note",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceLabel": "Contents note"
             },
             {
                 "propertyTemplates": [
@@ -33,16 +45,22 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "editable": "true",
+                            "repeatable": "false",
+                            "defaults": []
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Note"
                     }
                 ],
                 "id": "lc:RT:bf2:Note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
-                "resourceLabel": "Note",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceLabel": "Note"
             },
             {
                 "propertyTemplates": [
@@ -50,16 +68,20 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Script"
                     }
                 ],
                 "id": "lc:RT:bf2:Script",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Script",
-                "resourceLabel": "Script",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceLabel": "Script"
             },
             {
                 "propertyTemplates": [
@@ -67,6 +89,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Source Consulted (RDA 5.8.1.3)",
                         "remark": "http://access.rdatoolkit.org/5.8.1.3.html"
@@ -74,10 +103,7 @@
                 ],
                 "id": "lc:RT:bf2:SourceConsulted",
                 "resourceLabel": "Source Consulted",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source"
             },
             {
                 "propertyTemplates": [
@@ -85,6 +111,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Summary note",
                         "remark": "http://access.rdatoolkit.org/7.10.html"
@@ -92,10 +125,7 @@
                 ],
                 "id": "lc:RT:bf2:Summary",
                 "resourceLabel": "Summary note",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary"
             },
             {
                 "propertyTemplates": [
@@ -103,7 +133,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
                         "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent"
                             }
@@ -116,17 +150,22 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-                        "propertyLabel": "URI for Supplementary Content",
-                        "remark": "Idiomatic property used for structured values."
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+                        "propertyLabel": "URI for Supplementary Content"
                     }
                 ],
                 "id": "lc:RT:bf2:SupplContent",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent",
-                "resourceLabel": "Supplementary Content",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceLabel": "Supplementary Content"
             },
             {
                 "propertyTemplates": [
@@ -134,6 +173,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "System Requirement",
                         "remark": "http://access.rdatoolkit.org/3.20.html"
@@ -141,17 +187,13 @@
                 ],
                 "id": "lc:RT:bf2:SysReq",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/SystemRequirement",
-                "resourceLabel": "System Requirement",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceLabel": "System Requirement"
             }
         ],
         "id": "lc:profile:bf2:Note",
         "title": "BIBFRAME 2.0 Note",
         "description": "Notes (and more) for BIBFRAME resources",
         "date": "2017-08-21",
-        "author": "NDMSO",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
+        "author": "NDMSO"
     }
 }

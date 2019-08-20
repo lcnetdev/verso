@@ -7,20 +7,33 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "valueDataType": {},
+                            "defaults": []
+                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
                         "propertyLabel": "DDC Classification number"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
+                        "type": "resource",
+                        "resourceTemplates": [],
                         "valueConstraint": {
+                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/classSchemes"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/edition"
-                            }
+                            },
+                            "defaultURI": "",
+                            "defaultLiteral": "",
+                            "editable": "true",
+                            "defaults": []
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/edition",
                         "propertyLabel": "Dewey Edition"
@@ -28,10 +41,7 @@
                 ],
                 "id": "lc:RT:bf2:DDC",
                 "resourceLabel": "Dewey Decimal Classification",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc"
             },
             {
                 "propertyTemplates": [
@@ -39,6 +49,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
                         "propertyLabel": "LC Classification Number"
                     },
@@ -46,16 +63,21 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "resourceTemplates": [],
+                        "valueConstraint": {
+                            "valueTemplateRefs": [],
+                            "useValuesFrom": [],
+                            "defaults": [],
+                            "valueDataType": {}
+                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemPortion",
-                        "propertyLabel": "Classification item number"
+                        "propertyLabel": "Classification item number",
+                        "remark": ""
                     }
                 ],
                 "id": "lc:RT:bf2:LCC",
                 "resourceLabel": "Library of Congress Classification",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
-                "author": "NDMSO",
-                "date": "2019-08-14",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc"
             }
         ],
         "id": "lc:profile:bf2:Classification",
@@ -63,7 +85,6 @@
         "title": "BIBFRAME 2.0 Classification",
         "date": "2019-05-01",
         "author": "NDMSO",
-        "adherence": "RDA",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
+        "adherence": "RDA"
     }
 }
