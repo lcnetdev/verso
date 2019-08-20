@@ -9,7 +9,7 @@
                         "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://mlvlp04.loc.gov:8230/resources/works"
+                                "http://id.loc.gov/resources/works"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
@@ -837,7 +837,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
                 "resourceLabel": "Note",
                 "author": "NDMSO",
-                "date": "2019-08-14",
+                "date": "2019-08-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -862,7 +862,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
                 "resourceLabel": "Contents note",
                 "author": "NDMSO",
-                "date": "2019-08-14",
+                "date": "2019-08-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
@@ -880,7 +880,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Summary",
                 "resourceLabel": "Summary note",
                 "author": "NDMSO",
-                "date": "2019-08-14",
+                "date": "2019-08-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
