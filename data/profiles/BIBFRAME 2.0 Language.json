@@ -6,23 +6,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/languages"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language",
-                                "remark": ""
-                            },
-                            "valueLanguage": "",
-                            "remark": "",
-                            "editable": "true",
-                            "repeatable": "false",
-                            "defaults": [],
-                            "validatePattern": ""
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/Language",
                         "propertyLabel": "Language of Expression",
@@ -32,7 +23,9 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Language",
                 "id": "lc:RT:bf2:Language2",
                 "resourceLabel": "Language",
-                "remark": ""
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -40,14 +33,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Language of Content"
@@ -55,7 +44,10 @@
                 ],
                 "id": "lc:RT:bf2:Language:Note",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Language",
-                "resourceLabel": "Language of Content"
+                "resourceLabel": "Language of Content",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Language",
@@ -63,6 +55,7 @@
         "date": "2017-05-13",
         "description": "Language",
         "author": "NDMSO",
-        "adherence": "RDA"
+        "adherence": "RDA",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }
