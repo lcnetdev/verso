@@ -6,53 +6,39 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects",
                                 "http://id.loc.gov/authorities/names"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "repeatable": "false",
-                            "editable": "true",
-                            "defaults": []
+                            ]
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Topic",
                         "propertyLabel": "Search LCSH/LCNAF"
                     }
                 ],
                 "id": "lc:RT:bf2:TopicSearch",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Search subjects"
+                "resourceLabel": "Search subjects",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects",
                                 "http://id.loc.gov/authorities/childrensSubjects",
                                 "http://id.loc.gov/authorities/names"
                             ],
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Topic"
-                            },
-                            "editable": "false"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/Topic",
                         "propertyLabel": "Lookup"
@@ -61,7 +47,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "list",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Topic:madsTopic",
@@ -69,13 +54,9 @@
                                 "lc:RT:bf2:Topic:madsTemporal",
                                 "lc:RT:bf2:Topic:madsGenreForm"
                             ],
-                            "useValuesFrom": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject"
-                            },
-                            "repeatable": "true",
-                            "defaults": [],
-                            "editable": "true"
+                            }
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
                         "propertyLabel": "Search Subject Components"
@@ -83,7 +64,10 @@
                 ],
                 "id": "lc:RT:bf2:Components",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Subject components"
+                "resourceLabel": "Subject components",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -91,15 +75,6 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "editable": "true",
-                            "repeatable": "false",
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Input Subject + Subdivision string",
                         "remark": "A human-readable name for the subject."
@@ -107,10 +82,8 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "resource",
-                        "resourceTemplates": [],
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/subjectSchemes"
                             ],
@@ -130,27 +103,22 @@
                 ],
                 "id": "lc:RT:bf2:TopicInput",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Input subject strings"
+                "resourceLabel": "Input subject strings",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects",
                                 "http://id.loc.gov/authorities/names"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "repeatable": "true",
-                            "editable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Search LCSH/LCNAF",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Topic"
@@ -158,26 +126,21 @@
                 ],
                 "id": "lc:RT:bf2:Topic:madsTopic",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Topic",
-                "resourceLabel": "Heading or Topical subdivision"
+                "resourceLabel": "Heading or Topical subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "editable": "true",
-                            "repeatable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Search LCSH",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#GenreForm"
@@ -185,26 +148,21 @@
                 ],
                 "id": "lc:RT:bf2:Topic:madsGenreForm",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#GenreForm",
-                "resourceLabel": "Form subdivision"
+                "resourceLabel": "Form subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "repeatable": "true",
-                            "editable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Search LCSH",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Temporal"
@@ -212,27 +170,22 @@
                 ],
                 "id": "lc:RT:bf2:Topic:madsTemporal",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
-                "resourceLabel": "Chronological subdivision"
+                "resourceLabel": "Chronological subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
                                 "http://id.loc.gov/authorities/subjects"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": ""
-                            },
-                            "editable": "true",
-                            "repeatable": "true",
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "Search LCNAF/LCSH",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
@@ -241,22 +194,16 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "editable": "true",
-                            "repeatable": "false",
-                            "defaults": []
-                        },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Input Geographic Term"
                     }
                 ],
                 "id": "lc:RT:bf2:Topic:madsGeographic",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Geographic heading or subdivision"
+                "resourceLabel": "Geographic heading or subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -264,19 +211,10 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Components"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {
-                                "remark": "",
-                                "dataTypeURI": ""
-                            },
-                            "editable": "true",
-                            "repeatable": "false",
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
                         "propertyLabel": "Topics"
@@ -284,7 +222,10 @@
                 ],
                 "id": "lc:RT:bf2:SubjectTopic",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Subject-Topic"
+                "resourceLabel": "Subject-Topic",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
@@ -292,7 +233,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "list",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Agent:Person",
@@ -302,10 +242,7 @@
                                 "lc:RT:bf2:Topic:madsGeographic",
                                 "lc:RT:bf2:Topic:madsTemporal",
                                 "lc:RT:bf2:Topic:madsGenreForm"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
                         "propertyLabel": "Agents"
@@ -313,22 +250,22 @@
                 ],
                 "id": "lc:RT:bf2:SubjectAgent",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
-                "resourceLabel": "Subject-Agent"
+                "resourceLabel": "Subject-Agent",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects",
                                 "http://id.loc.gov/authorities/names"
                             ],
-                            "defaults": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Topic"
                             }
@@ -340,7 +277,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "list",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Topic:madsTopic",
@@ -349,8 +285,6 @@
                                 "lc:RT:bf2:Topic:madsGenreForm",
                                 "lc:RT:bf2:Topic:madsTopicSub"
                             ],
-                            "useValuesFrom": [],
-                            "defaults": [],
                             "valueDataType": {
                                 "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject"
                             }
@@ -362,35 +296,27 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Proposed subject heading"
                     }
                 ],
                 "id": "lc:RT:bf2:Topic:SubjectNew",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Expanded subjects"
+                "resourceLabel": "Expanded subjects",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "resourceTemplates": [],
+                        "type": "lookupResource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects"
-                            ],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
                         "propertyLabel": "Search LCSH"
@@ -399,35 +325,27 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Proposed heading"
                     }
                 ],
                 "id": "lc:RT:bf2:Topic:ChronologyTest",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
-                "resourceLabel": "Chronological subdivision test"
+                "resourceLabel": "Chronological subdivision test",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             },
             {
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/subjects"
-                            ],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
                         "propertyLabel": "Search LCSH"
@@ -435,13 +353,39 @@
                 ],
                 "id": "lc:RT:bf2:Topic:madsTopicSub",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
-                "resourceLabel": "Topical subdivision"
+                "resourceLabel": "Topical subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ]
+                        },
+                        "propertyLabel": "Search works",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
+                    }
+                ],
+                "id": "lc:RT:bf2:Topic:SubjectWork",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                "resourceLabel": "Subject-Work",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }
         ],
         "id": "lc:profile:bf2:Topic",
         "title": "BIBFRAME 2.0 Topic",
         "description": "Subject of Work",
         "date": "2017-05-13",
-        "author": "NDMSO"
+        "author": "NDMSO",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
     }
 }
