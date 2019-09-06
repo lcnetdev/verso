@@ -6,28 +6,16 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/resources/works"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Brief:Work"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
                             }
                         },
-                        "propertyLabel": "Search related works",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "valueConstraint": {
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
-                            }
-                        },
-                        "propertyLabel": "Input Related Work (if not found above)",
+                        "propertyLabel": "Lookup",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo"
                     },
                     {
@@ -67,7 +55,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/resources/works"
@@ -76,8 +64,8 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
                             }
                         },
-                        "propertyLabel": "Search related expressions",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo"
+                        "propertyLabel": "Search Related Expression",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/Relationship"
                     },
                     {
                         "mandatory": "false",
@@ -88,8 +76,8 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
                             }
                         },
-                        "propertyLabel": "Input Related Expression (if not found above)",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo"
+                        "propertyLabel": "Input Related Expression (if not found)",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label"
                     },
                     {
                         "mandatory": "false",
@@ -128,7 +116,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/resources/instances"
@@ -137,8 +125,8 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Instance"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
-                        "propertyLabel": "Search related instances"
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/Relationship",
+                        "propertyLabel": "Lookup"
                     },
                     {
                         "mandatory": "false",
@@ -149,8 +137,8 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Instance"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
-                        "propertyLabel": "Input Related Instance (if not found above)"
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Related Instance (if not found)"
                     },
                     {
                         "mandatory": "false",
@@ -189,24 +177,6 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
-                        "propertyLabel": "Title referenced"
-                    }
-                ],
-                "id": "lc:RT:bf2:ReferenceInstance",
-                "resourceLabel": "Instance Referenced",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
-                "remark": "used in rare materials profile",
-                "author": "NDMSO",
-                "date": "2019-08-21",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
                         "type": "lookupResource",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -230,6 +200,55 @@
                 "id": "lc:RT:bf2:Relation",
                 "resourceURI": "http://id.loc.gov/ontologies/bflc/Relation",
                 "resourceLabel": "Relationship Designator",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookupResource",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Agents:Contribution"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+                        "propertyLabel": "Contributor"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:WorkTitle"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+                        "propertyLabel": "Title"
+                    }
+                ],
+                "id": "lc:RT:bf2:Brief:Work",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                "resourceLabel": "Related Works",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"

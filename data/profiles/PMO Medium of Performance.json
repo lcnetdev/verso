@@ -85,23 +85,35 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
-                        "propertyLabel": "has Distinct Part Count"
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:PMOMedPerf:Doubling"
+                            ]
+                        },
+                        "propertyURI": "http://performedmusicontology.org/ontology/hasMediumPart",
+                        "propertyLabel": "OR has Doubling Medium Part"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
-                        "propertyLabel": "has Ensemble Count"
+                        "propertyLabel": "Total Ensemble Count"
                     },
                     {
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasPerformerCount",
-                        "propertyLabel": "Performer Count"
+                        "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
+                        "propertyLabel": "Total Distinct Part Count"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
+                        "propertyLabel": "Total Required Performer Count"
                     }
                 ],
                 "id": "lc:RT:bf2:PMOMedPerf:PerfMed",
@@ -148,34 +160,6 @@
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumOfPerformance",
                         "propertyLabel": "has Medium of Performance"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
-                        "propertyLabel": "has Distinct Part Count"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
-                        "propertyLabel": "has Required Performer Count"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
-                        "propertyLabel": "has Ensemble Count"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://performedmusicontology.org/ontology/hasPerformerCount",
-                        "propertyLabel": "has Performer Count"
                     }
                 ],
                 "id": "lc:RT:bf2:PMOMedPerf:MedPart",

@@ -43,36 +43,19 @@
             {
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
                 "id": "lc:RT:bf2:Agents:bfContribution",
-                "resourceLabel": "Contribution (test)",
+                "resourceLabel": "Collection",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Agent",
+                        "propertyLabel": "Name of collection",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:bfPerson",
-                                "lc:RT:bf2:Agent:Family",
-                                "lc:RT:bf2:Agent:CorporateBody",
-                                "lc:RT:bf2:Agent:Jurisdiction",
-                                "lc:RT:bf2:Agent:Conference"
+                                "lc:RT:bf2:Agent:CorporateBody"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                         "type": "resource",
                         "mandatory": "false",
                         "repeatable": "true"
-                    },
-                    {
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
-                        "propertyLabel": "Relationship Designator (RDA Appendix I)",
-                        "type": "resource",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:Role"
-                            ]
-                        },
-                        "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
                 ],
                 "author": "NDMSO",

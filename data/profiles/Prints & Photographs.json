@@ -6,6 +6,21 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -74,6 +89,28 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Place"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
+                        "propertyLabel": "Place associated with the Work"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/temporalCoverage",
+                        "propertyLabel": "Time coverage of the Work"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -98,7 +135,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
+                                "lc:RT:bf2:PrintPhoto:Note"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
@@ -183,29 +220,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
-                        "propertyLabel": "(Geographic) Coverage of the Content"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/temporalCoverage",
-                        "propertyLabel": "(Time) Coverage of the Content"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Place"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
-                            }
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
-                        "propertyLabel": "Place of Origin of the Work"
+                        "propertyLabel": "GAC (Geographic) codes"
                     },
                     {
                         "mandatory": "false",
@@ -247,13 +262,24 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
+                                "lc:RT:bf2:PrintPhoto:Work"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/instanceOf",
+                        "propertyLabel": "Instance Of"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
                                 "lc:RT:bf2:InstanceTitle",
                                 "lc:RT:bf2:Title:CollTitle"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
-                        "propertyLabel": "Title",
-                        "remark": "http://desktop.loc.gov/saved/1._Title_and_Statement_of_Responsibility_Area"
+                        "propertyLabel": "Title"
                     },
                     {
                         "mandatory": "false",
@@ -310,6 +336,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:Identifiers:LCCN",
+                                "lc:RT:bf2:Identifiers:Copyright",
                                 "lc:RT:bf2:Identifiers:Other",
                                 "lc:RT:bf2:Identifiers:Local"
                             ]
@@ -323,7 +350,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
+                                "lc:RT:bf2:PrintPhoto:Note"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
@@ -453,18 +480,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:PrintPhoto:AcqSource"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/acquisitionSource",
-                        "propertyLabel": "Source of Acquisition"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
                                 "lc:RT:bf2:Item:Access",
                                 "lc:RT:bf2:Item:Use"
                             ]
@@ -482,7 +497,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasItem",
-                        "propertyLabel": "Has Item"
+                        "propertyLabel": "Add Item information"
                     }
                 ],
                 "id": "lc:RT:bf2:PrintPhoto:Instance",
@@ -521,7 +536,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Identifiers:LC"
+                                "lc:RT:bf2:Identifiers:Shelfmark"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMark",
@@ -540,11 +555,18 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:CorporateBody"
+                                "lc:RT:bf2:PrintPhoto:AcqSource"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                        "propertyLabel": "Collection"
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/acquisitionSource",
+                        "propertyLabel": "Local copy identifier"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/electrnoicLocation",
+                        "propertyLabel": "URL of digital item"
                     },
                     {
                         "mandatory": "false",
@@ -564,7 +586,19 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Note"
+                                "lc:RT:bf2:Agents:bfContribution"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+                        "propertyLabel": "Collection"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:PrintPhoto:Note"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
@@ -589,8 +623,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/custodialHistory",
-                        "propertyLabel": "Custodial History of Item",
-                        "remark": "http://access.rdatoolkit.org/2.18.html"
+                        "propertyLabel": "Custodial History of Item"
                     },
                     {
                         "mandatory": "false",
@@ -603,13 +636,6 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/immediateAcquisition",
                         "propertyLabel": "Immediate Source of Acquisition of Item"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/electrnoicLocation",
-                        "propertyLabel": "URL of digital item"
                     }
                 ],
                 "id": "lc:RT:bf2:PrintPhoto:Item",
@@ -752,6 +778,37 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AcquisitionSource",
                 "author": "NDMSO",
                 "resourceLabel": "Source of Acquisition",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Note"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/noteType",
+                        "propertyLabel": "Note type"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "URL related to Note"
+                    }
+                ],
+                "id": "lc:RT:bf2:PrintPhoto:Note",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
+                "resourceLabel": "Note",
+                "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
             }

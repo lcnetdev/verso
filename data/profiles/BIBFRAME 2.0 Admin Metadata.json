@@ -78,7 +78,7 @@
                     },
                     {
                         "mandatory": "true",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
