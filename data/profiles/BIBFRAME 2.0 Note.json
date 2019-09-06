@@ -35,6 +35,13 @@
                         "type": "literal",
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Note"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/noteType",
+                        "propertyLabel": "Note type"
                     }
                 ],
                 "id": "lc:RT:bf2:Note",
