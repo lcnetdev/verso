@@ -689,7 +689,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
-                        "propertyLabel": "Source of number (e.g. OCLC)"
+                        "propertyLabel": "Source of number (e.g. OCoLC)"
                     },
                     {
                         "mandatory": "false",
