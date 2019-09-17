@@ -370,7 +370,10 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:SoundRecording:Work"
-                            ]
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
                         },
                         "mandatory": "false",
                         "repeatable": "true"
@@ -439,14 +442,18 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        },
-                        "propertyLabel": "Series Statement",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries"
+                        "type": "literal",
+                        "propertyLabel": "Series statement",
+                        "remark": "http://access.rdatoolkit.org/2.12.html",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
                         "mandatory": "false",

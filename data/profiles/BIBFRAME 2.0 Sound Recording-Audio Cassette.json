@@ -459,14 +459,18 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
-                        "propertyLabel": "Series Statement"
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
+                        "propertyLabel": "Series statement",
+                        "remark": "http://access.rdatoolkit.org/2.12.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
                         "mandatory": "false",

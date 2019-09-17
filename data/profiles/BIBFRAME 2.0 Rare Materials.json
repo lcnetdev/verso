@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/resources/works"
@@ -351,14 +351,18 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
-                        "propertyLabel": "Series Statement"
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
+                        "propertyLabel": "Series statement",
+                        "remark": "http://access.rdatoolkit.org/2.12.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
                         "mandatory": "false",
@@ -767,7 +771,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/millus"
@@ -800,7 +804,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/resources/works"
@@ -809,7 +813,7 @@
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/Relationship",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/references",
                         "propertyLabel": "Lookup"
                     },
                     {
@@ -844,7 +848,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://vocab.getty.edu/aat"
