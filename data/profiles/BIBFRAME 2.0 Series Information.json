@@ -50,7 +50,7 @@
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
                 "id": "lc:RT:bf2:SeriesInformation",
-                "resourceLabel": "Series Statement",
+                "resourceLabel": "Series Statement (unused)",
                 "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html",
                 "author": "NDMSO",
                 "date": "2019-08-21",

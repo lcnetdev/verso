@@ -13,8 +13,8 @@
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person",
-                        "type": "lookupResource",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true"
                     },
@@ -148,8 +148,8 @@
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Family",
-                        "type": "lookupResource",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true"
                     },
@@ -324,8 +324,8 @@
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Organization",
-                        "type": "lookupResource",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true"
                     },
@@ -514,8 +514,8 @@
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
-                        "type": "lookupResource",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true"
                     },
@@ -693,9 +693,9 @@
                 "resourceLabel": "Jurisdiction",
                 "propertyTemplates": [
                     {
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Search LCNAF",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
                         "valueConstraint": {
@@ -923,12 +923,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:Note"
-                            ]
-                        },
+                        "type": "literal",
                         "propertyLabel": "Source Consulted Note (RDA 8.12)",
                         "remark": "http://access.rdatoolkit.org/rdachp8_rda8-479.html",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#citationNote"
@@ -944,12 +939,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:Note"
-                            ]
-                        },
+                        "type": "literal",
                         "propertyLabel": "Cataloger's Note (RDA 8.13)",
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#editorialNote",
                         "remark": "http://access.rdatoolkit.org/rdachp8_rda8-531.html"
@@ -985,7 +975,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/relators"
@@ -999,7 +989,8 @@
                         "repeatable": "false",
                         "type": "literal",
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Input RDA relationship designator term (if it does not appear above)"
+                        "propertyLabel": "Input RDA relationship designator term (if it does not appear above)",
+                        "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
                 ],
                 "id": "lc:RT:bf2:Agent:Role",
@@ -1077,14 +1068,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
                         "propertyLabel": "Lookup",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person"
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
                     },
                     {
                         "mandatory": "false",
@@ -1111,13 +1102,13 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Family",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Lookup"
                     },
                     {
@@ -1145,13 +1136,13 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Lookup"
                     },
                     {
@@ -1179,13 +1170,13 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Lookup"
                     },
                     {
@@ -1213,13 +1204,13 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
                         "propertyLabel": "Lookup"
                     },
                     {

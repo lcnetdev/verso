@@ -40,14 +40,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
-                        "propertyLabel": "LC Classification Number"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemPortion",
-                        "propertyLabel": "Classification item number"
+                        "propertyLabel": "LC Classification number"
                     }
                 ],
                 "id": "lc:RT:bf2:LCC",

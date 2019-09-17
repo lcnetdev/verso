@@ -326,8 +326,15 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
                         "propertyLabel": "Series statement"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration"
                     },
                     {
                         "mandatory": "false",
@@ -667,7 +674,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/graphicMaterials"
