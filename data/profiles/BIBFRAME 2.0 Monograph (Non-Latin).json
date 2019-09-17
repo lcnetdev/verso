@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/resources/works"
@@ -240,6 +240,22 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/mscript"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Script"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/notation",
+                        "propertyLabel": "Script",
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/millus"
                             ],
                             "valueDataType": {
@@ -410,14 +426,18 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
-                        "propertyLabel": "Series Statement"
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
+                        "propertyLabel": "Series statement",
+                        "remark": "http://access.rdatoolkit.org/2.12.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
                         "mandatory": "false",

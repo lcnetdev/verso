@@ -225,11 +225,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Script"
-                            ]
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/mscript"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Script"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/notation",
                         "propertyLabel": "Script",
@@ -382,15 +385,19 @@
                     },
                     {
                         "mandatory": "false",
-                        "propertyLabel": "Series Statement",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
+                        "propertyLabel": "Series statement",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
+                        "remark": "http://access.rdatoolkit.org/2.12.html",
                         "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        }
+                        "type": "literal"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+                        "propertyLabel": "Series enumeration",
+                        "remark": "http://access.rdatoolkit.org/2.12.9.html"
                     },
                     {
                         "mandatory": "false",
@@ -851,7 +858,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mscale"

@@ -6,7 +6,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mbroadstd"
@@ -94,7 +94,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/names",
@@ -127,7 +127,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mcapturestorage"
@@ -159,7 +159,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mcolor"
@@ -284,7 +284,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mfiletype"
@@ -323,7 +323,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/maudience"
@@ -356,7 +356,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mplayback"
@@ -420,7 +420,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mpresformat"
@@ -453,7 +453,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mproduction"
@@ -515,7 +515,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mrecmedium"
@@ -554,7 +554,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mrecmedium"
@@ -593,7 +593,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mregencoding"
@@ -644,7 +644,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/msoundcontent"
@@ -683,7 +683,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mspecplayback"
@@ -716,7 +716,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mrectype"
@@ -755,7 +755,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mrectype"
@@ -794,7 +794,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/performanceMediums"
@@ -845,7 +845,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/performanceMediums"
@@ -896,7 +896,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/authorities/performanceMediums"
@@ -993,7 +993,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/mfiletype"

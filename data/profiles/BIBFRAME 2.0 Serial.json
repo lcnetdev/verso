@@ -52,10 +52,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/genreForms"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Form"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
@@ -158,7 +158,8 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Components"
+                                "lc:RT:bf2:Components",
+                                "lc:RT:bf2:Topic:Place:Components"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
@@ -239,10 +240,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/languages"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Language2"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
@@ -254,11 +255,14 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Script"
-                            ]
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/mscript"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Script"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/notation",
                         "propertyLabel": "Script",
@@ -307,15 +311,210 @@
                     },
                     {
                         "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/continues",
+                        "propertyLabel": "Continues (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/absorbed",
+                        "propertyLabel": "Absorbed (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/continuesInPart",
+                        "propertyLabel": "Continues in part (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/mergerOf",
+                        "propertyLabel": "Merger of (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/separatedFrom",
+                        "propertyLabel": "Separated from (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/continuedBy",
+                        "propertyLabel": "Continued by (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/absorbedBy",
+                        "propertyLabel": "Absorbed by (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/continuedInPartBy",
+                        "propertyLabel": "Continued in part by (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/mergedToForm",
+                        "propertyLabel": "Merged to form (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/splitInto",
+                        "propertyLabel": "Split into (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/supplement",
+                        "propertyLabel": "Has supplement (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/supplementTo",
+                        "propertyLabel": "Supplement to (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/resources/works"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
+                        "propertyLabel": "Related title (work in LC database)"
+                    },
+                    {
+                        "mandatory": "false",
                         "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Serial:RelatedWork"
+                                "lc:RT:bf2:RelatedWork"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
-                        "propertyLabel": "Related Works"
+                        "propertyLabel": "Related Works not in the LC database"
                     },
                     {
                         "mandatory": "false",
@@ -425,18 +624,6 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/copyrightDate",
                         "propertyLabel": "Copyright Date",
                         "remark": "http://access.rdatoolkit.org/2.11.html"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:SeriesInformation"
-                            ]
-                        },
-                        "propertyLabel": "Series Statement",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries"
                     },
                     {
                         "mandatory": "false",
@@ -963,14 +1150,14 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/resources/works"
+                                "http://id.loc.gov/resources/instances"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Instance"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
-                        "propertyLabel": "Search Related Manifestation"
+                        "propertyLabel": "Search Related Instance"
                     },
                     {
                         "mandatory": "false",
@@ -982,7 +1169,7 @@
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
-                        "propertyLabel": "Input Related Manifestation (if not found above)",
+                        "propertyLabel": "Input Related Instance (if not found above)",
                         "remark": "http://access.rdatoolkit.org/rdachp25_rda25-64.html"
                     },
                     {
@@ -1007,7 +1194,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
-                        "propertyLabel": "ISSN of Related Manifestation"
+                        "propertyLabel": "ISSN of Related Instance"
                     },
                     {
                         "mandatory": "false",
@@ -1092,7 +1279,7 @@
                     {
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "lookupResource",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "http://id.loc.gov/vocabulary/frequencies"
