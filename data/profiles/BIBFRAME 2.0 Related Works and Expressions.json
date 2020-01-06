@@ -97,6 +97,18 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
+                                "lc:RT:bf2:Relation"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
+                        "propertyLabel": "Relationship Designator"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
                                 "lc:RT:bf2:Note"
                             ]
                         },

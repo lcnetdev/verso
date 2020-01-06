@@ -426,10 +426,10 @@
                                 "http://id.loc.gov/vocabulary/mpresformat"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormatf"
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormat"
                             }
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormatf",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormat",
                         "propertyLabel": "Lookup",
                         "remark": "http://access.rdatoolkit.org/3.17.2.html"
                     },
@@ -442,7 +442,7 @@
                     }
                 ],
                 "id": "lc:RT:bf2:ProjFormat",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormatf",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/PresentationFormat",
                 "resourceLabel": "Presentation Format",
                 "author": "NDMSO",
                 "date": "2019-08-21",
@@ -506,6 +506,38 @@
                 "id": "lc:RT:bf2:ProjSpeed",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/ProjectionSpeed",
                 "resourceLabel": "Projection Speed",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/mgeneration"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Generation"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Generation",
+                        "propertyLabel": "Lookup"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Input Recording Generation (if not on list)"
+                    }
+                ],
+                "id": "lc:RT:bf2:RecGen",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Generation",
+                "resourceLabel": "Recording Generation",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
@@ -966,16 +998,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "defaults": [
-                                {
-                                    "defaultLiteral": "DVD video"
-                                },
-                                {
-                                    "defaultLiteral": "Blu-ray"
-                                }
-                            ]
-                        },
                         "propertyLabel": "Encoding Format",
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "remark": "http://access.rdatoolkit.org/3.19.3.html"
