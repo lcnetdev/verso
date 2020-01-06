@@ -50,10 +50,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/genreForms"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Form"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
@@ -79,11 +79,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names",
-                                "http://id.loc.gov/authorities/subjects"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Place"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
@@ -228,7 +227,8 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Components"
+                                "lc:RT:bf2:Components",
+                                "lc:RT:bf2:Topic:Place:Components"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
@@ -296,17 +296,18 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/languages"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Language2"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/language",
-                        "propertyLabel": "Language"
+                        "propertyLabel": "Language",
+                        "remark": "http://access.rdatoolkit.org/6.11.html"
                     },
                     {
                         "mandatory": "false",
@@ -361,7 +362,7 @@
                                 "lc:RT:bf2:RelatedExpression"
                             ]
                         },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasExpression",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/expressionOf",
                         "propertyLabel": "Related Expressions"
                     },
                     {
@@ -375,6 +376,18 @@
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
                         "propertyLabel": "Has BIBFRAME Instance"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Brief:Work"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasPart",
+                        "propertyLabel": "Has Part (Work)"
                     }
                 ],
                 "id": "lc:RT:bf2:SoundCDR:Work",
@@ -397,7 +410,7 @@
                             ]
                         },
                         "mandatory": "false",
-                        "repeatable": "true"
+                        "repeatable": "false"
                     },
                     {
                         "propertyLabel": "Title Information",
@@ -430,7 +443,7 @@
                         "remark": "http://access.rdatoolkit.org/2.5.html"
                     },
                     {
-                        "propertyLabel": "Publication, Distribution, Manufacture, Production",
+                        "propertyLabel": "Provision Activity",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
                         "type": "resource",
                         "valueConstraint": {
@@ -504,6 +517,7 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
+                                "lc:RT:bf2:Identifiers:LCCN",
                                 "lc:RT:bf2:Identifiers:ISBN",
                                 "lc:RT:bf2:Identifiers:ISMN",
                                 "lc:RT:bf2:Identifiers:PubNumber",
@@ -716,18 +730,6 @@
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
                     {
-                        "mandatory": "true",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Identifiers:LCCN"
-                            ]
-                        },
-                        "propertyLabel": "LCCN",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy"
-                    },
-                    {
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
@@ -741,7 +743,7 @@
                     },
                     {
                         "mandatory": "true",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -807,7 +809,7 @@
                         "type": "resource"
                     },
                     {
-                        "propertyLabel": "Barcode",
+                        "propertyLabel": "Item Barcode",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -819,15 +821,15 @@
                         "type": "resource"
                     },
                     {
-                        "propertyLabel": "Electronic location",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+                        "propertyLabel": "Location",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "Held in sublocation",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+                        "propertyLabel": "Electronic location",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"

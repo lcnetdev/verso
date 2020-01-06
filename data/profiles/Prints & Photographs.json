@@ -80,7 +80,8 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "lc:RT:bf2:PrintPhoto:TGMSubject",
-                                "lc:RT:bf2:Components"
+                                "lc:RT:bf2:Components",
+                                "lc:RT:bf2:Topic:Place:Components"
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
@@ -198,10 +199,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "resource",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/languages"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Language2"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
@@ -258,7 +259,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -306,7 +307,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
-                        "propertyLabel": "Production or Publication"
+                        "propertyLabel": "Provision Activity"
                     },
                     {
                         "mandatory": "false",
@@ -554,7 +555,7 @@
                         "repeatable": "true",
                         "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
-                        "propertyLabel": "Held in sublocation"
+                        "propertyLabel": "Location"
                     },
                     {
                         "mandatory": "false",
@@ -585,7 +586,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
-                        "propertyLabel": "Barcode"
+                        "propertyLabel": "Item Barcode"
                     },
                     {
                         "mandatory": "false",
@@ -801,6 +802,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://mlvlp04.loc.gov:3000/verso/api/configs?filter[where][configType]=noteTypes&filter[fields][json]=true"
+                            ]
+                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/noteType",
                         "propertyLabel": "Note type"
                     },

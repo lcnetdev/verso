@@ -67,6 +67,27 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber",
+                        "propertyLabel": "Part number"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
+                        "propertyLabel": "Part name"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
+                        "propertyLabel": "Other Title Information"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -190,6 +211,20 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber",
+                        "propertyLabel": "Part number"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
+                        "propertyLabel": "Part name"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/variantType",
                         "propertyLabel": "Variant title type"
                     },
@@ -230,6 +265,20 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/subtitle",
                         "propertyLabel": "Other Title Information",
                         "remark": "http://access.rdatoolkit.org/rdachp2_rda2-3939.html"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partNumber",
+                        "propertyLabel": "Part number"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/partName",
+                        "propertyLabel": "Part name"
                     },
                     {
                         "mandatory": "false",

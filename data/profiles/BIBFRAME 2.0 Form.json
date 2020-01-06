@@ -16,8 +16,7 @@
                             }
                         },
                         "propertyLabel": "Search LCGFT",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
-                        "remark": "http://access.rdatoolkit.org/6.3.html"
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm"
                     }
                 ],
                 "id": "lc:RT:bf2:Form",
@@ -56,6 +55,28 @@
                 "id": "lc:RT:bf2:Form:Geog",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
                 "resourceLabel": "Geographic coverage",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "https://lookup.ld4l.org/authorities/search/linked_data/getty_aat_ld4l_cache"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+                        "propertyLabel": "Search Getty AAT"
+                    }
+                ],
+                "id": "lc:RT:bf2:Form:AAT",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+                "resourceLabel": "Getty AAT",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"

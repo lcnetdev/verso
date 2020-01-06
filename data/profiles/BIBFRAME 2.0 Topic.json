@@ -74,30 +74,13 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/subjects",
-                                "http://id.loc.gov/authorities/childrensSubjects",
-                                "http://id.loc.gov/authorities/names"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
-                            }
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/Place",
-                        "propertyLabel": "Lookup"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
                         "type": "list",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:Topic:madsTopic",
-                                "lc:RT:bf2:Topic:madsGeographic",
-                                "lc:RT:bf2:Topic:madsGenreForm",
-                                "lc:RT:bf2:Topic:madsTemporal"
+                                "lc:RT:bf2:Topic:madsGeogHeading",
+                                "lc:RT:bf2:Topic:madsTopicSubdivision",
+                                "lc:RT:bf2:Topic:madsTemporal",
+                                "lc:RT:bf2:Topic:madsGenreForm"
                             ]
                         },
                         "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
@@ -105,7 +88,7 @@
                     }
                 ],
                 "id": "lc:RT:bf2:Topic:Place:Components",
-                "resourceLabel": "Place Subject components",
+                "resourceLabel": "Geographic subjects",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
                 "author": "NDMSO",
                 "date": "2019-08-21",
@@ -184,13 +167,73 @@
                                 "http://id.loc.gov/authorities/subjects"
                             ]
                         },
-                        "propertyLabel": "Search LCSH",
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#GenreForm"
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Topic",
+                        "propertyLabel": "Search LCSH"
                     }
                 ],
-                "id": "lc:RT:bf2:Topic:madsGenreForm",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#GenreForm",
-                "resourceLabel": "Form subdivision",
+                "id": "lc:RT:bf2:Topic:madsTopicSubdivision",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Topic",
+                "resourceLabel": "Topical subdivision",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names",
+                                "http://id.loc.gov/authorities/subjects"
+                            ]
+                        },
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                        "propertyLabel": "Search LCNAF/LCSH"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "propertyLabel": "Input Geographic term"
+                    }
+                ],
+                "id": "lc:RT:bf2:Topic:madsGeogHeading",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "resourceLabel": "Geographic heading",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/names",
+                                "http://id.loc.gov/authorities/subjects"
+                            ]
+                        },
+                        "propertyLabel": "Search LCNAF/LCSH",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "propertyLabel": "Input Geographic Term"
+                    }
+                ],
+                "id": "lc:RT:bf2:Topic:madsGeographic",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "resourceLabel": "Geographic subdivision",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
@@ -225,46 +268,16 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/names",
                                 "http://id.loc.gov/authorities/subjects"
                             ]
                         },
-                        "propertyLabel": "Search LCNAF/LCSH",
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Geographic"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
-                        "propertyLabel": "Input Geographic Term"
+                        "propertyLabel": "Search LCSH",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#GenreForm"
                     }
                 ],
-                "id": "lc:RT:bf2:Topic:madsGeographic",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
-                "resourceLabel": "Geographic heading or subdivision",
-                "author": "NDMSO",
-                "date": "2019-08-21",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Components"
-                            ]
-                        },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
-                        "propertyLabel": "Topics"
-                    }
-                ],
-                "id": "lc:RT:bf2:SubjectTopic",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Topic",
-                "resourceLabel": "Subject-Topic",
+                "id": "lc:RT:bf2:Topic:madsGenreForm",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#GenreForm",
+                "resourceLabel": "Form subdivision",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
@@ -274,25 +287,26 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "list",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:Person",
-                                "lc:RT:bf2:Agent:CorporateBody",
-                                "lc:RT:bf2:Agent:Conference",
-                                "lc:RT:bf2:Topic:madsTopic",
-                                "lc:RT:bf2:Topic:madsGeographic",
-                                "lc:RT:bf2:Topic:madsTemporal",
-                                "lc:RT:bf2:Topic:madsGenreForm"
+                            "useValuesFrom": [
+                                "http://id.loc.gov/authorities/subjects"
                             ]
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
-                        "propertyLabel": "Agents"
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
+                        "propertyLabel": "Search LCSH"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Proposed heading"
                     }
                 ],
-                "id": "lc:RT:bf2:SubjectAgent",
-                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
-                "resourceLabel": "Subject-Agent",
+                "id": "lc:RT:bf2:Topic:ChronologyTest",
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
+                "resourceLabel": "Chronological subdivision test",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
@@ -354,48 +368,25 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "list",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/subjects"
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Agent:Person",
+                                "lc:RT:bf2:Agent:CorporateBody",
+                                "lc:RT:bf2:Agent:Conference",
+                                "lc:RT:bf2:Topic:madsTopic",
+                                "lc:RT:bf2:Topic:madsGeographic",
+                                "lc:RT:bf2:Topic:madsTemporal",
+                                "lc:RT:bf2:Topic:madsGenreForm"
                             ]
                         },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
-                        "propertyLabel": "Search LCSH"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                        "propertyLabel": "Proposed heading"
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "propertyLabel": "Agents"
                     }
                 ],
-                "id": "lc:RT:bf2:Topic:ChronologyTest",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
-                "resourceLabel": "Chronological subdivision test",
-                "author": "NDMSO",
-                "date": "2019-08-21",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
-            },
-            {
-                "propertyTemplates": [
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/authorities/subjects"
-                            ]
-                        },
-                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
-                        "propertyLabel": "Search LCSH"
-                    }
-                ],
-                "id": "lc:RT:bf2:Topic:madsTopicSub",
-                "resourceURI": "http://www.loc.gov/mads/rdf/v1#TopicElement",
-                "resourceLabel": "Topical subdivision",
+                "id": "lc:RT:bf2:SubjectAgent",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+                "resourceLabel": "Subject-Agent",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"

@@ -21,18 +21,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "lc:RT:bf2:PMOMedPerf:MedPart2"
-                            ]
-                        },
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/alternateMediumOfPerformance",
-                        "propertyLabel": "OR has Alternate Medium Part"
-                    },
-                    {
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [
                                 "lc:RT:bf2:PMOMedPerf:Doubling"
                             ]
                         },
@@ -114,6 +102,18 @@
                         "type": "literal",
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "Total Required Performer Count"
+                    },
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "valueConstraint": {
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/AppliesTo"
+                            }
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/appliesTo",
+                        "propertyLabel": "Applies to"
                     }
                 ],
                 "id": "lc:RT:bf2:PMOMedPerf:PerfMed",
@@ -173,7 +173,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -183,7 +183,7 @@
                                 "dataTypeURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance"
                             }
                         },
-                        "propertyURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance",
+                        "propertyURI": "http://performedmusicontology.org/ontology/hasMediumOfPerformance",
                         "propertyLabel": "Individual Instrument or Voice"
                     },
                     {
@@ -212,7 +212,7 @@
                 "propertyTemplates": [
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -308,6 +308,23 @@
                 "id": "lc:RT:bf2:PMOMedPerf:Doubling",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Doubling Medium of Performance",
+                "author": "NDMSO",
+                "date": "2019-08-21",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "propertyLabel": "Medium Part Type"
+                    }
+                ],
+                "id": "lc:RT:bf2:PMOMedPerf:MedPartType",
+                "resourceURI": "http://performedmusicontology.org/ontology/MediumPartType",
+                "resourceLabel": "Medium Part Type",
                 "author": "NDMSO",
                 "date": "2019-08-21",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"

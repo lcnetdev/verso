@@ -40,6 +40,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://mlvlp04.loc.gov:3000/verso/api/configs?filter[where][configType]=noteTypes&filter[fields][json]=true"
+                            ]
+                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/noteType",
                         "propertyLabel": "Note type"
                     }

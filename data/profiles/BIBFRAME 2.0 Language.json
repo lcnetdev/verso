@@ -16,8 +16,7 @@
                             }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/Language",
-                        "propertyLabel": "Language of Expression",
-                        "remark": "http://access.rdatoolkit.org/6.11.html"
+                        "propertyLabel": "Language"
                     }
                 ],
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Language",

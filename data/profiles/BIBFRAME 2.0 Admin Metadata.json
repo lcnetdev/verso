@@ -11,6 +11,21 @@
                         "propertyLabel": "Your cataloger ID (Windows ID)"
                     },
                     {
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "http://id.loc.gov/vocabulary/menclvl"
+                            ],
+                            "valueDataType": {
+                                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"
+                            }
+                        },
+                        "propertyLabel": "Encoding level",
+                        "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel"
+                    },
+                    {
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
@@ -140,21 +155,6 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier"
                     },
                     {
-                        "mandatory": "true",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://id.loc.gov/vocabulary/menclvl"
-                            ],
-                            "valueDataType": {
-                                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"
-                            }
-                        },
-                        "propertyLabel": "Encoding level",
-                        "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel"
-                    },
-                    {
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
@@ -177,7 +177,7 @@
                     },
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -189,7 +189,7 @@
                     },
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": [
@@ -201,7 +201,7 @@
                     },
                     {
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/procInfo",
                         "propertyLabel": "Process Information"
