@@ -20,7 +20,13 @@
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/edition"
-                            }
+                            },
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/classSchemes/ddc23",
+                                    "defaultLiteral": "23"
+                                }
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/edition",
                         "propertyLabel": "Dewey Edition"
