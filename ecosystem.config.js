@@ -10,6 +10,7 @@ module.exports = {
         'AUTH': false,
         'DB_STORAGE': 'file',
         'DB_FILE': './bfpilot.json',
+        'NODE_OPTIONS': '--max_old_space_size=4096'
       },
       env_mongo: {
         'AUTH': true,
