@@ -12,10 +12,6 @@ You can explore the API using the Loopback API explorer at `/verso/explorer`. Th
 
 _Verso_ can be configured to use [MongoDB](https://www.mongodb.com/) or a simple file to persist the memory-based storage. See [Configuring storage](#configuring-storage) below.
 
-## Known issues
-
-* [MongoDB storage corruption](https://github.com/lcnetdev/verso/issues/5)
-
 Saving a record from the Profile Editor results in corruption of the record when using a MongoDB storage backend. This makes MongoDB storage unusable with the Profile Editor at present, except as read-only.
 
 ## Getting started
