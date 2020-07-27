@@ -1,7 +1,7 @@
 {
   "restApiRoot": "/verso/api",
   "host": "0.0.0.0",
-  "port": 3030,
+  "port": 3031,
   "secretForSigningCookies": "SHOULD_BE_UNIQUE_IN_PRODUCTION",
   "remoting": {
     "context": false,

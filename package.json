@@ -6,6 +6,8 @@
     "lint": "eslint .",
     "start": "sudo pm2 start ecosystem.config.js --update-env",
     "stop": "sudo pm2 delete verso",
+    "start-staging": "sudo pm2 start ecosystem.config.js --name verso-staging --env staging --update-env",
+    "stop-staging": "sudo pm2 delete verso-staging",
     "mongo": "sudo service mongodb start && sudo pm2 start ecosystem.config.js --env mongo --update-env",
     "dev": "node .",
     "posttest": "npm run lint && nsp check"
