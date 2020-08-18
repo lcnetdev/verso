@@ -6,14 +6,17 @@ module.exports = {
       name: 'verso',
       script: './server/server.js',
       watch: false,
-      env: {
+      append_env_to_name: true,
+      env_production: {
         'AUTH': false,
+	'NODE_ENV': 'production',
         'DB_STORAGE': 'file',
         'DB_FILE': './bfpilot.json',
         'NODE_OPTIONS': '--max_old_space_size=4096'
       },
       env_staging: {
         'AUTH': false,
+	'NODE_ENV': 'staging',
         'DB_STORAGE': 'file',
         'DB_FILE': './bfpilot_staging.json',
         'NODE_OPTIONS': '--max_old_space_size=4096'
